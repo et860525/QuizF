@@ -1,0 +1,100 @@
+{
+    "WordData": {
+        "date": "5/04/2008",
+        "time": "3:20 PM",
+        "Animal": [
+            {
+                "japanese": "Cow",
+                "chinese": "牛",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "Lion",
+                "chinese": "獅子",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "Sheep",
+                "chinese": "羊",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "Bird",
+                "chinese": "鳥",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "Pig",
+                "chinese": "豬",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "Elaphent",
+                "chinese": "大象",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "Bear",
+                "chinese": "熊",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "Penguin",
+                "chinese": "企鵝",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "Raccoon",
+                "chinese": "浣熊",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "Seal",
+                "chinese": "海豹",
+                "type": "Animal",
+                "status": 0
+            }
+        ],
+        "Furniture": [
+            {
+                "japanese": "いす",
+                "chinese": "椅子",
+                "type": "Furniture",
+                "status": 0
+            },
+            {
+                "japanese": "ソファ",
+                "chinese": "沙發",
+                "type": "Furniture",
+                "status": 0
+            },
+            {
+                "japanese": "コンピューター",
+                "chinese": "電腦",
+                "type": "Furniture",
+                "status": 0
+            },
+            {
+                "japanese": "ドア",
+                "chinese": "門",
+                "type": "Furniture",
+                "status": 0
+            },
+            {
+                "japanese": "ゆか",
+                "chinese": "床",
+                "type": "Furniture",
+                "status": 0
+            }
+        ]        
+    }
+}
