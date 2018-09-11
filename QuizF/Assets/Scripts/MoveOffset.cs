@@ -12,6 +12,13 @@ public class MoveOffset : MonoBehaviour
 
     private void Start()
     {
+        GameObject[] objs = GameObject.FindGameObjectsWithTag("BackGround");
+        if (objs.Length > 1)
+        {
+            Destroy(this.gameObject);
+        }
+
+        DontDestroyOnLoad(this.gameObject);
         frezz = false;
         materialBack = GetComponent<Renderer>().material;
     }
@@ -19,7 +26,10 @@ public class MoveOffset : MonoBehaviour
     private void FixedUpdate()
     {
         if (!frezz)
+        {
             offset += 0.001f;
+        }
+
         materialBack.SetTextureOffset("_MainTex", new Vector2(offset * velocity, 0));
     }
 }

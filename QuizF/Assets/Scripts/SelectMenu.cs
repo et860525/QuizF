@@ -6,22 +6,49 @@ using UnityEngine.UI;
 
 public class SelectMenu : MonoBehaviour
 {
-    public Button goButton;
-    public Text txtSelectName;
+    [SerializeField]
+    private string setlevelType;
 
-    public GameObject selectInfo;
+    public Button goButton;
+
+    public Text txtSelectName;
     public Text txtPointInfo;
+    public Text TextTest;
+
+    public GameObject selectInfo; 
     public GameObject star1;
     public GameObject star2;
     public GameObject star3;
 
+    private AudioSource buttonClik;
+
     public string[] levelName;
     public int numberConst;
 
+    private string levelType;
     private int iTeam;
 
     private void Start()
     {
+        levelType = PlayerPrefs.GetString("LevelType");
+
+        buttonClik = GetComponent<AudioSource>();
+
+        if (levelType == null)
+        {
+            switch(SceneManager.GetActiveScene().ToString())
+            {
+                case "FoodSelectMenu":
+                    levelType = setlevelType;
+                    break;
+                case "FurnitureSelectMenu":
+                    levelType = setlevelType;
+                    break;
+            }
+        }
+
+        TextTest.text = levelType;
+        
         Time.timeScale = 1;
         iTeam = 0;
         txtSelectName.text = levelName[iTeam];
@@ -56,6 +83,7 @@ public class SelectMenu : MonoBehaviour
 
     public void SelectLevel(int i)
     {
+        buttonClik.Play();
         star1.SetActive(false);
         star2.SetActive(false);
         star3.SetActive(false);
@@ -63,8 +91,8 @@ public class SelectMenu : MonoBehaviour
         PlayerPrefs.SetInt("iTeam", iTeam);
         txtSelectName.text = levelName[iTeam];
 
-        int finalNumber = PlayerPrefs.GetInt("finalNumber" + iTeam.ToString());
-        int average = PlayerPrefs.GetInt("average" + iTeam.ToString());        
+        int finalNumber = PlayerPrefs.GetInt("finalNumber" + levelType + iTeam.ToString());
+        int average = PlayerPrefs.GetInt("average" + levelType + iTeam.ToString());        
 
         if (finalNumber == 10)
         {
@@ -92,6 +120,8 @@ public class SelectMenu : MonoBehaviour
 
     public void GoToLevel()
     {
+        buttonClik.Play();
+        PlayerPrefs.SetString("LevelUsed" + levelType + iTeam.ToString(), "Open");
         SceneManager.LoadScene("Level" + iTeam.ToString());
     }
 
@@ -102,6 +132,8 @@ public class SelectMenu : MonoBehaviour
 
     public void GoTo(string nameScene)
     {
+        buttonClik.Play();
         SceneManager.LoadScene(nameScene);
     }
+
 }

@@ -1071,6 +1071,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe805a4d3869fdb49b2d4c659d949a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BackGround: {fileID: 0}
+  TempPanel: {fileID: 0}
+  OutPopUp: {fileID: 0}
   qText: {fileID: 0}
   qPoint: {fileID: 1401871013}
   timeText: {fileID: 644013488}
@@ -1078,7 +1081,9 @@ MonoBehaviour:
   answerTextB: {fileID: 1048170144}
   answerTextC: {fileID: 995289635}
   answerTextD: {fileID: 1080494876}
-  setQuestions: 5
+  setStartQuestion: 0
+  setLastQuestion: 0
+  setMaxQuestion: 0
 --- !u!4 &1268252988
 Transform:
   m_ObjectHideFlags: 0
@@ -1423,7 +1428,7 @@ GameObject:
   - component: {fileID: 1928833065}
   m_Layer: 5
   m_Name: Back
-  m_TagString: Untagged
+  m_TagString: BackGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1439,6 +1444,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbf79bfadd8701b4fad2dc14d216632d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  frezz: 0
   velocity: 1
 --- !u!23 &1928833066
 MeshRenderer:

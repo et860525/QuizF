@@ -32,13 +32,13 @@ public class ReadData : MonoBehaviour
             SaveData();
         }*/
 
-        if (Input.GetKeyDown(KeyCode.C))
+        /*if (Input.GetKeyDown(KeyCode.C))
         {
-            foreach (WordList w in theWords.Animal)
+            foreach (WordList w in theWords.Food)
             {
                 Debug.Log(w.chinese);
             }
-        }
+        }*/
 
         if (Input.GetKeyDown(KeyCode.R))
         {
@@ -66,10 +66,10 @@ public class ReadData : MonoBehaviour
                 theWords = wrapper.WordData;
                 Debug.Log(theWords.date + "\n" + theWords.time);
 
-                foreach (WordList w in theWords.Animal)
+                /*foreach (WordList w in theWords.Food)
                 {
                     Debug.Log(w.chinese);
-                }
+                }*/
             }
             else
             {

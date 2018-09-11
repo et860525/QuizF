@@ -2,10 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using System.IO;
 
 public class FinalBoard : MonoBehaviour
 {
+    [SerializeField]
+    private GameObject BackGround;
+
     private int iTeam;
 
     public string myText;
@@ -13,8 +17,7 @@ public class FinalBoard : MonoBehaviour
     public Color rightColor;
     public Color wrongColor;
 
-    public AnswerTextControl Question;
-    public AnswerTextControl Answer;
+    public WordsDataControll wordsControll;
 
     public Text txtPoint;
     public Text txtPointInfo;
@@ -23,37 +26,44 @@ public class FinalBoard : MonoBehaviour
     public GameObject star2;
     public GameObject star3;
 
+    private AudioSource buttonClik;
+
+    private StringData theWords; 
+
     private int maxNumber;
     private int finalNumber;
     private int average;
 
     private List<WordList> finalQuestion;
+    private List<WordList> setWordStaut;
 
+    private string levelType;
     private string fileName = "WordDataBase.json";
     private string path;
 
     // Use this for initialization
     void Start ()
     {
-        iTeam = PlayerPrefs.GetInt("iTeam");
+        BackGround = GameObject.FindGameObjectWithTag("BackGround");
+        BackGround.GetComponent<MoveOffset>().frezz = false;
 
+        iTeam = PlayerPrefs.GetInt("iTeam");
+        levelType = PlayerPrefs.GetString("LevelType");
+
+        buttonClik = GetComponent<AudioSource>();
 
         finalQuestion = new List<WordList>();
+        setWordStaut = new List<WordList>();
+
         LoadData();
-
-        maxNumber = finalQuestion.Count;
-
-        /*for (int i = 0; i < finalQuestion.Count; i++)
-        {
-            Debug.Log(theWords.tempList[i].status);
-        }*/
+        SaveData();
 
         star1.SetActive(false);
         star2.SetActive(false);
         star3.SetActive(false);
 
-        finalNumber = PlayerPrefs.GetInt("finalNumberTemp" + iTeam.ToString(), finalNumber);
-        average = PlayerPrefs.GetInt("averageTemp" + iTeam.ToString(), (int)average);
+        finalNumber = PlayerPrefs.GetInt("finalNumberTemp" + levelType + iTeam.ToString(), finalNumber);
+        average = PlayerPrefs.GetInt("averageTemp" + levelType + iTeam.ToString(), (int)average);
 
         txtPoint.text = finalNumber.ToString();
         txtPointInfo.text = "You got " + average.ToString() + " of 10";
@@ -78,6 +88,7 @@ public class FinalBoard : MonoBehaviour
         }
         //SaveData(iTeam);
     }
+
 
     public void ReStart()
     {
@@ -104,30 +115,105 @@ public class FinalBoard : MonoBehaviour
             finalQuestion.Add(loadData.tempList[i]);
             Debug.Log(finalQuestion[i].chinese);
         }
-    }
 
-    private void Update()
-    {
+        maxNumber = finalQuestion.Count;
+
         if (finalQuestion != null)
         {
             for (int i = 0; i < finalQuestion.Count; i++)
             {
                 if (finalQuestion[i].status == 0)
                 {
-                    Question.LogText(maxNumber, finalQuestion[i].japanese, rightColor);
+                    wordsControll.GetWordString(maxNumber, levelType, finalQuestion[i].japanese, finalQuestion[i].chinese, rightColor);
                 }
                 else
                 {
-                    Question.LogText(maxNumber, finalQuestion[i].japanese, wrongColor);
+                    wordsControll.GetWordString(maxNumber, levelType, finalQuestion[i].japanese, finalQuestion[i].chinese, wrongColor);
                 }
-                Answer.LogText(maxNumber, finalQuestion[i].chinese, rightColor);
             }
+        }
+    }
+
+    void SaveData()
+    {
+        TextAsset file = Resources.Load("WordDataBase") as TextAsset;
+        try
+        {
+            if (file != null)
+            {
+                var getJsonList = new List<WordList>();
+
+                //Get Json File.
+                string contents = file.ToString();
+                Debug.Log(contents);
+
+                JsonWrapper wrapper = JsonUtility.FromJson<JsonWrapper>(contents);
+                theWords = wrapper.WordData;
+
+                //Get data.
+                Debug.Log(theWords.date + "\n" + theWords.time);
+
+                switch (levelType)
+                {
+                    case "Food":
+                        for (int i = 0; i < theWords.Food.Count; i++)
+                        {
+                            getJsonList.Add(theWords.Food[i]);
+                            Debug.Log(getJsonList.Count);
+                            //Debug.Log(questionWords[i].chinese);
+                        }
+                        break;
+
+                    case "Furniture":
+                        for (int i = 0; i < theWords.Furniture.Count; i++)
+                        {
+                            getJsonList.Add(theWords.Furniture[i]);
+                            //Debug.Log(getJsonList.Count);
+                            Debug.Log(getJsonList[i].chinese);
+                        }
+                        break;
+                }
+                
+                /*for(int i = 0; i < finalQuestion.Count; i++)
+                {
+                    if (getJsonList[i].chinese == finalQuestion[i].chinese && finalQuestion[i].status == 1)
+                    {
+                        getJsonList[i].status = finalQuestion[i].status;
+                        Debug.Log(getJsonList[i].chinese + getJsonList[i].status);
+                    }
+                }
+
+                path = "Assets/Resources/" + fileName;
+                JsonWrapper saveWrapper = new JsonWrapper();            NEED UPDATE;
+                wrapper.WordData = theWords;
+
+                contents = JsonUtility.ToJson(wrapper, true);
+                System.IO.File.WriteAllText(path, contents);*/
+
+            }
+            else
+            {
+                Debug.Log("Unable to read the save data, file does not exist.");
+            }
+        }
+        catch (System.Exception ex)
+        {
+            Debug.Log(ex.Message);
         }
     }
 
     public void GoTo(string nameScene)
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(nameScene);
+        buttonClik.Play();
+        switch (levelType)
+        {
+            case "Food":
+                SceneManager.LoadScene("FoodSelectMenu");
+                break;
+            case "Furniture":
+                SceneManager.LoadScene("FurnitureSelectMenu");
+                break;
+        }
     }
 
 }

@@ -7,18 +7,20 @@ public class MainMenu : MonoBehaviour
     [SerializeField]
     private GameObject Expanel;
 
-
     [SerializeField]
     private GameObject ExitPop;
 
+    private AudioSource buttonClik;
+
     private bool isExplanation = false;
 
-    public bool isExitPanal = false;
+    private bool isExitPanal = false;
 
     // Use this for initialization
     void Start ()
     {
-	}
+        buttonClik = GetComponent<AudioSource>();
+    }
 
     private void Update()
     {
@@ -37,7 +39,6 @@ public class MainMenu : MonoBehaviour
                 {
                     CallExitPop();
                 }
-
             }
         }
 
@@ -49,8 +50,18 @@ public class MainMenu : MonoBehaviour
         }
     }
 
+    //-----Controll Button-----
+
+    public void GoTo(string nameScene)
+    {
+        buttonClik.Play();
+        UnityEngine.SceneManagement.SceneManager.LoadScene(nameScene);
+    }
+
+    //Explanation Panel
     public void CallExplanation()
     {
+        buttonClik.Play();
         isExplanation = !isExplanation;
 
         if (isExplanation)
@@ -64,8 +75,10 @@ public class MainMenu : MonoBehaviour
         }
     }
 
+    //Exit Panel
     public void CallExitPop()
     {
+        buttonClik.Play();
         isExitPanal = !isExitPanal;
 
         if (isExitPanal)
@@ -79,18 +92,17 @@ public class MainMenu : MonoBehaviour
         }
     }
 
-    public void GoTo(string nameScene)
-    {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(nameScene);
-    }
+    
 
     public void GoExit()
     {
+        buttonClik.Play();
         Application.Quit();
     }
 
     public void DeleteAll()
     {
+        buttonClik.Play();
         PlayerPrefs.DeleteAll();
     }
 }

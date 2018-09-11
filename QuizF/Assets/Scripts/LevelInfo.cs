@@ -13,16 +13,20 @@ public class LevelInfo : MonoBehaviour
 
     public GameObject InteractableButton;
 
+    private string levelType;
+
     //private int finalNumber;
 
     // Use this for initialization
     void Start ()
     {
+        levelType = PlayerPrefs.GetString("LevelType");
+
         star1.SetActive(false);
         star2.SetActive(false);
         star3.SetActive(false); 
                
-        int finalNumber = PlayerPrefs.GetInt("finalNumber" + iTeam.ToString());
+        int finalNumber = PlayerPrefs.GetInt("finalNumber" + levelType + iTeam.ToString());
 
         if (finalNumber == 10)
         {

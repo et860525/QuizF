@@ -7,8 +7,9 @@ public class StringData
 {
     public string date = "";
     public string time = "";
+
     //Chose word type;
-    public List<WordList> Animal = new List<WordList>(); 
+    public List<WordList> Food = new List<WordList>();
     public List<WordList> Furniture = new List<WordList>();
     
     //public List<WordList> tempList = new List<WordList>();
