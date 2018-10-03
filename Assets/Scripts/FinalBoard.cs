@@ -126,15 +126,18 @@ public class FinalBoard : MonoBehaviour
 
         if (finalQuestion != null)
         {
-            for (int i = 0; i < finalQuestion.Count; i++)
+            if (levelType != "Animal")
             {
-                if (finalQuestion[i].status == 0)
+                for (int i = 0; i < finalQuestion.Count; i++)
                 {
-                    wordsControll.GetWordString(maxNumber, levelType, finalQuestion[i].japanese, finalQuestion[i].chinese, rightColor);
-                }
-                else
-                {
-                    wordsControll.GetWordString(maxNumber, levelType, finalQuestion[i].japanese, finalQuestion[i].chinese, wrongColor);
+                    if (finalQuestion[i].status == 0)
+                    {
+                        wordsControll.GetWordString(maxNumber, levelType, finalQuestion[i].japanese, finalQuestion[i].chinese, rightColor);
+                    }
+                    else
+                    {
+                        wordsControll.GetWordString(maxNumber, levelType, finalQuestion[i].japanese, finalQuestion[i].chinese, wrongColor);
+                    }
                 }
             }
         }
@@ -144,13 +147,20 @@ public class FinalBoard : MonoBehaviour
             LoadImages();
             if (finalSprites != null)
             {
-                for (int fc = 0; fc < finalQuestion.Count; fc++)
+                for (int i = 0; i < finalQuestion.Count; i++)
                 {
-                    for (int ic = 0; ic < finalSprites.Count; ic++)
+                    for (int j = 0; j < finalSprites.Count; j++)
                     {
-                        if (finalQuestion[fc].japanese == finalSprites[ic].name)
+                        if (finalQuestion[i].japanese == finalSprites[j].name)
                         {
-                            putSprite.sprite = finalSprites[ic];                                                               
+                            if (finalQuestion[i].status == 0)
+                            {
+                                wordsControll.GetWordString(maxNumber, levelType, finalQuestion[i].japanese, finalQuestion[i].chinese, finalSprites[j], rightColor);
+                            }
+                            else
+                            {
+                                wordsControll.GetWordString(maxNumber, levelType, finalQuestion[i].japanese, finalQuestion[i].chinese, finalSprites[j], wrongColor);
+                            }
                         }
                     }
                 }

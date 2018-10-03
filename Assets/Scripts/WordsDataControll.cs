@@ -41,7 +41,34 @@ public class WordsDataControll : MonoBehaviour
         wdList.Add(tWord.gameObject);
     }
 
-    public void TestGetWords(List<WordList> final, string type, int maxNum, Color myColor)
+    public void GetWordString(int maxNum, string type, string jp, string ch, Sprite sp, Color myColor)
+    {
+
+        if (wdList.Count >= maxNum)
+        {
+            GameObject tempItem = wdList[0];
+            Destroy(tempItem.gameObject);
+            wdList.Remove(tempItem);
+        }
+
+        if (GameObject.Find("Words(Clone)") != null && GameObject.Find("Words(Clone)").GetComponent<WordsDataShow>().type != type)
+        {
+            GameObject tempItem = wdList[0];
+            Destroy(tempItem.gameObject);
+            wdList.Remove(tempItem);
+        }
+
+        GameObject tWord = Instantiate(wordsTemplate) as GameObject;
+        tWord.SetActive(true);
+
+        tWord.GetComponent<WordsDataShow>().SetText(jp, ch, type, sp, myColor);
+
+        tWord.transform.SetParent(wordsTemplate.transform.parent, false);
+
+        wdList.Add(tWord.gameObject);
+    }
+
+    public void DataBaseGetWords(List<WordList> final, string type, int maxNum, Color myColor)
     {
         var tempCount = wdList.Count;
         if (GameObject.Find("Words(Clone)"))

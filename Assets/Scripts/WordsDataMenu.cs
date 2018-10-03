@@ -75,7 +75,7 @@ public class WordsDataMenu : MonoBehaviour
                         for (int i = 0; i < theWords.Food.Count; i++) //Must Load all json file of type.
                         {
                             finalQuestion.Add(theWords.Food[i]);
-                            //Debug.Log(finalQuestion[i].chinese);
+                            Debug.Log(finalQuestion[i].chinese);
                         }
 
                         //Button interactable.
@@ -86,7 +86,7 @@ public class WordsDataMenu : MonoBehaviour
                         for (int i = 0; i < theWords.Furniture.Count; i++)
                         {
                             finalQuestion.Add(theWords.Furniture[i]);
-                            //Debug.Log(finalQuestion[i].chinese);
+                            Debug.Log(finalQuestion[i].chinese);
                         }
 
                         //Button interactable.
@@ -113,7 +113,7 @@ public class WordsDataMenu : MonoBehaviour
 
                 Debug.Log(lastNumber);
 
-                wordsControll.TestGetWords(finalQuestion, _type, lastNumber, rightColor);
+                wordsControll.DataBaseGetWords(finalQuestion, _type, lastNumber, rightColor);
 
 
                 //Debug.Log(finalQuestion.Count);

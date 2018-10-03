@@ -162,6 +162,11 @@ public class ImageLevelManager : MonoBehaviour
 
     void SetQuestion()
     {
+        answerTextA.color = Color.black;
+        answerTextB.color = Color.black;
+        answerTextC.color = Color.black;
+        answerTextD.color = Color.black;
+
         // Random for Question
         int randomQuestionIndex = Random.Range(0, qSprites.Count); // Depend questionWords list Count (questionWords is --), and random in the questionWords question.
         // Random for Anwser
@@ -257,10 +262,26 @@ public class ImageLevelManager : MonoBehaviour
         {
             if (answerTextA.text == correct)
             {
+                answerTextA.color = Color.green;
                 clicks += 1;
             }
             else
             {
+                answerTextA.color = Color.red;
+
+                if (answerTextB.text == correct)
+                {
+                    answerTextB.color = Color.green;
+                }
+                else if (answerTextC.text == correct)
+                {
+                    answerTextC.color = Color.green;
+                }
+                else if (answerTextD.text == correct)
+                {
+                    answerTextD.color = Color.green;
+                }
+
                 finalCorrentList[answerListNum].status = 1;
             }
         }
@@ -269,10 +290,26 @@ public class ImageLevelManager : MonoBehaviour
         {
             if (answerTextB.text == correct)
             {
+                answerTextB.color = Color.green;
                 clicks += 1;
             }
             else
             {
+                answerTextB.color = Color.red;
+
+                if (answerTextA.text == correct)
+                {
+                    answerTextA.color = Color.green;
+                }
+                else if (answerTextC.text == correct)
+                {
+                    answerTextC.color = Color.green;
+                }
+                else if (answerTextD.text == correct)
+                {
+                    answerTextD.color = Color.green;
+                }
+
                 finalCorrentList[answerListNum].status = 1;
             }
         }
@@ -281,10 +318,26 @@ public class ImageLevelManager : MonoBehaviour
         {
             if (answerTextC.text == correct)
             {
+                answerTextC.color = Color.green;
                 clicks += 1;
             }
             else
             {
+                answerTextC.color = Color.red;
+
+                if (answerTextA.text == correct)
+                {
+                    answerTextA.color = Color.green;
+                }
+                else if (answerTextB.text == correct)
+                {
+                    answerTextB.color = Color.green;
+                }
+                else if (answerTextD.text == correct)
+                {
+                    answerTextD.color = Color.green;
+                }
+
                 finalCorrentList[answerListNum].status = 1;
             }
         }
@@ -293,13 +346,30 @@ public class ImageLevelManager : MonoBehaviour
         {
             if (answerTextD.text == correct)
             {
+                answerTextD.color = Color.green;
                 clicks += 1;
             }
             else
             {
+                answerTextD.color = Color.red;
+
+                if (answerTextA.text == correct)
+                {
+                    answerTextA.color = Color.green;
+                }
+                else if (answerTextB.text == correct)
+                {
+                    answerTextB.color = Color.green;
+                }
+                else if (answerTextC.text == correct)
+                {
+                    answerTextC.color = Color.green;
+                }
+
                 finalCorrentList[answerListNum].status = 1;
             }
         }
+
         CancelInvoke("TimerDownCount");
         TempPanel.gameObject.SetActive(true);
         BackGround.GetComponent<MoveOffset>().frezz = true;

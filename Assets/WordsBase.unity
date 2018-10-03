@@ -864,6 +864,7 @@ MonoBehaviour:
   jpString: {fileID: 532489163}
   chString: {fileID: 1357118562}
   type: 
+  image: {fileID: 0}
 --- !u!1 &708764703
 GameObject:
   m_ObjectHideFlags: 0

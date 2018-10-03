@@ -149,7 +149,7 @@ public class SelectMenu : MonoBehaviour
     public void GoToLevel()
     {
         buttonClik.Play();
-        //PlayerPrefs.SetString("LevelUsed" + levelType + iTeam.ToString(), "Open");
+        PlayerPrefs.SetString("LevelUsed" + levelType + iTeam.ToString(), "Open");
 
         switch (levelType)
         {
@@ -161,10 +161,6 @@ public class SelectMenu : MonoBehaviour
                 else if (iTeam == 3)
                 {
                     SceneManager.LoadScene("Level3");
-                }
-                else if (iTeam == 4)
-                {
-                    SceneManager.LoadScene("ImageLevel");
                 }
                 break;
             case "Furniture":
@@ -186,6 +182,11 @@ public class SelectMenu : MonoBehaviour
                 else if (iTeam == 2)
                 {
                     PlayerPrefs.SetString("ExplorerName", "Animal2");
+                    SceneManager.LoadScene("ImageLevel");
+                }
+                else if (iTeam == 3)
+                {
+                    PlayerPrefs.SetString("ExplorerName", "Animal3");
                     SceneManager.LoadScene("ImageLevel");
                 }
                 break;

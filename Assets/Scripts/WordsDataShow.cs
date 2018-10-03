@@ -10,8 +10,10 @@ public class WordsDataShow : MonoBehaviour
 
     [SerializeField]
     private Text chString;
-
+       
     public string type;
+
+    public Image image;
 
     public void SetText(string _jpS, string _chS, string _type, Color _myColor)
     {
@@ -19,7 +21,20 @@ public class WordsDataShow : MonoBehaviour
         chString.text = _chS;
 
         jpString.color = _myColor;
+        chString.color = _myColor;        
+
+        type = _type;
+    }
+
+    public void SetText(string _jpS, string _chS, string _type, Sprite sprite, Color _myColor)
+    {
+        jpString.text = _jpS;
+        chString.text = _chS;
+
+        jpString.color = _myColor;
         chString.color = _myColor;
+
+        image.sprite = sprite;
 
         type = _type;
     }

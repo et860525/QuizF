@@ -206,6 +206,11 @@ public class LevelManager : MonoBehaviour
     //Set Question Jp or Ch.
     void SetQuestion(string _levelType, string _gameMode)
     {
+        answerTextA.color = Color.black;
+        answerTextB.color = Color.black;
+        answerTextC.color = Color.black;
+        answerTextD.color = Color.black;
+
         int randomQuestionIndex = Random.Range(0, questionWords.Count); // Depend questionWords list Count (questionWords is --), and random in the questionWords question.
         int randomCorrent = Random.Range(1, 4);
 
@@ -332,11 +337,27 @@ public class LevelManager : MonoBehaviour
         if (sub == "A")
         {
             if (answerTextA.text == correct)
-            {
+            {                
+                answerTextA.color = Color.green;
                 clicks += 1;
             }
             else
             {
+                answerTextA.color = Color.red;
+                
+                if (answerTextB.text == correct)
+                {
+                    answerTextB.color = Color.green;
+                }
+                else if (answerTextC.text == correct)
+                {
+                    answerTextC.color = Color.green;
+                }
+                else if (answerTextD.text == correct)
+                {
+                    answerTextD.color = Color.green;
+                }
+
                 finalCorrentList[answerListNum].status = 1;
             }
         }
@@ -345,10 +366,26 @@ public class LevelManager : MonoBehaviour
         {
             if (answerTextB.text == correct)
             {
+                answerTextB.color = Color.green;
                 clicks += 1;
             }
             else
             {
+                answerTextB.color = Color.red;
+
+                if (answerTextA.text == correct)
+                {
+                    answerTextA.color = Color.green;
+                }
+                else if (answerTextC.text == correct)
+                {
+                    answerTextC.color = Color.green;
+                }
+                else if (answerTextD.text == correct)
+                {
+                    answerTextD.color = Color.green;
+                }
+
                 finalCorrentList[answerListNum].status = 1;
             }
         }
@@ -356,11 +393,27 @@ public class LevelManager : MonoBehaviour
         else if (sub == "C")
         {
             if (answerTextC.text == correct)
-            {
+            {          
+                answerTextC.color = Color.green;
                 clicks += 1;
             }
             else
             {
+                answerTextC.color = Color.red;
+
+                if (answerTextA.text == correct)
+                {
+                    answerTextA.color = Color.green;
+                }
+                else if (answerTextB.text == correct)
+                {
+                    answerTextB.color = Color.green;
+                }
+                else if (answerTextD.text == correct)
+                {
+                    answerTextD.color = Color.green;
+                }
+
                 finalCorrentList[answerListNum].status = 1;
             }
         }
@@ -369,13 +422,30 @@ public class LevelManager : MonoBehaviour
         {
             if (answerTextD.text == correct)
             {
+                answerTextD.color = Color.green;
                 clicks += 1;
             }
             else
             {
+                answerTextD.color = Color.red;
+
+                if (answerTextA.text == correct)
+                {
+                    answerTextA.color = Color.green;
+                }
+                else if (answerTextB.text == correct)
+                {
+                    answerTextB.color = Color.green;
+                }
+                else if (answerTextC.text == correct)
+                {
+                    answerTextC.color = Color.green;
+                }
+
                 finalCorrentList[answerListNum].status = 1;
             }
         }
+
         CancelInvoke("TimerDownCount");
         TempPanel.gameObject.SetActive(true);
         BackGround.GetComponent<MoveOffset>().frezz = true;
@@ -430,7 +500,6 @@ public class LevelManager : MonoBehaviour
             setTime = maxTime;
             InvokeRepeating("TimerDownCount", 0f, 1.0f);
             BackGround.GetComponent<MoveOffset>().frezz = false;
-
             SetQuestion(levelType, gameModeString);
             qPoint.text = (idQuestion + 1).ToString() + "/" + maxQuestion.ToString();
         }
