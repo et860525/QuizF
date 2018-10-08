@@ -6,9 +6,7 @@ using UnityEngine.UI;
 
 public class SelectMenu : MonoBehaviour
 {
-    [SerializeField]
-    private string setLevelType;
-
+ 
     public Button goButton;
 
     public Text txtSelectName;
@@ -34,22 +32,6 @@ public class SelectMenu : MonoBehaviour
 
         buttonClik = GetComponent<AudioSource>();
 
-        if (levelType == null)
-        {
-            switch(SceneManager.GetActiveScene().ToString())
-            {
-                case "FoodSelectMenu":
-                    levelType = setLevelType;
-                    break;
-                case "FurnitureSelectMenu":
-                    levelType = setLevelType;
-                    break;
-                case "AnimalSelectMenu":
-                    levelType = setLevelType;
-                    break;
-            }
-        }
-
         TextTest.text = levelType;
         
         Time.timeScale = 1;
@@ -73,7 +55,7 @@ public class SelectMenu : MonoBehaviour
             {
 
                 // Quit the application
-                GoTo("MainMenu");
+                GoTo("TypeSelectMenu");
             }
         }
         //PC Test.
@@ -123,71 +105,63 @@ public class SelectMenu : MonoBehaviour
         selectInfo.SetActive(true);
         goButton.interactable = true;
     }
-
-    public void SetGameMode(string gameMode)
-    {
-        PlayerPrefs.SetString("gameMode", gameMode);
-    }
-
-    public void SetStartQuestionNuber(int start_number)
-    {
-        PlayerPrefs.SetInt("StartQuestionNuber", start_number);
-    }
-
-    public void SetLastQuestionNuber(int last_number)
-    {
-        PlayerPrefs.SetInt("LastQuestionNuber", last_number);
-    }
-
-    public void SetMaxQuestionNumber(int max_number)
-    {
-        PlayerPrefs.SetInt("MaxQuestionNumber", max_number);
-    }
-    
     
     //GoTo
     public void GoToLevel()
     {
         buttonClik.Play();
-        PlayerPrefs.SetString("LevelUsed" + levelType + iTeam.ToString(), "Open");
-
+        
         switch (levelType)
         {
-            case "Food":
-                if (iTeam == 1 || iTeam == 2)
-                {
-                    SceneManager.LoadScene("WordLevel");
-                }
-                else if (iTeam == 3)
-                {
-                    SceneManager.LoadScene("Level3");
-                }
-                break;
             case "Furniture":
-                if (iTeam == 1 || iTeam == 2)
+                if (iTeam == 1)
+                {
+                    //Open data base (1).
+                    PlayerPrefs.SetString("LevelUsed" + levelType + iTeam.ToString(), "Open");
+                    SceneManager.LoadScene("WordLevel");
+                }
+                else if (iTeam == 2)
                 {
                     SceneManager.LoadScene("WordLevel");
                 }
                 else if (iTeam == 3)
                 {
-                    SceneManager.LoadScene("Level3");
+                    SceneManager.LoadScene("WordLevel");
                 }
                 break;
+
             case "Animal":
                 if (iTeam == 1)
+                {
+                    //Open data base (1).
+                    PlayerPrefs.SetString("LevelUsed" + levelType + iTeam.ToString(), "Open");
+                    PlayerPrefs.SetString("LevelID", "Animal1");
+                    SceneManager.LoadScene("AnimalOneInput");
+                }
+                else if (iTeam == 2)
                 {
                     PlayerPrefs.SetString("ExplorerName", "Animal1");
                     SceneManager.LoadScene("ImageLevel");
                 }
-                else if (iTeam == 2)
+                else if (iTeam == 3)
+                {
+                    SceneManager.LoadScene("WordLevel");
+                }
+                else if (iTeam == 4)
+                {
+                    //Open data base (4).
+                    PlayerPrefs.SetString("LevelUsed" + levelType + iTeam.ToString(), "Open");
+                    PlayerPrefs.SetString("LevelID", "Animal2");
+                    SceneManager.LoadScene("AnimalTwoInput");
+                }
+                else if (iTeam == 5)
                 {
                     PlayerPrefs.SetString("ExplorerName", "Animal2");
                     SceneManager.LoadScene("ImageLevel");
                 }
-                else if (iTeam == 3)
+                else if (iTeam == 6)
                 {
-                    PlayerPrefs.SetString("ExplorerName", "Animal3");
-                    SceneManager.LoadScene("ImageLevel");
+                    SceneManager.LoadScene("WordLevel");
                 }
                 break;
         }

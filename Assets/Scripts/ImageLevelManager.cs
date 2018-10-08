@@ -225,11 +225,11 @@ public class ImageLevelManager : MonoBehaviour
         _an2.text = tempList[tempRnd[1]];
         _an3.text = tempList[tempRnd[2]];
 
-        Debug.Log("BEF" + tempList.Count);
+        //Debug.Log("BEF" + tempList.Count);
 
         tempList.Add(tempAfterDeletePlus);
 
-        Debug.Log("AFT" + tempList.Count);
+        //Debug.Log("AFT" + tempList.Count);
 
         // Debug.Log( " and " + an2 + " and " + an3);
     }

@@ -41,8 +41,7 @@ public class LevelManager : MonoBehaviour
 
     //Class
     private StringData theWords = new StringData(); //Load Json dataBase.
-    private List<WordList> questionWords; //Store words.
-    private List<WordList> AnswerWords; //Store answer words.
+    private List<WordList> questionWords; //Store words.    
     private List<WordList> finalCorrentList; //Store corrent answer and save.
 
     //Static
@@ -59,8 +58,6 @@ public class LevelManager : MonoBehaviour
     private float setTime; // Set time.
     private float clicks; // Right answer and caculate point.
     private float average; // Calculate point.
-    private float startQuestion; // Set Question begin.
-    private float lastQuestion;  // Set Question last. 
     private float maxQuestion; 
     
     //String
@@ -84,13 +81,7 @@ public class LevelManager : MonoBehaviour
 
         //Get Level Information
         iTeam = PlayerPrefs.GetInt("iTeam");
-        gameModeString = PlayerPrefs.GetString("gameMode");
-        levelType = PlayerPrefs.GetString("LevelType");
-
-        //Get number of Question
-        startQuestion = PlayerPrefs.GetInt("StartQuestionNuber");
-        lastQuestion = PlayerPrefs.GetInt("LastQuestionNuber");
-        maxQuestion = PlayerPrefs.GetInt("MaxQuestionNumber");
+        levelType = PlayerPrefs.GetString("LevelType");       
 
         questionWords = new List<WordList>();
         finalCorrentList = new List<WordList>();
@@ -106,7 +97,7 @@ public class LevelManager : MonoBehaviour
 
         LoadData(levelType);
 
-        SetQuestion(levelType, gameModeString);
+        SetQuestion(levelType);
 
         qPoint.text = (idQuestion + 1).ToString() + "/" + maxQuestion.ToString();
     }
@@ -128,7 +119,15 @@ public class LevelManager : MonoBehaviour
 
     void LoadData(string _leveltype)
     {
-        TextAsset file = Resources.Load("WordDataBase") as TextAsset;
+        TextAsset file;
+        if (_leveltype == "Animal")
+        {
+            file = Resources.Load("Animal/AnimalDataBase") as TextAsset;
+        }
+        else
+        {
+            file = Resources.Load("WordDataBase") as TextAsset;
+        }
         //string filePath = Path.Combine(Application.streamingAssetsPath, fileName);
         //string filePath = Path.Combine(Application.dataPath, fileName);        
         try
@@ -149,32 +148,53 @@ public class LevelManager : MonoBehaviour
 
                 switch (_leveltype)
                 {
-                    case "Food":                 
-                        for (int i = 0; i < theWords.Food.Count; i++)
+                    case "Furniture":
+                        if (iTeam == 1)
                         {
-                            getJsonList.Add(theWords.Food[i]);
-                            //Debug.Log(getJsonList.Count);
-                            //Debug.Log(questionWords[i].chinese);
+                            for (int i = 0; i < theWords.Furniture1.Count; i++)
+                            {
+                                getJsonList.Add(theWords.Furniture1[i]);
+                                //Debug.Log(getJsonList.Count);
+                            }
+                        }
+                        if (iTeam == 2)
+                        {
+                            for (int i = 0; i < theWords.Furniture2.Count; i++)
+                            {
+                                getJsonList.Add(theWords.Furniture2[i]);
+                                //Debug.Log(getJsonList.Count);
+                            }
                         }
                         break;
-
-                    case "Furniture":
-                        for (int i = 0; i < theWords.Furniture.Count; i++)
+                    case "Animal":
+                        if (iTeam == 3)
                         {
-                            getJsonList.Add(theWords.Furniture[i]);
-                            //Debug.Log(getJsonList.Count);
-                            //Debug.Log(questionWords[i].chinese);
-                        }                       
+                            for (int i = 0; i < theWords.Animal1.Count; i++)
+                            {
+                                getJsonList.Add(theWords.Animal1[i]);
+                                //Debug.Log(getJsonList.Count);
+                            }
+                        }
+                        if (iTeam == 6)
+                        {
+                            for (int i = 0; i < theWords.Animal2.Count; i++)
+                            {
+                                getJsonList.Add(theWords.Animal2[i]);
+                                //Debug.Log(getJsonList.Count);
+                            }
+                        }
                         break;
                         //.....ADD TYPE.
                 }
 
-                for (int i = (int)startQuestion; i <= (int)lastQuestion; i++)
+                for (int i = 0; i < getJsonList.Count; i++)
                 {
                     questionWords.Add(getJsonList[i]);
                 }
 
-                for (int i = 0; i < questionWords.Count; i++)
+                maxQuestion = questionWords.Count;
+
+               for (int i = 0; i < questionWords.Count; i++)
                 {
                     Debug.Log(questionWords.Count);
                     Debug.Log(questionWords[i].japanese);
@@ -204,32 +224,38 @@ public class LevelManager : MonoBehaviour
     }
 
     //Set Question Jp or Ch.
-    void SetQuestion(string _levelType, string _gameMode)
+    void SetQuestion(string _levelType)
     {
         answerTextA.color = Color.black;
         answerTextB.color = Color.black;
         answerTextC.color = Color.black;
         answerTextD.color = Color.black;
 
+        string _gameMode = "";
+
+        int randomForGameMode = Random.Range(0, 2);
         int randomQuestionIndex = Random.Range(0, questionWords.Count); // Depend questionWords list Count (questionWords is --), and random in the questionWords question.
         int randomCorrent = Random.Range(1, 4);
 
         //Check question is ch or jp.
-        switch (_gameMode)
+
+        if (randomForGameMode == 0)
         {
-            case "jp":
-                qText.text = questionWords[randomQuestionIndex].japanese; 
-                correct = questionWords[randomQuestionIndex].chinese;
-                finalCorrentList.Add(questionWords[randomQuestionIndex]);
-                questionWords.RemoveAt(randomQuestionIndex);
-                break;
-            case "ch":
-                qText.text = questionWords[randomQuestionIndex].chinese;
-                correct = questionWords[randomQuestionIndex].japanese;
-                finalCorrentList.Add(questionWords[randomQuestionIndex]);
-                questionWords.RemoveAt(randomQuestionIndex);
-                break;
+            _gameMode = "jp";
+            qText.text = questionWords[randomQuestionIndex].japanese;
+            correct = questionWords[randomQuestionIndex].chinese;
+            finalCorrentList.Add(questionWords[randomQuestionIndex]);
+            questionWords.RemoveAt(randomQuestionIndex);
         }
+        else if (randomForGameMode == 1)
+        {
+            _gameMode = "ch";
+            qText.text = questionWords[randomQuestionIndex].chinese;
+            correct = questionWords[randomQuestionIndex].japanese;
+            finalCorrentList.Add(questionWords[randomQuestionIndex]);
+            questionWords.RemoveAt(randomQuestionIndex);
+        }
+
 
         //Set Answer.
         switch (randomCorrent)  // Set correct answer.
@@ -261,32 +287,65 @@ public class LevelManager : MonoBehaviour
         //Delete in templist Corrent answer.
         switch (__levelType)
         {
-            case "Food":
-                for (int i = 0; i <= lastQuestion; i++) // If want Answer more choise, lastQuestion can be type.count (type is Food, Furniture ...).
+            case "Furniture":
+                if (iTeam == 1)
                 {
-                    tempList.Add(theWords.Food[i]);
-                }
-
-                for (int i = 0; i < tempList.Count; i++)
-                {
-                    if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
+                    for (int i = 0; i <= (int)maxQuestion - 1; i++)
                     {
-                        tempList.RemoveAt(i);
+                        tempList.Add(theWords.Furniture1[i]);
+                    }
+
+                    for (int i = 0; i < tempList.Count; i++)
+                    {
+                        if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
+                        {
+                            tempList.RemoveAt(i);
+                        }
+                    }
+                }
+                else if (iTeam == 6)
+                {
+                    for (int i = 0; i <= (int)maxQuestion - 1; i++)
+                    {
+                        tempList.Add(theWords.Furniture2[i]);
+                    }
+                    for (int i = 0; i < tempList.Count; i++)
+                    {
+                        if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
+                        {
+                            tempList.RemoveAt(i);
+                        }
                     }
                 }
                 break;
 
-            case "Furniture":
-                for (int i = 0; i <= lastQuestion; i++)
+            case "Animal":
+                if (iTeam == 3)
                 {
-                    tempList.Add(theWords.Furniture[i]);
-                }
-
-                for (int i = 0; i < tempList.Count; i++)
-                {
-                    if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
+                    for (int i = 0; i <= (int)maxQuestion - 1; i++)
                     {
-                        tempList.RemoveAt(i);
+                        tempList.Add(theWords.Animal1[i]);
+                    }
+                    for (int i = 0; i < tempList.Count; i++)
+                    {
+                        if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
+                        {
+                            tempList.RemoveAt(i);
+                        }
+                    }
+                }
+                else if (iTeam == 6)
+                {
+                    for (int i = 0; i <= (int)maxQuestion - 1; i++)
+                    {
+                        tempList.Add(theWords.Animal2[i]);
+                    }
+                    for (int i = 0; i < tempList.Count; i++)
+                    {
+                        if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
+                        {
+                            tempList.RemoveAt(i);
+                        }
                     }
                 }
                 break;
@@ -316,7 +375,7 @@ public class LevelManager : MonoBehaviour
         System.Random rnd = new System.Random();
         for (int i = 0; i < 3; i++)
         {
-            randomArray[i] = rnd.Next(0, PlayerPrefs.GetInt("MaxQuestionNumber") - 1);   // Random 1 ~ List.Count.
+            randomArray[i] = rnd.Next(0, (int)maxQuestion - 1);   // Random 1 ~ List.Count.
 
             //Debug.Log("TempRnd Value" + randomArray[i]);
 
@@ -325,7 +384,7 @@ public class LevelManager : MonoBehaviour
                 while (randomArray[j] == randomArray[i])    // Check match or not.
                 {
                     j = 0;  // If match j = 0 do again.
-                    randomArray[i] = rnd.Next(0, PlayerPrefs.GetInt("MaxQuestionNumber") - 1);   // Random 1 ~ List.Count.
+                    randomArray[i] = rnd.Next(0, (int)maxQuestion - 1);   // Random 1 ~ List.Count.
                 }
             }
         }
@@ -500,7 +559,7 @@ public class LevelManager : MonoBehaviour
             setTime = maxTime;
             InvokeRepeating("TimerDownCount", 0f, 1.0f);
             BackGround.GetComponent<MoveOffset>().frezz = false;
-            SetQuestion(levelType, gameModeString);
+            SetQuestion(levelType);
             qPoint.text = (idQuestion + 1).ToString() + "/" + maxQuestion.ToString();
         }
         else
@@ -544,8 +603,8 @@ public class LevelManager : MonoBehaviour
     {
         switch(levelType)
         {
-            case "Food":
-                SceneManager.LoadScene("FoodSelectMenu");
+            case "Animal":
+                SceneManager.LoadScene("AnimalSelectMenu");
                 break;
             case "Furniture":
                 SceneManager.LoadScene("FurnitureSelectMenu");

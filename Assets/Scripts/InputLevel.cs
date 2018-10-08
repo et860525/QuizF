@@ -6,24 +6,23 @@ using UnityEngine.UI;
 
 public class InputLevel : MonoBehaviour
 {
-    public GameObject[] answerInput;
+    public List<GameObject> answerInput;
     public GameObject OutPopUp;
     public GameObject WinPanel;
 
-    public Text pointText;
+    private string levelType;
+    private string levelName;
 
-    [SerializeField]
-    private int maxQuestion;
-
-    
-
-    private int point;
+    private int checkAll;
 
     private bool isOutPopUp;
 
     private void Start()
     {
-        point = 0;
+        //Screen.fullScreen = false;
+        checkAll = 0;
+        levelType = PlayerPrefs.GetString("LevelType");
+        levelName = PlayerPrefs.GetString("LevelID");
     }
 
     private void Update()
@@ -45,103 +44,27 @@ public class InputLevel : MonoBehaviour
         }*/
     }
 
-    private void FixedUpdate()
+    public void GetAnswerInt(int i)
     {
-        CheckEnd();
-    }
-
-    public void CheckEnd()
-    {
-        if (point == maxQuestion)
+        if (answerInput[i].GetComponent<InputField>().text == answerInput[i].name)
         {
-            Time.timeScale = 0;
+            answerInput[i].transform.Find("Text").GetComponent<Text>().color = Color.green;
+            answerInput[i].GetComponent<InputField>().interactable = false;
+            checkAll++;
+            //Debug.Log("Yes");
+        }
+        else if (answerInput[i].GetComponent<InputField>().text != answerInput[i].name && answerInput[i].GetComponent<InputField>().text != "") 
+        {
+            answerInput[i].transform.Find("Text").GetComponent<Text>().color = Color.red;
+            answerInput[i].GetComponent<InputField>().interactable = false;
+            checkAll++;
+            //Debug.Log("No");
+        }
+
+        if (checkAll == answerInput.Count)
+        {
             WinPanel.SetActive(true);
-            //SceneManager.LoadScene("FinalBoard");
         }
-    }
-
-    public void GetSet(int i)
-    {
-        switch(i)
-        {
-            case 0:
-                if (answerInput[i].GetComponent<InputField>().text == "head" || answerInput[i].GetComponent<InputField>().text == "Head")
-                {
-                    point++;
-                    answerInput[i].transform.Find("Text").GetComponent<Text>().color = Color.black;
-                    answerInput[i].GetComponent<InputField>().interactable = false;
-                    //answerInput[i].SetActive(false);
-                    Debug.Log("Yes");
-                }
-                else
-                {
-                    answerInput[i].transform.Find("Text").GetComponent<Text>().color = Color.red;
-                    Debug.Log("No");
-                }
-                break;
-            case 1:
-                if (answerInput[i].GetComponent<InputField>().text == "neck" || answerInput[i].GetComponent<InputField>().text == "Neck")
-                {
-                    point++;
-                    answerInput[i].transform.Find("Text").GetComponent<Text>().color = Color.black;
-                    answerInput[i].GetComponent<InputField>().interactable = false;
-                    //answerInput[i].SetActive(false);
-                    Debug.Log("Yes");
-                }
-                else
-                {
-                    answerInput[i].transform.Find("Text").GetComponent<Text>().color = Color.red;
-                    Debug.Log("No");
-                }
-                break;
-            case 2:
-                if (answerInput[i].GetComponent<InputField>().text == "arm" || answerInput[i].GetComponent<InputField>().text == "Arm")
-                {
-                    point++;
-                    answerInput[i].transform.Find("Text").GetComponent<Text>().color = Color.black;
-                    answerInput[i].GetComponent<InputField>().interactable = false;
-                    //answerInput[i].SetActive(false);
-                    Debug.Log("Yes");
-                }
-                else
-                {
-                    answerInput[i].transform.Find("Text").GetComponent<Text>().color = Color.red;
-                    Debug.Log("No");
-                }
-                break;
-            case 3:
-                if (answerInput[i].GetComponent<InputField>().text == "body" || answerInput[i].GetComponent<InputField>().text == "Body")
-                {
-                    point++;
-                    answerInput[i].transform.Find("Text").GetComponent<Text>().color = Color.black;
-                    answerInput[i].GetComponent<InputField>().interactable = false;
-                    //answerInput[i].SetActive(false);
-                    Debug.Log("Yes");
-                }
-                else
-                {
-                    answerInput[i].transform.Find("Text").GetComponent<Text>().color = Color.red;
-                    Debug.Log("No");
-                }
-                break;
-            case 4:
-                if (answerInput[i].GetComponent<InputField>().text == "leg" || answerInput[i].GetComponent<InputField>().text == "Leg")
-                {
-                    point++;
-                    answerInput[i].transform.Find("Text").GetComponent<Text>().color = Color.black;
-                    answerInput[i].GetComponent<InputField>().interactable = false;
-                    //answerInput[i].SetActive(false);
-                    Debug.Log("Yes");
-                }
-                else
-                {
-                    answerInput[i].transform.Find("Text").GetComponent<Text>().color = Color.red;
-                    Debug.Log("No");
-                }
-                break;
-        }
-
-        pointText.text = point.ToString() + "/" + maxQuestion.ToString(); 
     }
 
     public void CallOutPopUp()
@@ -163,6 +86,9 @@ public class InputLevel : MonoBehaviour
 
     public void YesOutPopUp()
     {
-        SceneManager.LoadScene("FoodSelectMenu");
+        if (levelType == "Animal")
+        {
+            SceneManager.LoadScene("AnimalSelectMenu");
+        }
     }
 }

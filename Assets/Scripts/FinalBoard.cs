@@ -62,7 +62,7 @@ public class FinalBoard : MonoBehaviour
         setWordStaut = new List<WordList>();
 
         LoadData();
-        SaveData();
+        //SaveData();
 
         star1.SetActive(false);
         star2.SetActive(false);
@@ -126,7 +126,7 @@ public class FinalBoard : MonoBehaviour
 
         if (finalQuestion != null)
         {
-            if (levelType != "Animal")
+            if (iTeam == 3 || iTeam == 6)
             {
                 for (int i = 0; i < finalQuestion.Count; i++)
                 {
@@ -142,7 +142,7 @@ public class FinalBoard : MonoBehaviour
             }
         }
 
-        if (levelType == "Animal")
+        if (iTeam == 2 || iTeam == 5)
         {
             LoadImages();
             if (finalSprites != null)
@@ -168,7 +168,7 @@ public class FinalBoard : MonoBehaviour
         }
     }
 
-    void SaveData()
+   /* void SaveData()
     {
         TextAsset file = Resources.Load("WordDataBase") as TextAsset;
         try
@@ -189,15 +189,6 @@ public class FinalBoard : MonoBehaviour
 
                 switch (levelType)
                 {
-                    case "Food":
-                        for (int i = 0; i < theWords.Food.Count; i++)
-                        {
-                            getJsonList.Add(theWords.Food[i]);
-                            Debug.Log(getJsonList.Count);
-                            //Debug.Log(questionWords[i].chinese);
-                        }
-                        break;
-
                     case "Furniture":
                         for (int i = 0; i < theWords.Furniture.Count; i++)
                         {
@@ -222,7 +213,7 @@ public class FinalBoard : MonoBehaviour
                 wrapper.WordData = theWords;
 
                 contents = JsonUtility.ToJson(wrapper, true);
-                System.IO.File.WriteAllText(path, contents);*/
+                System.IO.File.WriteAllText(path, contents);
 
             }
             else
@@ -234,7 +225,7 @@ public class FinalBoard : MonoBehaviour
         {
             Debug.Log(ex.Message);
         }
-    }
+    }*/
 
     void LoadImages()
     {

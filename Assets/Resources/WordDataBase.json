@@ -2,129 +2,7 @@
     "WordData": {
         "date": "5/04/2008",
         "time": "3:20 PM",
-        "Food": [
-            {
-                "japanese": "Barbecue",
-                "chinese": "烤肉",
-                "type": "Food",
-                "status": 0
-            },
-            {
-                "japanese": "Bean",
-                "chinese": "豆",
-                "type": "Food",
-                "status": 0
-            },
-            {
-                "japanese": "Steak",
-                "chinese": "牛排",
-                "type": "Food",
-                "status": 0
-            },
-            {
-                "japanese": "Pizza",
-                "chinese": "比薩",
-                "type": "Food",
-                "status": 0
-            },
-            {
-                "japanese": "Hamburger",
-                "chinese": "漢堡",
-                "type": "Food",
-                "status": 0
-            },
-            {
-                "japanese": "Cookie",
-                "chinese": "餅乾",
-                "type": "Food",
-                "status": 0
-            },
-            {
-                "japanese": "Cake",
-                "chinese": "蛋糕",
-                "type": "Food",
-                "status": 0
-            },
-            {
-                "japanese": "Leek",
-                "chinese": "韭菜",
-                "type": "Food",
-                "status": 0
-            },
-            {
-                "japanese": "Onion",
-                "chinese": "洋蔥",
-                "type": "Food",
-                "status": 0
-            },
-            {
-                "japanese": "Lettuce",
-                "chinese": "萵苣",
-                "type": "Food",
-                "status": 0
-            },
-            {
-                "japanese": "Radish",
-                "chinese": "蘿蔔",
-                "type": "Food",
-                "status": 0
-            },
-            {
-                "japanese": "Shrimp",
-                "chinese": "小蝦",
-                "type": "Food",
-                "status": 0
-            },
-            {
-                "japanese": "Lobster",
-                "chinese": "龍蝦",
-                "type": "Food",
-                "status": 0
-            },
-            {
-                "japanese": "Crab",
-                "chinese": "螃蟹",
-                "type": "Food",
-                "status": 0
-            },
-            {
-                "japanese": "Sandwich",
-                "chinese": "三明治",
-                "type": "Food",
-                "status": 0
-            },
-            {
-                "japanese": "Ham",
-                "chinese": "火腿",
-                "type": "Food",
-                "status": 0
-            },
-            {
-                "japanese": "Taco",
-                "chinese": "墨西哥捲",
-                "type": "Food",
-                "status": 0
-            },
-            {
-                "japanese": "Muffins",
-                "chinese": "鬆餅",
-                "type": "Food",
-                "status": 0
-            },
-            {
-                "japanese": "Celery",
-                "chinese": "芹菜",
-                "type": "Food",
-                "status": 0
-            },
-            {
-                "japanese": "Orange",
-                "chinese": "橙子",
-                "type": "Food",
-                "status": 0
-            }
-        ],
-        "Furniture": [
+        "Furniture1": [
             {
                 "japanese": "いす",
                 "chinese": "椅子",
@@ -184,7 +62,9 @@
                 "chinese": "書架",
                 "type": "Furniture",
                 "status": 0
-            },
+            }
+        ],
+        "Furniture2": [
             {
                 "japanese": "エアコン",
                 "chinese": "空調",

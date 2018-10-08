@@ -6,7 +6,6 @@ using UnityEngine;
 
 public class VocabularyInput : MonoBehaviour {
 
-    private string fileName = "WordDataBase.json";
     private StringData theWords = new StringData(); //Load Json dataBase.
     private List<WordList> saveList;
     public Dropdown dropdownType;
@@ -15,7 +14,7 @@ public class VocabularyInput : MonoBehaviour {
     public InputField Jp;
     public InputField Ch;
 
-    List<string> names = new List<string>() { "Select type", "Food", "Furniture" };
+    List<string> names = new List<string>() { "Select type", "Furniture1", "Furniture2", "Animal1", "Animal2", "Animal3" };
 
     private void Start()
     {
@@ -45,9 +44,8 @@ public class VocabularyInput : MonoBehaviour {
 
     void LoadData(int _leveltype)
     {
-        TextAsset file = Resources.Load("WordDataBase") as TextAsset;
-        //string filePath = Path.Combine(Application.streamingAssetsPath, fileName);
-        //string filePath = Path.Combine(Application.dataPath, fileName);        
+        TextAsset file = Resources.Load("Animal/AnimalDataBase") as TextAsset;
+         
         try
         {
             if (file != null)
@@ -65,23 +63,45 @@ public class VocabularyInput : MonoBehaviour {
                 switch (_leveltype)
                 {
                     case 1:
-                        for (int i = 0; i < theWords.Food.Count; i++)
+                        for (int i = 0; i < theWords.Furniture1.Count; i++)
                         {
-                            saveList.Add(theWords.Food[i]);
+                            saveList.Add(theWords.Furniture1[i]);
                             //Debug.Log(getJsonList.Count);
                             //Debug.Log(saveList[i].chinese);
                         }
                         break;
-
                     case 2:
-                        for (int i = 0; i < theWords.Furniture.Count; i++)
+                        for (int i = 0; i < theWords.Furniture2.Count; i++)
                         {
-                            saveList.Add(theWords.Furniture[i]);
+                            saveList.Add(theWords.Furniture2[i]);
                             //Debug.Log(getJsonList.Count);
                             //Debug.Log(saveList[i].chinese);
                         }
                         break;
-                        //.....ADD TYPE.
+                    case 3:
+                        for (int i = 0; i < theWords.Animal1.Count; i++)
+                        {
+                            saveList.Add(theWords.Animal1[i]);
+                            //Debug.Log(getJsonList.Count);
+                            //Debug.Log(saveList[i].chinese);
+                        }
+                        break;
+                    case 4:
+                        for (int i = 0; i < theWords.Animal2.Count; i++)
+                        {
+                            saveList.Add(theWords.Animal2[i]);
+                            //Debug.Log(getJsonList.Count);
+                            //Debug.Log(saveList[i].chinese);
+                        }
+                        break;
+                    case 5:
+                        for (int i = 0; i < theWords.Animal3.Count; i++)
+                        {
+                            saveList.Add(theWords.Animal3[i]);
+                            //Debug.Log(getJsonList.Count);
+                            //Debug.Log(saveList[i].chinese);
+                        }
+                        break;
                 }
             }
             else
@@ -99,23 +119,35 @@ public class VocabularyInput : MonoBehaviour {
     {
         switch(selectedName.text)
         {
-            case "Food":
-                theWords.Food.Add(new WordList(Jp.text, Ch.text, selectedName.text));
+            case "Animal1":
+                theWords.Animal1.Add(new WordList(Jp.text, Ch.text, "Animal"));
                 break;
-            case "Furniture":
-                theWords.Furniture.Add(new WordList(Jp.text, Ch.text, selectedName.text));
+            case "Animal2":
+                theWords.Animal2.Add(new WordList(Jp.text, Ch.text, "Animal"));
+                break;
+            case "Animal3":
+                theWords.Animal3.Add(new WordList(Jp.text, Ch.text, "Animal"));
                 break;
         }            
-        SaveData();
+        SaveData(selectedName.text);
+        Jp.text = "";
+        Ch.text = "";
     }
 
-    void SaveData()
+    void SaveData(string type)
     {
         JsonWrapper wrapper = new JsonWrapper();
         wrapper.WordData = theWords;
 
         string contents = JsonUtility.ToJson(wrapper, true);
-        System.IO.File.WriteAllText("Assets/Resources/WordDataBase.json", contents);
+        if (type == "Animal1" || type == "Animal2" || type == "Animal3")
+        {
+            System.IO.File.WriteAllText("Assets/Resources/Animal/AnimalDataBase.json", contents);
+        }
+        else
+        {
+            System.IO.File.WriteAllText("Assets/Resources/WordDataBase.json", contents);
+        }
 
     }
 

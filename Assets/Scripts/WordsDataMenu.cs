@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class WordsDataMenu : MonoBehaviour
 {
-    public GameObject foodButton;
     public GameObject furnitureButton;
+    public GameObject animalButton;
 
     public UnityEngine.UI.Scrollbar scrollbar;
 
@@ -18,10 +18,7 @@ public class WordsDataMenu : MonoBehaviour
     private StringData theWords = new StringData(); //Load Json dataBase.
     private List<WordList> finalQuestion;
 
-    private int maxNumber;    
-    private int lastNumber;
-
-    private string levelUsed;
+    private TextAsset file;
 
     private void Start()
     {
@@ -42,20 +39,27 @@ public class WordsDataMenu : MonoBehaviour
             }
         }
         //PC Test.
-        if (Input.GetKeyDown(KeyCode.O))
+        /*if (Input.GetKeyDown(KeyCode.O))
         {
             // Quit the application
             GoTo("TypeSelectMenu");
-        }
+        }*/
     }
 
     public void LoadData(string _type)
     {
         finalQuestion.Clear();
-        lastNumber = 0;
         scrollbar.value = 1;
+        
+        if (_type == "Animal")
+        {
+            file = Resources.Load("Animal/AnimalDataBase") as TextAsset;
+        }
+        else if (_type == "Furniture")
+        {
+            file = Resources.Load("WordDataBase") as TextAsset;
+        }
 
-        TextAsset file = Resources.Load("WordDataBase") as TextAsset;
         try
         {
             if (file != null)
@@ -71,49 +75,59 @@ public class WordsDataMenu : MonoBehaviour
                 Debug.Log(theWords.date + "\n" + theWords.time);
                 switch (_type)
                 {
-                    case "Food":
-                        for (int i = 0; i < theWords.Food.Count; i++) //Must Load all json file of type.
+                    case "Animal":
+                        if (PlayerPrefs.GetString("LevelUsed" + _type + "4") == "Open")
                         {
-                            finalQuestion.Add(theWords.Food[i]);
-                            Debug.Log(finalQuestion[i].chinese);
+                            for (int i = 0; i < theWords.Animal1.Count; i++)
+                            {
+                                finalQuestion.Add(theWords.Animal1[i]);
+                                Debug.Log(finalQuestion[i].chinese);
+                            }
+
+                            for (int i = 0; i < theWords.Animal2.Count; i++)
+                            {
+                                finalQuestion.Add(theWords.Animal2[i]);
+                                Debug.Log(finalQuestion[i].chinese);
+                            }
+                        }
+
+                        if (PlayerPrefs.GetString("LevelUsed" + _type + "1") == "Open")
+                        {
+                            for (int i = 0; i < theWords.Animal1.Count; i++)
+                            {
+                                finalQuestion.Add(theWords.Animal1[i]);
+                                Debug.Log(finalQuestion[i].chinese);
+                            }
                         }
 
                         //Button interactable.
-                        foodButton.GetComponent<Button>().interactable = false;
                         furnitureButton.GetComponent<Button>().interactable = true;
+                        animalButton.GetComponent<Button>().interactable = false;
                         break;
+
                     case "Furniture":
-                        for (int i = 0; i < theWords.Furniture.Count; i++)
+                        if (PlayerPrefs.GetString("LevelUsed" + _type + "1") == "Open")
                         {
-                            finalQuestion.Add(theWords.Furniture[i]);
-                            Debug.Log(finalQuestion[i].chinese);
+                            for (int i = 0; i < theWords.Furniture1.Count; i++)
+                            {
+                                finalQuestion.Add(theWords.Furniture1[i]);
+                                Debug.Log(finalQuestion[i].chinese);
+                            }
                         }
+
+                        /*for (int i = 0; i < theWords.Furniture2.Count; i++)
+                        {
+                            finalQuestion.Add(theWords.Furniture2[i]);
+                            Debug.Log(finalQuestion[i].chinese);
+                        }*/
 
                         //Button interactable.
                         furnitureButton.GetComponent<Button>().interactable = false;
-                        foodButton.GetComponent<Button>().interactable = true;                       
-                        break;
+                        animalButton.GetComponent<Button>().interactable = true;       
+                        break;               
                 }
 
-                if (PlayerPrefs.GetString("LevelUsed" + _type + "1") == "Open")
-                {
-                    lastNumber = 9;
-
-                    if (PlayerPrefs.GetString("LevelUsed" + _type + "2") == "Open")
-                    {
-                        lastNumber = 19;
-                    }
-
-                    Debug.Log(lastNumber);
-                }
-                else
-                {
-                    lastNumber = 0;
-                }
-
-                Debug.Log(lastNumber);
-
-                wordsControll.DataBaseGetWords(finalQuestion, _type, lastNumber, rightColor);
+                wordsControll.DataBaseGetWords(finalQuestion, _type, finalQuestion.Count - 1, rightColor);
 
 
                 //Debug.Log(finalQuestion.Count);
@@ -166,7 +180,7 @@ public class WordsDataMenu : MonoBehaviour
 
     public void GoTo(string nameScene)
     {
-        foodButton.GetComponent<Button>().interactable = true;
+        animalButton.GetComponent<Button>().interactable = true;
         furnitureButton.GetComponent<Button>().interactable = true;
         UnityEngine.SceneManagement.SceneManager.LoadScene(nameScene);
     }
