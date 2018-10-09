@@ -75,6 +75,7 @@ public class LevelManager : MonoBehaviour
     */
     private void Start()
     {
+        //Screen.fullScreen = false;
         Time.timeScale = 1;
 
         BackGround = GameObject.FindGameObjectWithTag("BackGround");

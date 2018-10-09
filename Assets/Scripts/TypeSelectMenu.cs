@@ -12,6 +12,21 @@ public class TypeSelectMenu : MonoBehaviour
         buttonClik = GetComponent<AudioSource>();
     }
 
+    private void Update()
+    {
+        // Make sure user is on Android platform
+        if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
+        {
+            // Check if Back was pressed this frame
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+
+                // Quit the application
+                GoTo("MainMenu");
+            }
+        }
+    }
+
     public void SetType(string type)
     {
         buttonClik.Play();
