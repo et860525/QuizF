@@ -76,27 +76,21 @@ public class WordsDataMenu : MonoBehaviour
                 switch (_type)
                 {
                     case "Animal":
-                        if (PlayerPrefs.GetString("LevelUsed" + _type + "4") == "Open")
-                        {
-                            for (int i = 0; i < theWords.Animal1.Count; i++)
-                            {
-                                finalQuestion.Add(theWords.Animal1[i]);
-                                Debug.Log(finalQuestion[i].chinese);
-                            }
-
-                            for (int i = 0; i < theWords.Animal2.Count; i++)
-                            {
-                                finalQuestion.Add(theWords.Animal2[i]);
-                                Debug.Log(finalQuestion[i].chinese);
-                            }
-                        }
-
                         if (PlayerPrefs.GetString("LevelUsed" + _type + "1") == "Open")
                         {
                             for (int i = 0; i < theWords.Animal1.Count; i++)
                             {
                                 finalQuestion.Add(theWords.Animal1[i]);
                                 Debug.Log(finalQuestion[i].chinese);
+                            }
+
+                            if (PlayerPrefs.GetString("LevelUsed" + _type + "4") == "Open")
+                            {
+                                for (int i = 0; i < theWords.Animal2.Count; i++)
+                                {
+                                    finalQuestion.Add(theWords.Animal2[i]);
+                                    Debug.Log(finalQuestion[i].chinese);
+                                }
                             }
                         }
 

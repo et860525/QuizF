@@ -28,7 +28,7 @@ public class LevelInfo : MonoBehaviour
                
         int finalNumber = PlayerPrefs.GetInt("finalNumber" + levelType + iTeam.ToString());
 
-        if (finalNumber == 10)
+        if (finalNumber >= 10)
         {
             star1.SetActive(true);
             star2.SetActive(true);
@@ -52,7 +52,7 @@ public class LevelInfo : MonoBehaviour
 
     public void SetInteractable(int finalNumber)
     {
-        if (finalNumber >= 5)
+        if (finalNumber >= 10)
         {
             InteractableButton.GetComponent<Button>().interactable = true;
         }

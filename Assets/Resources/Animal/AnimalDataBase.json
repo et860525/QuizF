@@ -2,8 +2,8 @@
     "WordData": {
         "date": "5/04/2008",
         "time": "3:20 PM",
-        "Food": [],
-        "Furniture": [],
+        "Furniture1": [],
+        "Furniture2": [],
         "Animal1": [
             {
                 "japanese": "ねずみ",
@@ -188,6 +188,97 @@
                 "status": 0
             }
         ],
-        "Animal3": []
+        "Animal3": [
+            {
+                "japanese": "あらいぐま",
+                "chinese": "浣熊",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "きつね",
+                "chinese": "狐狸",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "かに",
+                "chinese": "螃蟹",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "わに",
+                "chinese": "鱷魚",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "ゴリラ",
+                "chinese": "猩猩",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "シマウマ",
+                "chinese": "斑馬",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "りす",
+                "chinese": "松鼠",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "しか",
+                "chinese": "鹿",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "ひつじ",
+                "chinese": "綿羊",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "きんぎょ",
+                "chinese": "金魚",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "おおかみ",
+                "chinese": "狼",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "アルパカ",
+                "chinese": "羊駝",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "いのしし",
+                "chinese": "野豬",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "さめ",
+                "chinese": "鯊魚",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "はりねずみ",
+                "chinese": "刺蝟",
+                "type": "Animal",
+                "status": 0
+            }
+        ]
     }
 }

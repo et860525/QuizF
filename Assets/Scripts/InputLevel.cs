@@ -13,7 +13,14 @@ public class InputLevel : MonoBehaviour
     private string levelType;
     private string levelName;
 
-    private int checkAll;
+    private int iTeam;  
+    private int finalNumber;
+
+    private float checkAll;
+    private float crrect;
+    private float average;
+
+    private static float thePoint;
 
     private bool isOutPopUp;
 
@@ -21,8 +28,10 @@ public class InputLevel : MonoBehaviour
     {
         //Screen.fullScreen = false;
         checkAll = 0;
+        iTeam = PlayerPrefs.GetInt("iTeam");
         levelType = PlayerPrefs.GetString("LevelType");
         levelName = PlayerPrefs.GetString("LevelID");
+        thePoint = answerInput.Count;
     }
 
     private void Update()
@@ -51,6 +60,7 @@ public class InputLevel : MonoBehaviour
             answerInput[i].transform.Find("Text").GetComponent<Text>().color = Color.green;
             answerInput[i].GetComponent<InputField>().interactable = false;
             checkAll++;
+            crrect++;
             //Debug.Log("Yes");
         }
         else if (answerInput[i].GetComponent<InputField>().text != answerInput[i].name && answerInput[i].GetComponent<InputField>().text != "") 
@@ -64,6 +74,19 @@ public class InputLevel : MonoBehaviour
         if (checkAll == answerInput.Count)
         {
             WinPanel.SetActive(true);
+            WinPanel.transform.Find("Image").transform.Find("Text").GetComponent<Text>().text = crrect.ToString() + " / " + thePoint.ToString();
+
+            average = 10 * (crrect / thePoint);
+            finalNumber = Mathf.RoundToInt(average);
+
+            if (finalNumber >= PlayerPrefs.GetInt("finalNumber" + levelType + iTeam.ToString()))
+            {
+                PlayerPrefs.SetInt("finalNumber" + levelType + iTeam.ToString(), finalNumber);
+                PlayerPrefs.SetInt("average" + levelType + iTeam.ToString(), (int)average);
+            }
+
+            PlayerPrefs.SetInt("finalNumberTemp" + levelType + iTeam.ToString(), finalNumber);
+            PlayerPrefs.SetInt("averageTemp" + levelType + iTeam.ToString(), (int)average);
         }
     }
 

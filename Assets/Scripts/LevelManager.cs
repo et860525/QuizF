@@ -184,6 +184,15 @@ public class LevelManager : MonoBehaviour
                                 //Debug.Log(getJsonList.Count);
                             }
                         }
+                        if (iTeam == 9)
+                        {
+                            for (int i = 0; i < theWords.Animal3.Count; i++)
+                            {
+                                getJsonList.Add(theWords.Animal3[i]);
+                                //Debug.Log(getJsonList.Count);
+                            }
+                        }
+                        break;
                         break;
                         //.....ADD TYPE.
                 }
@@ -340,6 +349,20 @@ public class LevelManager : MonoBehaviour
                     for (int i = 0; i <= (int)maxQuestion - 1; i++)
                     {
                         tempList.Add(theWords.Animal2[i]);
+                    }
+                    for (int i = 0; i < tempList.Count; i++)
+                    {
+                        if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
+                        {
+                            tempList.RemoveAt(i);
+                        }
+                    }
+                }
+                else if (iTeam == 9)
+                {
+                    for (int i = 0; i <= (int)maxQuestion - 1; i++)
+                    {
+                        tempList.Add(theWords.Animal3[i]);
                     }
                     for (int i = 0; i < tempList.Count; i++)
                     {

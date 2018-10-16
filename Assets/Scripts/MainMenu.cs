@@ -10,11 +10,16 @@ public class MainMenu : MonoBehaviour
     [SerializeField]
     private GameObject ExitPop;
 
+    [SerializeField]
+    private GameObject DeletePop;
+
     private AudioSource buttonClik;
 
     private bool isExplanation = false;
 
     private bool isExitPanal = false;
+
+    private bool isDeletePanal = false;
 
     // Use this for initialization
     void Start ()
@@ -43,11 +48,11 @@ public class MainMenu : MonoBehaviour
         }
 
         //PC Test.
-        if (Input.GetKeyDown(KeyCode.O))
+        /*if (Input.GetKeyDown(KeyCode.O))
         {
             // Quit the application
             CallExitPop();
-        }
+        }*/
     }
 
     //-----Controll Button-----
@@ -92,7 +97,23 @@ public class MainMenu : MonoBehaviour
         }
     }
 
-    
+    //Delete Panel
+    public void CallDeletePop()
+    {
+        buttonClik.Play();
+        isDeletePanal = !isDeletePanal;
+
+        if (isDeletePanal)
+        {
+            DeletePop.gameObject.SetActive(true);
+        }
+
+        if (!isDeletePanal)
+        {
+            DeletePop.gameObject.SetActive(false);
+        }
+    }
+
 
     public void GoExit()
     {
@@ -104,5 +125,6 @@ public class MainMenu : MonoBehaviour
     {
         buttonClik.Play();
         PlayerPrefs.DeleteAll();
+        DeletePop.gameObject.SetActive(false);
     }
 }

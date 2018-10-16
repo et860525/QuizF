@@ -133,7 +133,7 @@ public class SelectMenu : MonoBehaviour
             case "Animal":
                 if (iTeam == 1)
                 {
-                    //Open data base (1).
+                    //Open data base (1).       
                     PlayerPrefs.SetString("LevelUsed" + levelType + iTeam.ToString(), "Open");
                     PlayerPrefs.SetString("LevelID", "Animal1");
                     SceneManager.LoadScene("AnimalOneInput");
@@ -160,6 +160,22 @@ public class SelectMenu : MonoBehaviour
                     SceneManager.LoadScene("ImageLevel");
                 }
                 else if (iTeam == 6)
+                {
+                    SceneManager.LoadScene("WordLevel");
+                }
+                else if (iTeam == 7)
+                {
+                    //Open data base (4).
+                    PlayerPrefs.SetString("LevelUsed" + levelType + iTeam.ToString(), "Open");
+                    PlayerPrefs.SetString("LevelID", "Animal3");
+                    SceneManager.LoadScene("AnimalThreeInput");
+                }
+                else if (iTeam == 8)
+                {
+                    PlayerPrefs.SetString("ExplorerName", "Animal3");
+                    SceneManager.LoadScene("ImageLevel");
+                }
+                else if (iTeam == 9)
                 {
                     SceneManager.LoadScene("WordLevel");
                 }
