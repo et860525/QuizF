@@ -113,23 +113,6 @@ public class SelectMenu : MonoBehaviour
         
         switch (levelType)
         {
-            case "Furniture":
-                if (iTeam == 1)
-                {
-                    //Open data base (1).
-                    PlayerPrefs.SetString("LevelUsed" + levelType + iTeam.ToString(), "Open");
-                    SceneManager.LoadScene("WordLevel");
-                }
-                else if (iTeam == 2)
-                {
-                    SceneManager.LoadScene("WordLevel");
-                }
-                else if (iTeam == 3)
-                {
-                    SceneManager.LoadScene("WordLevel");
-                }
-                break;
-
             case "Animal":
                 if (iTeam == 1)
                 {
@@ -180,9 +163,145 @@ public class SelectMenu : MonoBehaviour
                     SceneManager.LoadScene("WordLevel");
                 }
                 break;
+            case "Cuisime":
+                if (iTeam == 1)
+                {
+                    //Open data base (1).
+                    PlayerPrefs.SetString("LevelUsed" + levelType + iTeam.ToString(), "Open");
+                    PlayerPrefs.SetString("LevelID", "Cuisime1");
+                    SceneManager.LoadScene("CuisimeOneInput");
+                }
+                else if (iTeam == 2)
+                {
+                    PlayerPrefs.SetString("ExplorerName", "Cuisime1");
+                    SceneManager.LoadScene("ImageLevel");
+                }
+                else if (iTeam == 3)
+                {
+                    SceneManager.LoadScene("WordLevel");
+                }
+                else if (iTeam == 4)
+                {
+                    //Open data base (4).
+                    PlayerPrefs.SetString("LevelUsed" + levelType + iTeam.ToString(), "Open");
+                    PlayerPrefs.SetString("LevelID", "Cuisime2");
+                    SceneManager.LoadScene("CuisimeTwoInput");
+                }
+                else if (iTeam == 5)
+                {
+                    PlayerPrefs.SetString("ExplorerName", "Cuisime2");
+                    SceneManager.LoadScene("ImageLevel");
+                }
+                else if (iTeam == 6)
+                {
+                    SceneManager.LoadScene("WordLevel");
+                }
+                break;
+            case "Fruit":
+                if (iTeam == 1)
+                {
+                    //Open data base (1).
+                    PlayerPrefs.SetString("LevelUsed" + levelType + iTeam.ToString(), "Open");
+                    PlayerPrefs.SetString("LevelID", "Fruit1");
+                    SceneManager.LoadScene("");
+                }
+                else if (iTeam == 2)
+                {
+                    PlayerPrefs.SetString("ExplorerName", "Fruit1");
+                    SceneManager.LoadScene("ImageLevel");
+                }
+                else if (iTeam == 3)
+                {
+                    SceneManager.LoadScene("WordLevel");
+                }
+                else if (iTeam == 4)
+                {
+                    //Open data base (4).
+                    PlayerPrefs.SetString("LevelUsed" + levelType + iTeam.ToString(), "Open");
+                    PlayerPrefs.SetString("LevelID", "Fruit2");
+                    SceneManager.LoadScene("FruitTwoInput");
+                }
+                else if (iTeam == 5)
+                {
+                    PlayerPrefs.SetString("ExplorerName", "Fruit2");
+                    SceneManager.LoadScene("ImageLevel");
+                }
+                else if (iTeam == 6)
+                {
+                    SceneManager.LoadScene("WordLevel");
+                }
+                break;
+            case "Meat":
+                if (iTeam == 1)
+                {
+                    //Open data base (1).
+                    PlayerPrefs.SetString("LevelUsed" + levelType + iTeam.ToString(), "Open");
+                    PlayerPrefs.SetString("LevelID", "Meat1");
+                    SceneManager.LoadScene("MeatOneInput");
+                }
+                else if (iTeam == 2)
+                {
+                    PlayerPrefs.SetString("ExplorerName", "Meat1");
+                    SceneManager.LoadScene("ImageLevel");
+                }
+                else if (iTeam == 3)
+                {
+                    SceneManager.LoadScene("WordLevel");
+                }
+                break;
+            case "Vegetable":
+                if (iTeam == 1)
+                {
+                    //Open data base (1).
+                    PlayerPrefs.SetString("LevelUsed" + levelType + iTeam.ToString(), "Open");
+                    PlayerPrefs.SetString("LevelID", "Vegetable1");
+                    SceneManager.LoadScene("");
+                }
+                else if (iTeam == 2)
+                {
+                    PlayerPrefs.SetString("ExplorerName", "Vegetable1");
+                    SceneManager.LoadScene("ImageLevel");
+                }
+                else if (iTeam == 3)
+                {
+                    SceneManager.LoadScene("WordLevel");
+                }
+                else if (iTeam == 4)
+                {
+                    //Open data base (4).
+                    PlayerPrefs.SetString("LevelUsed" + levelType + iTeam.ToString(), "Open");
+                    PlayerPrefs.SetString("LevelID", "Vegetable2");
+                    SceneManager.LoadScene("");
+                }
+                else if (iTeam == 5)
+                {
+                    PlayerPrefs.SetString("ExplorerName", "Vegetable2");
+                    SceneManager.LoadScene("ImageLevel");
+                }
+                else if (iTeam == 6)
+                {
+                    SceneManager.LoadScene("WordLevel");
+                }
+                break;
+            case "MakeUp":
+                if(iTeam == 1)
+                {
+                    //Open data base (1).
+                    PlayerPrefs.SetString("LevelUsed" + levelType + iTeam.ToString(), "Open");
+                    PlayerPrefs.SetString("LevelID", "MakeUp1");
+                    SceneManager.LoadScene("MakeUpOneInput");
+                }
+                else if (iTeam == 2)
+                {
+                    PlayerPrefs.SetString("ExplorerName", "MakeUp1");
+                    SceneManager.LoadScene("ImageLevel");
+                }
+                else if (iTeam == 3)
+                {
+                    SceneManager.LoadScene("WordLevel");
+                }
+                break;
         }
-
-
     }
 
     public void GoTo(string nameScene)

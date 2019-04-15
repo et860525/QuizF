@@ -14,7 +14,7 @@ public class VocabularyInput : MonoBehaviour {
     public InputField Jp;
     public InputField Ch;
 
-    List<string> names = new List<string>() { "Select type", "Furniture1", "Furniture2", "Animal1", "Animal2", "Animal3" };
+    List<string> names = new List<string>() { "Select type", "Cuisime1", "Cuisime2", "Animal1", "Animal2", "Animal3" };
 
     private void Start()
     {
@@ -63,22 +63,6 @@ public class VocabularyInput : MonoBehaviour {
                 switch (_leveltype)
                 {
                     case 1:
-                        for (int i = 0; i < theWords.Furniture1.Count; i++)
-                        {
-                            saveList.Add(theWords.Furniture1[i]);
-                            //Debug.Log(getJsonList.Count);
-                            //Debug.Log(saveList[i].chinese);
-                        }
-                        break;
-                    case 2:
-                        for (int i = 0; i < theWords.Furniture2.Count; i++)
-                        {
-                            saveList.Add(theWords.Furniture2[i]);
-                            //Debug.Log(getJsonList.Count);
-                            //Debug.Log(saveList[i].chinese);
-                        }
-                        break;
-                    case 3:
                         for (int i = 0; i < theWords.Animal1.Count; i++)
                         {
                             saveList.Add(theWords.Animal1[i]);
@@ -86,7 +70,7 @@ public class VocabularyInput : MonoBehaviour {
                             //Debug.Log(saveList[i].chinese);
                         }
                         break;
-                    case 4:
+                    case 2:
                         for (int i = 0; i < theWords.Animal2.Count; i++)
                         {
                             saveList.Add(theWords.Animal2[i]);
@@ -94,10 +78,42 @@ public class VocabularyInput : MonoBehaviour {
                             //Debug.Log(saveList[i].chinese);
                         }
                         break;
-                    case 5:
+                    case 3:
                         for (int i = 0; i < theWords.Animal3.Count; i++)
                         {
                             saveList.Add(theWords.Animal3[i]);
+                            //Debug.Log(getJsonList.Count);
+                            //Debug.Log(saveList[i].chinese);
+                        }
+                        break;
+                    case 4:
+                        for (int i = 0; i < theWords.Cuisime1.Count; i++)
+                        {
+                            saveList.Add(theWords.Cuisime1[i]);
+                            //Debug.Log(getJsonList.Count);
+                            //Debug.Log(saveList[i].chinese);
+                        }
+                        break;
+                    case 5:
+                        for (int i = 0; i < theWords.Cuisime2.Count; i++)
+                        {
+                            saveList.Add(theWords.Cuisime2[i]);
+                            //Debug.Log(getJsonList.Count);
+                            //Debug.Log(saveList[i].chinese);
+                        }
+                        break;
+                    case 6:
+                        for (int i = 0; i < theWords.Fruit1.Count; i++)
+                        {
+                            saveList.Add(theWords.Fruit1[i]);
+                            //Debug.Log(getJsonList.Count);
+                            //Debug.Log(saveList[i].chinese);
+                        }
+                        break;
+                    case 7:
+                        for (int i = 0; i < theWords.Fruit2.Count; i++)
+                        {
+                            saveList.Add(theWords.Fruit2[i]);
                             //Debug.Log(getJsonList.Count);
                             //Debug.Log(saveList[i].chinese);
                         }
@@ -127,6 +143,12 @@ public class VocabularyInput : MonoBehaviour {
                 break;
             case "Animal3":
                 theWords.Animal3.Add(new WordList(Jp.text, Ch.text, "Animal"));
+                break;
+            case "Cuisime1":
+                theWords.Cuisime1.Add(new WordList(Jp.text, Ch.text, "Cuisime"));
+                break;
+            case "Cuisime2":
+                theWords.Cuisime1.Add(new WordList(Jp.text, Ch.text, "Cuisime"));
                 break;
         }            
         SaveData(selectedName.text);

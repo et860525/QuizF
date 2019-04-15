@@ -1,0 +1,198 @@
+{
+  "WordData": {
+    "date": "5/04/2008",
+    "time": "3:20 PM",
+    "Animal1": [],
+    "Animal2": [],
+    "Animal3": [],
+    "Cuisime1": [
+      {
+        "japanese": "すし",
+        "chinese": "壽司",
+        "type": "Cuisime",
+        "status": 0
+      },
+      {
+        "japanese": "おにぎり",
+        "chinese": "飯糰",
+        "type": "Cuisime",
+        "status": 0
+      },
+      {
+        "japanese": "おでん",
+        "chinese": "關東煮",
+        "type": "Cuisime",
+        "status": 0
+      },
+      {
+        "japanese": "カレー",
+        "chinese": "咖哩飯",
+        "type": "Cuisime",
+        "status": 0
+      },
+      {
+        "japanese": "ハンバーガー",
+        "chinese": "漢堡",
+        "type": "Cuisime",
+        "status": 0
+      },
+      {
+        "japanese": "さしみ",
+        "chinese": "生魚片",
+        "type": "Cuisime",
+        "status": 0
+      },
+      {
+        "japanese": "チャーハン",
+        "chinese": "炒飯",
+        "type": "Cuisime",
+        "status": 0
+      },
+      {
+        "japanese": "ぎょうざ",
+        "chinese": "餃子",
+        "type": "Cuisime",
+        "status": 0
+      },
+      {
+        "japanese": "エビフライ",
+        "chinese": "炸蝦",
+        "type": "Cuisime",
+        "status": 0
+      },
+      {
+        "japanese": "ポテトフライ",
+        "chinese": "薯條",
+        "type": "Cuisime",
+        "status": 0
+      },
+      {
+        "japanese": "ちゃわんむし",
+        "chinese": "茶碗蒸",
+        "type": "Cuisime",
+        "status": 0
+      },
+      {
+        "japanese": "ごはん",
+        "chinese": "白飯",
+        "type": "Cuisime",
+        "status": 0
+      },
+      {
+        "japanese": "たまごやき",
+        "chinese": "玉子燒",
+        "type": "Cuisime",
+        "status": 0
+      },
+      {
+        "japanese": "たこやき",
+        "chinese": "章魚燒",
+        "type": "Cuisime",
+        "status": 0
+      },
+      {
+        "japanese": "なっとう",
+        "chinese": "納豆",
+        "type": "Cuisime",
+        "status": 0
+      }
+    ],
+    "Cuisime2": [
+      {
+        "japanese": "ラーメン",
+        "chinese": "拉麵",
+        "type": "Cuisime",
+        "status": 0
+      },
+      {
+        "japanese": "からあげ",
+        "chinese": "唐揚雞",
+        "type": "Cuisime",
+        "status": 0
+      },
+      {
+        "japanese": "すきやき",
+        "chinese": "壽喜燒",
+        "type": "Cuisime",
+        "status": 0
+      },
+      {
+        "japanese": "とんかつ",
+        "chinese": "豬排",
+        "type": "Cuisime",
+        "status": 0
+      },
+      {
+        "japanese": "おやこどん",
+        "chinese": "親子丼",
+        "type": "Cuisime",
+        "status": 0
+      },
+      {
+        "japanese": "焼きそば",
+        "chinese": "炒麵",
+        "type": "Cuisime",
+        "status": 0
+      },
+      {
+        "japanese": "やきにく",
+        "chinese": "燒肉",
+        "type": "Cuisime",
+        "status": 0
+      },
+      {
+        "japanese": "おこのみやき",
+        "chinese": "大阪燒",
+        "type": "Cuisime",
+        "status": 0
+      },
+      {
+        "japanese": "てんぷら",
+        "chinese": "天婦羅",
+        "type": "Cuisime",
+        "status": 0
+      },
+      {
+        "japanese": "ぎゅうどん",
+        "chinese": "牛丼",
+        "type": "Cuisime",
+        "status": 0
+      },
+      {
+        "japanese": "そば",
+        "chinese": "蕎麥麵",
+        "type": "Cuisime",
+        "status": 0
+      },
+      {
+        "japanese": "うどん",
+        "chinese": "烏龍麵",
+        "type": "Cuisime",
+        "status": 0
+      },
+      {
+        "japanese": "たいやき",
+        "chinese": "鯛魚燒",
+        "type": "Cuisime",
+        "status": 0
+      },
+      {
+        "japanese": "にくじゃが",
+        "chinese": "馬鈴薯燉肉",
+        "type": "Cuisime",
+        "status": 0
+      },
+      {
+        "japanese": "みそしる",
+        "chinese": "味噌湯",
+        "type": "Cuisime",
+        "status": 0
+      }
+    ],
+    "Fruit1": [],
+    "Fruit2": [],
+    "Meat1": [],
+    "Vegetable1": [],
+    "Vegetable2": []
+  }
+}

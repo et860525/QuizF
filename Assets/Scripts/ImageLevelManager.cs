@@ -41,6 +41,9 @@ public class ImageLevelManager : MonoBehaviour
 
     private AudioSource timeSound;
 
+    //Audio source
+    public AudioSource pictureAudio;
+
     //Class
     private StringData theWords = new StringData(); //Load Json dataBase.
     private List<WordList> questionWords; //Store words.
@@ -80,6 +83,8 @@ public class ImageLevelManager : MonoBehaviour
     {
         tempList = new List<string>();
         finalCorrentList = new List<WordList>();
+        pictureAudio = qImage.GetComponent<AudioSource>();
+
         Time.timeScale = 1;
 
         BackGround = GameObject.FindGameObjectWithTag("BackGround");
@@ -87,6 +92,7 @@ public class ImageLevelManager : MonoBehaviour
         //Get Level Information
         iTeam = PlayerPrefs.GetInt("iTeam");
         levelType = PlayerPrefs.GetString("LevelType");
+        Debug.Log(levelType);
         explorerName = PlayerPrefs.GetString("ExplorerName");
 
         timeSound = GetComponent<AudioSource>();
@@ -97,7 +103,7 @@ public class ImageLevelManager : MonoBehaviour
         InvokeRepeating("TimerDownCount", 0f, 1f);
 
         LoadImages();
-
+        
         SetQuestion();
 
         idQuestion = 0;
@@ -139,6 +145,40 @@ public class ImageLevelManager : MonoBehaviour
     void LoadImages()
     {
         // For game run (DELETE DATA Every run).
+        object[] loadedIcons = Resources.LoadAll(levelType + "/" + explorerName, typeof(Sprite));
+        //this
+
+        for (int x = 0; x < loadedIcons.Length; x++)
+        {
+            qSprites.Add((Sprite)loadedIcons[x]);
+           //Debug.Log(qSprites.Count);
+        }
+
+        maxQuestion = qSprites.Count;
+        Debug.Log("max ist number " + maxQuestion);
+
+        // For game anwser (NOT DELETE DATA).
+        //object[] loadedTemp = Resources.LoadAll("Animal/Animal2", typeof(Sprite));
+        for (int i = 0; i < qSprites.Count; i++)
+        {
+            tempList.Add(qSprites[i].name);
+        }
+        //or this
+        //loadedIcons.CopyTo (Icons,0);
+    }
+
+     public void PlayAudio()
+    {
+        if (!pictureAudio.isPlaying)
+            pictureAudio.Play();
+    }
+
+    /*
+     * 
+     * 
+     * void LoadImages()
+    {
+        // For game run (DELETE DATA Every run).
         object[] loadedIcons = Resources.LoadAll("Animal/" + explorerName, typeof(Sprite));
         //this
         for (int x = 0; x < loadedIcons.Length; x++)
@@ -159,6 +199,7 @@ public class ImageLevelManager : MonoBehaviour
         //or this
         //loadedIcons.CopyTo (Icons,0);
     }
+     * */
 
     void SetQuestion()
     {
@@ -167,6 +208,11 @@ public class ImageLevelManager : MonoBehaviour
         answerTextC.color = Color.black;
         answerTextD.color = Color.black;
 
+        answerTextA.fontSize = 70;
+        answerTextB.fontSize = 70;
+        answerTextC.fontSize = 70;
+        answerTextD.fontSize = 70;
+
         // Random for Question
         int randomQuestionIndex = Random.Range(0, qSprites.Count); // Depend questionWords list Count (questionWords is --), and random in the questionWords question.
         // Random for Anwser
@@ -174,6 +220,8 @@ public class ImageLevelManager : MonoBehaviour
 
         //Question
         qImage.sprite = qSprites[randomQuestionIndex];
+        pictureAudio.clip = Resources.Load<AudioClip>(levelType + "/" + explorerName + "Audio" + "/" + qSprites[randomQuestionIndex].name);
+        PlayAudio();
         correct = qSprites[randomQuestionIndex].name;
 
         //Save question string for final board.           
@@ -224,6 +272,19 @@ public class ImageLevelManager : MonoBehaviour
         _an1.text = tempList[tempRnd[0]];
         _an2.text = tempList[tempRnd[1]];
         _an3.text = tempList[tempRnd[2]];
+
+        if (_an1.text.Length > 6)
+        {
+            _an1.fontSize = 50;
+        }
+        if (_an2.text.Length > 6)
+        {
+            _an2.fontSize = 50;
+        }
+        if (_an3.text.Length > 6)
+        {
+            _an3.fontSize = 50;
+        }
 
         //Debug.Log("BEF" + tempList.Count);
 
@@ -371,6 +432,7 @@ public class ImageLevelManager : MonoBehaviour
         }
 
         CancelInvoke("TimerDownCount");
+        pictureAudio.Stop();
         TempPanel.gameObject.SetActive(true);
         BackGround.GetComponent<MoveOffset>().frezz = true;
         StartCoroutine(Wait());
@@ -450,6 +512,9 @@ public class ImageLevelManager : MonoBehaviour
 
     public void CallOutPopUp()
     {
+
+
+
         isOutPopUp = !isOutPopUp;
 
         if (isOutPopUp)
@@ -467,19 +532,25 @@ public class ImageLevelManager : MonoBehaviour
 
     public void YesOutPopUp()
     {
-        switch (levelType)
+        SceneManager.LoadScene(levelType + "SelectMenu");
+
+        /*switch (levelType)
         {
-            case "Food":
-                SceneManager.LoadScene("FoodSelectMenu");
-                break;
-            case "Furniture":
-                SceneManager.LoadScene("FurnitureSelectMenu");
-                break;
             case "Animal":
                 SceneManager.LoadScene("AnimalSelectMenu");
                 break;
-        }
-
+            case "Cuisime":
+                SceneManager.LoadScene("CuisimeSelectMenu");
+                break;
+            case "Fruit":
+                SceneManager.LoadScene("FruitSelectMenu");
+                break;
+            case "Meat":
+                SceneManager.LoadScene("MeatSelectMenu");
+                break;
+            case "Vegetable":
+                SceneManager.LoadScene("VegetableSelectMenu");
+                break;
+        }*/
     }
-
 }

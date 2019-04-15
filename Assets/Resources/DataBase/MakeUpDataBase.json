@@ -1,0 +1,108 @@
+﻿{
+  "WordData": {
+    "date": "5/04/2008",
+    "time": "3:20 PM",
+    "Animal1": [],
+    "Animal2": [],
+    "Animal3": [],
+    "Cuisime1": [],
+    "Cuisime2": [],
+    "Fruit1": [],
+    "Fruit2": [],
+    "Meat1": [],
+    "Vegetable1": [],
+    "Vegetable2": [],
+    "MakeUp1": [
+      {
+        "japanese": "アイメイク",
+        "chinese": "眼妝",
+        "type": "MakeUp",
+        "status": 0
+      },
+      {
+        "japanese": "マスカラ",
+        "chinese": "睫毛膏",
+        "type": "MakeUp",
+        "status": 0
+      },
+      {
+        "japanese": "アイシャドー",
+        "chinese": "眼影",
+        "type": "MakeUp",
+        "status": 0
+      },
+      {
+        "japanese": "コンシーラー",
+        "chinese": "遮瑕膏",
+        "type": "MakeUp",
+        "status": 0
+      },
+      {
+        "japanese": "アイブロウペンシル",
+        "chinese": "眉筆",
+        "type": "MakeUp",
+        "status": 0
+      },
+      {
+        "japanese": "アイライナー",
+        "chinese": "眼線筆",
+        "type": "MakeUp",
+        "status": 0
+      },
+      {
+        "japanese": "うすげしょう",
+        "chinese": "淡妝",
+        "type": "MakeUp",
+        "status": 0
+      },
+      {
+        "japanese": "あつげしょう",
+        "chinese": "濃妝",
+        "type": "MakeUp",
+        "status": 0
+      },
+      {
+        "japanese": "チーク",
+        "chinese": "腮紅",
+        "type": "MakeUp",
+        "status": 0
+      },
+      {
+        "japanese": "カラコン",
+        "chinese": "放大片",
+        "type": "MakeUp",
+        "status": 0
+      },
+      {
+        "japanese": "パフ",
+        "chinese": "粉撲",
+        "type": "MakeUp",
+        "status": 0
+      },
+      {
+        "japanese": "けしょう",
+        "chinese": "化妝",
+        "type": "MakeUp",
+        "status": 0
+      },
+      {
+        "japanese": "ひやけどめ",
+        "chinese": "防曬乳",
+        "type": "MakeUp",
+        "status": 0
+      },
+      {
+        "japanese": "パック",
+        "chinese": "面膜",
+        "type": "MakeUp",
+        "status": 0
+      },
+      {
+        "japanese": "リップ",
+        "chinese": "口紅",
+        "type": "MakeUp",
+        "status": 0
+      }
+    ]
+  }
+}

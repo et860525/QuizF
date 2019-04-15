@@ -64,7 +64,6 @@ public class LevelManager : MonoBehaviour
     private string levelType;
     private string correct;
     private string fileName = "FinalList.json";
-    private string path;
 
     //Bool
     private bool isOutPopUp; // Controll the panel.
@@ -82,8 +81,8 @@ public class LevelManager : MonoBehaviour
 
         //Get Level Information
         iTeam = PlayerPrefs.GetInt("iTeam");
-        levelType = PlayerPrefs.GetString("LevelType");       
-
+        levelType = PlayerPrefs.GetString("LevelType");
+        
         questionWords = new List<WordList>();
         finalCorrentList = new List<WordList>();
 
@@ -120,15 +119,36 @@ public class LevelManager : MonoBehaviour
 
     void LoadData(string _leveltype)
     {
-        TextAsset file;
-        if (_leveltype == "Animal")
+        TextAsset file = Resources.Load("DataBase/" + _leveltype + "DataBase") as TextAsset;
+
+        // OLD MOTHERFUCKER SCHOOL
+        /*try
         {
-            file = Resources.Load("Animal/AnimalDataBase") as TextAsset;
+            if (_leveltype == "Animal")
+            {
+                file = Resources.Load("Animal/AnimalDataBase") as TextAsset;
+            }
+            if (_leveltype == "Cuisime")
+            {
+                file = Resources.Load("Cuisime/CuisimeDataBase") as TextAsset;
+            }
+            if (_leveltype == "Fruit")
+            {
+                file = Resources.Load("Fruit/FruitDataBase") as TextAsset;
+            }
+            if (_leveltype == "Meat")
+            {
+                file = Resources.Load("Meat/MeatDataBase") as TextAsset;
+            }
+            if (_leveltype == "Vegetable")
+            {
+                file = Resources.Load("Vegetable/VegetableDataBase") as TextAsset;
+            }
         }
-        else
+        catch(System.Exception ex)
         {
-            file = Resources.Load("WordDataBase") as TextAsset;
-        }
+            Debug.Log(ex.Message);
+        }*/
         //string filePath = Path.Combine(Application.streamingAssetsPath, fileName);
         //string filePath = Path.Combine(Application.dataPath, fileName);        
         try
@@ -149,24 +169,6 @@ public class LevelManager : MonoBehaviour
 
                 switch (_leveltype)
                 {
-                    case "Furniture":
-                        if (iTeam == 1)
-                        {
-                            for (int i = 0; i < theWords.Furniture1.Count; i++)
-                            {
-                                getJsonList.Add(theWords.Furniture1[i]);
-                                //Debug.Log(getJsonList.Count);
-                            }
-                        }
-                        if (iTeam == 2)
-                        {
-                            for (int i = 0; i < theWords.Furniture2.Count; i++)
-                            {
-                                getJsonList.Add(theWords.Furniture2[i]);
-                                //Debug.Log(getJsonList.Count);
-                            }
-                        }
-                        break;
                     case "Animal":
                         if (iTeam == 3)
                         {
@@ -193,6 +195,79 @@ public class LevelManager : MonoBehaviour
                             }
                         }
                         break;
+                    case "Cuisime":
+                        if (iTeam == 3)
+                        {
+                            for (int i = 0; i < theWords.Cuisime1.Count; i++)
+                            {
+                                getJsonList.Add(theWords.Cuisime1[i]);
+                                //Debug.Log(getJsonList.Count);
+                            }
+                        }
+                        if (iTeam == 6)
+                        {
+                            for (int i = 0; i < theWords.Cuisime2.Count; i++)
+                            {
+                                getJsonList.Add(theWords.Cuisime2[i]);
+                                //Debug.Log(getJsonList.Count);
+                            }
+                        }
+                        break;
+                    case "Fruit":
+                        if (iTeam == 3)
+                        {
+                            for (int i = 0; i < theWords.Fruit1.Count; i++)
+                            {
+                                getJsonList.Add(theWords.Fruit1[i]);
+                                //Debug.Log(getJsonList.Count);
+                            }
+                        }
+                        if (iTeam == 6)
+                        {
+                            for (int i = 0; i < theWords.Fruit2.Count; i++)
+                            {
+                                getJsonList.Add(theWords.Fruit2[i]);
+                                //Debug.Log(getJsonList.Count);
+                            }
+                        }
+                        break;
+                    case "Meat":
+                        if (iTeam == 3)
+                        {
+                            for (int i = 0; i < theWords.Meat1.Count; i++)
+                            {
+                                getJsonList.Add(theWords.Meat1[i]);
+                                //Debug.Log(getJsonList.Count);
+                            }
+                        }
+                        break;
+                    case "Vegetable":
+                        if (iTeam == 3)
+                        {
+                            for (int i = 0; i < theWords.Vegetable1.Count; i++)
+                            {
+                                getJsonList.Add(theWords.Vegetable1[i]);
+                                //Debug.Log(getJsonList.Count);
+                            }
+                        }
+                        if (iTeam == 6)
+                        {
+                            for (int i = 0; i < theWords.Vegetable2.Count; i++)
+                            {
+                                getJsonList.Add(theWords.Vegetable2[i]);
+                                //Debug.Log(getJsonList.Count);
+                            }
+                        }
+                        break;
+                    case "MakeUp":
+                        if (iTeam == 3)
+                        {
+                            for (int i = 0; i < theWords.MakeUp1.Count; i++)
+                            {
+                                getJsonList.Add(theWords.MakeUp1[i]);
+                                //Debug.Log(getJsonList.Count);
+                            }
+                        }
                         break;
                         //.....ADD TYPE.
                 }
@@ -241,6 +316,11 @@ public class LevelManager : MonoBehaviour
         answerTextC.color = Color.black;
         answerTextD.color = Color.black;
 
+        answerTextA.fontSize = 70;
+        answerTextB.fontSize = 70;
+        answerTextC.fontSize = 70;
+        answerTextD.fontSize = 70;
+
         string _gameMode = "";
 
         int randomForGameMode = Random.Range(0, 2);
@@ -253,6 +333,10 @@ public class LevelManager : MonoBehaviour
         {
             _gameMode = "jp";
             qText.text = questionWords[randomQuestionIndex].japanese;
+            if (qText.text.Length > 6)
+            {
+                qText.fontSize = 50;
+            }
             correct = questionWords[randomQuestionIndex].chinese;
             finalCorrentList.Add(questionWords[randomQuestionIndex]);
             questionWords.RemoveAt(randomQuestionIndex);
@@ -272,18 +356,34 @@ public class LevelManager : MonoBehaviour
         {
             case 1:
                 answerTextA.text = correct;
+                if (answerTextA.text.Length > 6)
+                {
+                    answerTextA.fontSize = 50;
+                }
                 SetAnswer(_levelType, _gameMode, answerTextA, answerTextB, answerTextC, answerTextD);
                 break;
             case 2:
                 answerTextB.text = correct;
+                if (answerTextA.text.Length > 6)
+                {
+                    answerTextA.fontSize = 50;
+                }
                 SetAnswer(_levelType, _gameMode, answerTextB, answerTextA, answerTextC, answerTextD);
                 break;
             case 3:
                 answerTextC.text = correct;
+                if (answerTextA.text.Length > 6)
+                {
+                    answerTextA.fontSize = 50;
+                }
                 SetAnswer(_levelType, _gameMode, answerTextC, answerTextA, answerTextB, answerTextD);
                 break;
             case 4:
                 answerTextD.text = correct;
+                if (answerTextA.text.Length > 6)
+                {
+                    answerTextA.fontSize = 50;
+                }
                 SetAnswer(_levelType, _gameMode, answerTextD, answerTextA, answerTextB, answerTextC);
                 break;
         }
@@ -297,38 +397,6 @@ public class LevelManager : MonoBehaviour
         //Delete in templist Corrent answer.
         switch (__levelType)
         {
-            case "Furniture":
-                if (iTeam == 1)
-                {
-                    for (int i = 0; i <= (int)maxQuestion - 1; i++)
-                    {
-                        tempList.Add(theWords.Furniture1[i]);
-                    }
-
-                    for (int i = 0; i < tempList.Count; i++)
-                    {
-                        if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
-                        {
-                            tempList.RemoveAt(i);
-                        }
-                    }
-                }
-                else if (iTeam == 6)
-                {
-                    for (int i = 0; i <= (int)maxQuestion - 1; i++)
-                    {
-                        tempList.Add(theWords.Furniture2[i]);
-                    }
-                    for (int i = 0; i < tempList.Count; i++)
-                    {
-                        if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
-                        {
-                            tempList.RemoveAt(i);
-                        }
-                    }
-                }
-                break;
-
             case "Animal":
                 if (iTeam == 3)
                 {
@@ -373,6 +441,134 @@ public class LevelManager : MonoBehaviour
                     }
                 }
                 break;
+            case "Cuisime":
+                if (iTeam == 3)
+                {
+                    for (int i = 0; i <= (int)maxQuestion - 1; i++)
+                    {
+                        tempList.Add(theWords.Cuisime1[i]);
+                    }
+
+                    for (int i = 0; i < tempList.Count; i++)
+                    {
+                        if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
+                        {
+                            tempList.RemoveAt(i);
+                        }
+                    }
+                }
+                else if (iTeam == 6)
+                {
+                    for (int i = 0; i <= (int)maxQuestion - 1; i++)
+                    {
+                        tempList.Add(theWords.Cuisime2[i]);
+                    }
+                    for (int i = 0; i < tempList.Count; i++)
+                    {
+                        if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
+                        {
+                            tempList.RemoveAt(i);
+                        }
+                    }
+                }
+                break;
+            case "Fruit":
+                if (iTeam == 3)
+                {
+                    for (int i = 0; i <= (int)maxQuestion - 1; i++)
+                    {
+                        tempList.Add(theWords.Fruit1[i]);
+                    }
+
+                    for (int i = 0; i < tempList.Count; i++)
+                    {
+                        if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
+                        {
+                            tempList.RemoveAt(i);
+                        }
+                    }
+                }
+                else if (iTeam == 6)
+                {
+                    for (int i = 0; i <= (int)maxQuestion - 1; i++)
+                    {
+                        tempList.Add(theWords.Fruit2[i]);
+                    }
+                    for (int i = 0; i < tempList.Count; i++)
+                    {
+                        if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
+                        {
+                            tempList.RemoveAt(i);
+                        }
+                    }
+                }
+                break;
+            case "Meat":
+                if (iTeam == 3)
+                {
+                    for (int i = 0; i <= (int)maxQuestion - 1; i++)
+                    {
+                        tempList.Add(theWords.Meat1[i]);
+                    }
+
+                    for (int i = 0; i < tempList.Count; i++)
+                    {
+                        if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
+                        {
+                            tempList.RemoveAt(i);
+                        }
+                    }
+                }
+                break;
+            case "Vegetable":
+                if (iTeam == 3)
+                {
+                    for (int i = 0; i <= (int)maxQuestion - 1; i++)
+                    {
+                        tempList.Add(theWords.Vegetable1[i]);
+                    }
+
+                    for (int i = 0; i < tempList.Count; i++)
+                    {
+                        if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
+                        {
+                            tempList.RemoveAt(i);
+                        }
+                    }
+                }
+                else if (iTeam == 6)
+                {
+                    for (int i = 0; i <= (int)maxQuestion - 1; i++)
+                    {
+                        tempList.Add(theWords.Vegetable2[i]);
+                    }
+                    for (int i = 0; i < tempList.Count; i++)
+                    {
+                        if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
+                        {
+                            tempList.RemoveAt(i);
+                        }
+                    }
+                }
+                break;
+            case "MakeUp":
+                if (iTeam == 3)
+                {
+                    for (int i = 0; i <= (int)maxQuestion - 1; i++)
+                    {
+                        tempList.Add(theWords.MakeUp1[i]);
+                    }
+
+                    for (int i = 0; i < tempList.Count; i++)
+                    {
+                        if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
+                        {
+                            tempList.RemoveAt(i);
+                        }
+                    }
+                }
+                break;
+                //Add type
         }
 
         //Use tempList without corrent answer.
@@ -388,6 +584,20 @@ public class LevelManager : MonoBehaviour
                 _an1.text = tempList[tempRnd[0]].japanese;
                 _an2.text = tempList[tempRnd[1]].japanese;
                 _an3.text = tempList[tempRnd[2]].japanese;
+
+                if (_an1.text.Length > 6)
+                {
+                    _an1.fontSize = 50;
+                }
+                if (_an2.text.Length > 6)
+                {
+                    _an2.fontSize = 50;
+                }
+                if (_an3.text.Length > 6)
+                {
+                    _an3.fontSize = 50;
+                }
+
                 break;
         }
         // Debug.Log( " and " + an2 + " and " + an3);
@@ -625,15 +835,25 @@ public class LevelManager : MonoBehaviour
 
     public void YesOutPopUp()
     {
-        switch(levelType)
+        SceneManager.LoadScene(levelType + "SelectMenu");
+        /*switch(levelType)
         {
             case "Animal":
                 SceneManager.LoadScene("AnimalSelectMenu");
                 break;
-            case "Furniture":
-                SceneManager.LoadScene("FurnitureSelectMenu");
+            case "Cuisime":
+                SceneManager.LoadScene("CuisimeSelectMenu");
                 break;
-        }
-        
+            case "Fruit":
+                SceneManager.LoadScene("FruitSelectMenu");
+                break;
+            case "Meat":
+                SceneManager.LoadScene("MeatSelectMenu");
+                break;
+            case "Vegetable":
+                SceneManager.LoadScene("VegetableSelectMenu");
+                break;
+        }*/
+
     }
 }

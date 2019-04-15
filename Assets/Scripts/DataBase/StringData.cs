@@ -9,11 +9,21 @@ public class StringData
     public string time = "";
 
     //Chose word type;
-    public List<WordList> Furniture1 = new List<WordList>();
-    public List<WordList> Furniture2 = new List<WordList>();
     public List<WordList> Animal1 = new List<WordList>();
     public List<WordList> Animal2 = new List<WordList>();
     public List<WordList> Animal3 = new List<WordList>();
 
-    //public List<WordList> tempList = new List<WordList>();
+    public List<WordList> Cuisime1 = new List<WordList>();
+    public List<WordList> Cuisime2 = new List<WordList>();
+
+    public List<WordList> Fruit1 = new List<WordList>();
+    public List<WordList> Fruit2 = new List<WordList>();
+
+    public List<WordList> Meat1 = new List<WordList>();
+
+    public List<WordList> Vegetable1 = new List<WordList>();
+    public List<WordList> Vegetable2 = new List<WordList>();
+
+    public List<WordList> MakeUp1 = new List<WordList>();
+
 }

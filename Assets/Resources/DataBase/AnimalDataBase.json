@@ -1,0 +1,282 @@
+{
+    "WordData": {
+        "date": "5/04/2008",
+        "time": "3:20 PM",
+        "Animal1": [
+            {
+                "japanese": "ねずみ",
+                "chinese": "鼠",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "うし",
+                "chinese": "牛",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "トラ",
+                "chinese": "虎",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "うさぎ",
+                "chinese": "兔",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "りゅう",
+                "chinese": "龍",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "へび",
+                "chinese": "蛇",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "うま",
+                "chinese": "馬",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "やぎ",
+                "chinese": "山羊",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "さる",
+                "chinese": "猴",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "とり",
+                "chinese": "雞",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "いぬ",
+                "chinese": "狗",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "ぶた",
+                "chinese": "豬",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "パンダ",
+                "chinese": "貓熊",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "コアラ",
+                "chinese": "無尾熊",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "ライオン",
+                "chinese": "獅子",
+                "type": "Animal",
+                "status": 0
+            }
+        ],
+        "Animal2": [
+            {
+                "japanese": "カンガルー",
+                "chinese": "袋鼠",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "かえる",
+                "chinese": "青蛙",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "ぞう",
+                "chinese": "大象",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "キリン",
+                "chinese": "長頸鹿",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "ペンギン",
+                "chinese": "企鵝",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "しろくま",
+                "chinese": "北極熊",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "くじら",
+                "chinese": "鯨魚",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "あざらし",
+                "chinese": "海豹",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "ひょう",
+                "chinese": "豹",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "カピバラ",
+                "chinese": "水豚",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "カワウソ",
+                "chinese": "水獺",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "かも",
+                "chinese": "鴨子",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "ねこ",
+                "chinese": "貓",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "フクロウ",
+                "chinese": "貓頭鷹",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "かめ",
+                "chinese": "烏龜",
+                "type": "Animal",
+                "status": 0
+            }
+        ],
+        "Animal3": [
+            {
+                "japanese": "あらいぐま",
+                "chinese": "浣熊",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "きつね",
+                "chinese": "狐狸",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "かに",
+                "chinese": "螃蟹",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "わに",
+                "chinese": "鱷魚",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "ゴリラ",
+                "chinese": "猩猩",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "シマウマ",
+                "chinese": "斑馬",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "りす",
+                "chinese": "松鼠",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "しか",
+                "chinese": "鹿",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "ひつじ",
+                "chinese": "綿羊",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "きんぎょ",
+                "chinese": "金魚",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "おおかみ",
+                "chinese": "狼",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "アルパカ",
+                "chinese": "羊駝",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "いのしし",
+                "chinese": "野豬",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "さめ",
+                "chinese": "鯊魚",
+                "type": "Animal",
+                "status": 0
+            },
+            {
+                "japanese": "はりねずみ",
+                "chinese": "刺蝟",
+                "type": "Animal",
+                "status": 0
+            }
+        ]
+    }
+}

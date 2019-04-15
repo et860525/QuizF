@@ -1,0 +1,198 @@
+﻿{
+  "WordData": {
+    "date": "5/04/2008",
+    "time": "3:20 PM",
+    "Animal1": [],
+    "Animal2": [],
+    "Animal3": [],
+    "Cuisime1": [],
+    "Cuisime2": [],
+    "Fruit1": [],
+    "Fruit2": [],
+    "Meat1": [],
+    "Vegetable1": [
+      {
+        "japanese": "プチトマト",
+        "chinese": "小番茄",
+        "type": "Vegetable",
+        "status": 0
+      },
+      {
+        "japanese": "ジャガイモ",
+        "chinese": "馬鈴薯",
+        "type": "Vegetable",
+        "status": 0
+      },
+      {
+        "japanese": "にんにく",
+        "chinese": "蒜",
+        "type": "Vegetable",
+        "status": 0
+      },
+      {
+        "japanese": "しょうが",
+        "chinese": "薑",
+        "type": "Vegetable",
+        "status": 0
+      },
+      {
+        "japanese": "ねぎ",
+        "chinese": "蔥",
+        "type": "Vegetable",
+        "status": 0
+      },
+      {
+        "japanese": "わさび",
+        "chinese": "山葵",
+        "type": "Vegetable",
+        "status": 0
+      },
+      {
+        "japanese": "キャベツ",
+        "chinese": "高麗菜",
+        "type": "Vegetable",
+        "status": 0
+      },
+      {
+        "japanese": "ほうれんそう",
+        "chinese": "菠菜",
+        "type": "Vegetable",
+        "status": 0
+      },
+      {
+        "japanese": "しいたけ",
+        "chinese": "香菇",
+        "type": "Vegetable",
+        "status": 0
+      },
+      {
+        "japanese": "グリインピーマ",
+        "chinese": "豌豆",
+        "type": "Vegetable",
+        "status": 0
+      },
+      {
+        "japanese": "たけのこ",
+        "chinese": "竹筍",
+        "type": "Vegetable",
+        "status": 0
+      },
+      {
+        "japanese": "こんぶ",
+        "chinese": "昆布",
+        "type": "Vegetable",
+        "status": 0
+      },
+      {
+        "japanese": "トウモロコシ",
+        "chinese": "玉米",
+        "type": "Vegetable",
+        "status": 0
+      },
+      {
+        "japanese": "あかキャベツ",
+        "chinese": "紫色高麗菜",
+        "type": "Vegetable",
+        "status": 0
+      },
+      {
+        "japanese": "もやし",
+        "chinese": "豆芽菜",
+        "type": "Vegetable",
+        "status": 0
+      }
+    ],
+    "Vegetable2": [
+      {
+        "japanese": "サツマイモ",
+        "chinese": "地瓜",
+        "type": "Vegetable",
+        "status": 0
+      },
+      {
+        "japanese": "だいこん",
+        "chinese": "蘿蔔",
+        "type": "Vegetable",
+        "status": 0
+      },
+      {
+        "japanese": "しいたけ",
+        "chinese": "香菇",
+        "type": "Vegetable",
+        "status": 0
+      },
+      {
+        "japanese": "トマト",
+        "chinese": "番茄",
+        "type": "Vegetable",
+        "status": 0
+      },
+      {
+        "japanese": "かぼちゃ",
+        "chinese": "南瓜",
+        "type": "Vegetable",
+        "status": 0
+      },
+      {
+        "japanese": "ブロッコリー",
+        "chinese": "花椰菜",
+        "type": "Vegetable",
+        "status": 0
+      },
+      {
+        "japanese": "アスパラガス",
+        "chinese": "蘆筍",
+        "type": "Vegetable",
+        "status": 0
+      },
+      {
+        "japanese": "たまねぎ",
+        "chinese": "洋蔥",
+        "type": "Vegetable",
+        "status": 0
+      },
+      {
+        "japanese": "なす",
+        "chinese": "茄子",
+        "type": "Vegetable",
+        "status": 0
+      },
+      {
+        "japanese": "ピーマン",
+        "chinese": "青椒",
+        "type": "Vegetable",
+        "status": 0
+      },
+      {
+        "japanese": "とうがらし",
+        "chinese": "辣椒",
+        "type": "Vegetable",
+        "status": 0
+      },
+      {
+        "japanese": "きゅうり",
+        "chinese": "小黃瓜",
+        "type": "Vegetable",
+        "status": 0
+      },
+      {
+        "japanese": "にんじん",
+        "chinese": "紅蘿蔔",
+        "type": "Vegetable",
+        "status": 0
+      },
+      {
+        "japanese": "ベビーコーン",
+        "chinese": "玉米筍",
+        "type": "Vegetable",
+        "status": 0
+      },
+      {
+        "japanese": "にがうり",
+        "chinese": "苦瓜",
+        "type": "Vegetable",
+        "status": 0
+      }
+    ]
+  }
+}

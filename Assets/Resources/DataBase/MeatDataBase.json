@@ -1,0 +1,107 @@
+﻿{
+  "WordData": {
+    "date": "5/04/2008",
+    "time": "3:20 PM",
+    "Animal1": [],
+    "Animal2": [],
+    "Animal3": [],
+    "Cuisime1": [],
+    "Cuisime2": [],
+    "Fruit1": [],
+    "Fruit2": [],
+    "Meat1": [
+      {
+        "japanese": "ロース",
+        "chinese": "里肌肉",
+        "type": "Meat",
+        "status": 0
+      },
+      {
+        "japanese": "ヒレ",
+        "chinese": "腰內肉",
+        "type": "Meat",
+        "status": 0
+      },
+      {
+        "japanese": "ぎゅうにく",
+        "chinese": "牛肉",
+        "type": "Meat",
+        "status": 0
+      },
+      {
+        "japanese": "ようにく",
+        "chinese": "羊肉",
+        "type": "Meat",
+        "status": 0
+      },
+      {
+        "japanese": "カもにく",
+        "chinese": "鴨肉",
+        "type": "Meat",
+        "status": 0
+      },
+      {
+        "japanese": "ぶたにく",
+        "chinese": "豬肉",
+        "type": "Meat",
+        "status": 0
+      },
+      {
+        "japanese": "ほおにく",
+        "chinese": "臉頰肉",
+        "type": "Meat",
+        "status": 0
+      },
+      {
+        "japanese": "ぶたあし",
+        "chinese": "豬腳",
+        "type": "Meat",
+        "status": 0
+      },
+      {
+        "japanese": "さかな",
+        "chinese": "魚肉",
+        "type": "Meat",
+        "status": 0
+      },
+      {
+        "japanese": "とりにく",
+        "chinese": "雞肉",
+        "type": "Meat",
+        "status": 0
+      },
+      {
+        "japanese": "てばさき",
+        "chinese": "雞翅",
+        "type": "Meat",
+        "status": 0
+      },
+      {
+        "japanese": "ももにく",
+        "chinese": "雞腿",
+        "type": "Meat",
+        "status": 0
+      },
+      {
+        "japanese": "ばにく",
+        "chinese": "馬肉",
+        "type": "Meat",
+        "status": 0
+      },
+      {
+        "japanese": "ひきにく",
+        "chinese": "絞肉",
+        "type": "Meat",
+        "status": 0
+      },
+      {
+        "japanese": "ばらにく",
+        "chinese": "五花肉",
+        "type": "Meat",
+        "status": 0
+      }
+    ],
+    "Vegetable1": [],
+    "Vegetable2": []
+  }
+}

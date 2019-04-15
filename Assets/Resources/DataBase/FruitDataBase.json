@@ -1,0 +1,198 @@
+﻿{
+  "WordData": {
+    "date": "5/04/2008",
+    "time": "3:20 PM",
+    "Animal1": [],
+    "Animal2": [],
+    "Animal3": [],
+    "Cuisime1": [],
+    "Cuisime2": [],
+    "Fruit1": [
+      {
+        "japanese": "マンゴー",
+        "chinese": "芒果",
+        "type": "Fruit",
+        "status": 0
+      },
+      {
+        "japanese": "うめ",
+        "chinese": "梅子",
+        "type": "Fruit",
+        "status": 0
+      },
+      {
+        "japanese": "レモン",
+        "chinese": "檸檬",
+        "type": "Fruit",
+        "status": 0
+      },
+      {
+        "japanese": "キウイ",
+        "chinese": "奇異果",
+        "type": "Fruit",
+        "status": 0
+      },
+      {
+        "japanese": "ドラゴン‐フルーツ",
+        "chinese": "火龍果",
+        "type": "Fruit",
+        "status": 0
+      },
+      {
+        "japanese": "いちご",
+        "chinese": "草莓",
+        "type": "Fruit",
+        "status": 0
+      },
+      {
+        "japanese": "ぶどう",
+        "chinese": "葡萄",
+        "type": "Fruit",
+        "status": 0
+      },
+      {
+        "japanese": "ライチー",
+        "chinese": "荔枝",
+        "type": "Fruit",
+        "status": 0
+      },
+      {
+        "japanese": "りんご",
+        "chinese": "蘋果",
+        "type": "Fruit",
+        "status": 0
+      },
+      {
+        "japanese": "スイカ",
+        "chinese": "西瓜",
+        "type": "Fruit",
+        "status": 0
+      },
+      {
+        "japanese": "バナナ",
+        "chinese": "香蕉",
+        "type": "Fruit",
+        "status": 0
+      },
+      {
+        "japanese": "パパイヤ",
+        "chinese": "木瓜",
+        "type": "Fruit",
+        "status": 0
+      },
+      {
+        "japanese": "ドリアン",
+        "chinese": "榴槤",
+        "type": "Fruit",
+        "status": 0
+      },
+      {
+        "japanese": "オレンジ",
+        "chinese": "橘子",
+        "type": "Fruit",
+        "status": 0
+      },
+      {
+        "japanese": "もも",
+        "chinese": "桃子",
+        "type": "Fruit",
+        "status": 0
+      }
+    ],
+    "Fruit2": [
+      {
+        "japanese": "レンブ",
+        "chinese": "蓮霧",
+        "type": "Fruit",
+        "status": 0
+      },
+      {
+        "japanese": "メロン",
+        "chinese": "哈密瓜",
+        "type": "Fruit",
+        "status": 0
+      },
+      {
+        "japanese": "スタアフルウツ",
+        "chinese": "楊桃",
+        "type": "Fruit",
+        "status": 0
+      },
+      {
+        "japanese": "ゆず",
+        "chinese": "柚子",
+        "type": "Fruit",
+        "status": 0
+      },
+      {
+        "japanese": "サクランボ",
+        "chinese": "櫻桃",
+        "type": "Fruit",
+        "status": 0
+      },
+      {
+        "japanese": "パイナップル",
+        "chinese": "鳳梨",
+        "type": "Fruit",
+        "status": 0
+      },
+      {
+        "japanese": "しゃか",
+        "chinese": "釋迦",
+        "type": "Fruit",
+        "status": 0
+      },
+      {
+        "japanese": "かき",
+        "chinese": "柿子",
+        "type": "Fruit",
+        "status": 0
+      },
+      {
+        "japanese": "グアバ",
+        "chinese": "番石榴",
+        "type": "Fruit",
+        "status": 0
+      },
+      {
+        "japanese": "ココナツ",
+        "chinese": "椰子",
+        "type": "Fruit",
+        "status": 0
+      },
+      {
+        "japanese": "アボカド",
+        "chinese": "酪梨",
+        "type": "Fruit",
+        "status": 0
+      },
+      {
+        "japanese": "パッションフルーツ",
+        "chinese": "百香果",
+        "type": "Fruit",
+        "status": 0
+      },
+      {
+        "japanese": "なし",
+        "chinese": "梨子",
+        "type": "Fruit",
+        "status": 0
+      },
+      {
+        "japanese": "ブルーベリー",
+        "chinese": "藍莓",
+        "type": "Fruit",
+        "status": 0
+      },
+      {
+        "japanese": "ざくろ",
+        "chinese": "紅番石榴",
+        "type": "Fruit",
+        "status": 0
+      }
+    ],
+    "Meat1": [],
+    "Vegetable1": [],
+    "Vegetable2": []
+  }
+}

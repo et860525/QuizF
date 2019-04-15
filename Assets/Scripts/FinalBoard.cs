@@ -189,10 +189,10 @@ public class FinalBoard : MonoBehaviour
 
                 switch (levelType)
                 {
-                    case "Furniture":
-                        for (int i = 0; i < theWords.Furniture.Count; i++)
+                    case "Cuisime":
+                        for (int i = 0; i < theWords.Cuisime.Count; i++)
                         {
-                            getJsonList.Add(theWords.Furniture[i]);
+                            getJsonList.Add(theWords.Cuisime[i]);
                             //Debug.Log(getJsonList.Count);
                             Debug.Log(getJsonList[i].chinese);
                         }
@@ -230,7 +230,7 @@ public class FinalBoard : MonoBehaviour
     void LoadImages()
     {
         // For game run (DELETE DATA Every run).
-        object[] loadedIcons = Resources.LoadAll("Animal/" + explorerName, typeof(Sprite));
+        object[] loadedIcons = Resources.LoadAll(levelType + "/" + explorerName, typeof(Sprite));
         //this
         for (int x = 0; x < loadedIcons.Length; x++)
         {
@@ -252,16 +252,23 @@ public class FinalBoard : MonoBehaviour
     {
         buttonClik.Play();
         switch (levelType)
-        {
-            case "Food":
-                SceneManager.LoadScene("FoodSelectMenu");
-                break;
-            case "Furniture":
-                SceneManager.LoadScene("FurnitureSelectMenu");
-                break;
+        {          
             case "Animal":
                 SceneManager.LoadScene("AnimalSelectMenu");
                 break;
+            case "Cuisime":
+                SceneManager.LoadScene("CuisimeSelectMenu");
+                break;
+            case "Fruit":
+                SceneManager.LoadScene("FruitSelectMenu");
+                break;
+            case "Meat":
+                SceneManager.LoadScene("MeatSelectMenu");
+                break;
+            case "Vegetable":
+                SceneManager.LoadScene("VegetableSelectMenu");
+                break;
+
         }
     }
 
