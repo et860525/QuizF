@@ -1,0 +1,98 @@
+{
+  "WordData": {
+    "date": "5/04/2008",
+    "time": "3:20 PM",
+    "Plant1": [
+      {
+        "japanese": "はな",
+        "chinese": "花",
+        "type": "Plant",
+        "status": 0
+      },
+      {
+        "japanese": "くさ",
+        "chinese": "草",
+        "type": "Plant",
+        "status": 0
+      },
+      {
+        "japanese": "き",
+        "chinese": "樹木",
+        "type": "Plant",
+        "status": 0
+      },
+      {
+        "japanese": "うみ",
+        "chinese": "海",
+        "type": "Plant",
+        "status": 0
+      },
+      {
+        "japanese": "こうげん",
+        "chinese": "高原",
+        "type": "Plant",
+        "status": 0
+      },
+      {
+        "japanese": "たき",
+        "chinese": "瀑布",
+        "type": "Plant",
+        "status": 0
+      },
+      {
+        "japanese": "さばく",
+        "chinese": "沙漠",
+        "type": "Plant",
+        "status": 0
+      },
+      {
+        "japanese": "もり",
+        "chinese": "森林",
+        "type": "Plant",
+        "status": 0
+      },
+      {
+        "japanese": "へいげん",
+        "chinese": "平原",
+        "type": "Plant",
+        "status": 0
+      },
+      {
+        "japanese": "かざん",
+        "chinese": "火山",
+        "type": "Plant",
+        "status": 0
+      },
+      {
+        "japanese": "やま",
+        "chinese": "山",
+        "type": "Plant",
+        "status": 0
+      },
+      {
+        "japanese": "みね",
+        "chinese": "山峰",
+        "type": "Plant",
+        "status": 0
+      },
+      {
+        "japanese": "たに",
+        "chinese": "山谷",
+        "type": "Plant",
+        "status": 0
+      },
+      {
+        "japanese": "ぼんち",
+        "chinese": "盆地",
+        "type": "Plant",
+        "status": 0
+      },
+      {
+        "japanese": "みずうみ",
+        "chinese": "湖",
+        "type": "Plant",
+        "status": 0
+      }
+    ]
+  }
+}

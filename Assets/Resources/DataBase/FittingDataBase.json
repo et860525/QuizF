@@ -1,0 +1,98 @@
+{
+  "WordData": {
+    "date": "5/04/2008",
+    "time": "3:20 PM",
+    "Fitting1": [
+      {
+        "japanese": "ターバン",
+        "chinese": "髮帶",
+        "type": "Fitting",
+        "status": 0
+      },
+      {
+        "japanese": "ぼうし",
+        "chinese": "帽子",
+        "type": "Fitting",
+        "status": 0
+      },
+      {
+        "japanese": "イヤリング",
+        "chinese": "耳環",
+        "type": "Fitting",
+        "status": 0
+      },
+      {
+        "japanese": "チョーカー",
+        "chinese": "頸圈",
+        "type": "Fitting",
+        "status": 0
+      },
+      {
+        "japanese": "ネックレス",
+        "chinese": "項鍊",
+        "type": "Fitting",
+        "status": 0
+      },
+      {
+        "japanese": "ブレスレット",
+        "chinese": "手鍊",
+        "type": "Fitting",
+        "status": 0
+      },
+      {
+        "japanese": "パールネックレス",
+        "chinese": "珍珠項鍊",
+        "type": "Fitting",
+        "status": 0
+      },
+      {
+        "japanese": "ブローチ",
+        "chinese": "胸針",
+        "type": "Fitting",
+        "status": 0
+      },
+      {
+        "japanese": "かばん",
+        "chinese": "包包",
+        "type": "Fitting",
+        "status": 0
+      },
+      {
+        "japanese": "うでどけい",
+        "chinese": "手錶",
+        "type": "Fitting",
+        "status": 0
+      },
+      {
+        "japanese": "サングラス",
+        "chinese": "墨鏡",
+        "type": "Fitting",
+        "status": 0
+      },
+      {
+        "japanese": "マフラー",
+        "chinese": "圍巾",
+        "type": "Fitting",
+        "status": 0
+      },
+      {
+        "japanese": "ネクタイ",
+        "chinese": "領帶",
+        "type": "Fitting",
+        "status": 0
+      },
+      {
+        "japanese": "てぶくろ",
+        "chinese": "手套",
+        "type": "Fitting",
+        "status": 0
+      },
+      {
+        "japanese": "ベルト",
+        "chinese": "皮帶",
+        "type": "Fitting",
+        "status": 0
+      }
+    ]
+  }
+}

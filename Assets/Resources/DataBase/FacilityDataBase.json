@@ -1,0 +1,98 @@
+{
+  "WordData": {
+    "date": "5/04/2008",
+    "time": "3:20 PM",
+    "Facility1": [
+      {
+        "japanese": "ローラーコースター",
+        "chinese": "雲霄飛車",
+        "type": "Facility",
+        "status": 0
+      },
+      {
+        "japanese": "かんらんしゃ",
+        "chinese": "摩天輪",
+        "type": "Facility",
+        "status": 0
+      },
+      {
+        "japanese": "グレートポセイドン",
+        "chinese": "海盜船",
+        "type": "Facility",
+        "status": 0
+      },
+      {
+        "japanese": "ドロップタワー",
+        "chinese": "自由落體",
+        "type": "Facility",
+        "status": 0
+      },
+      {
+        "japanese": "ロープウェイ",
+        "chinese": "纜車",
+        "type": "Facility",
+        "status": 0
+      },
+      {
+        "japanese": "ウォータースライダー",
+        "chinese": "滑水道",
+        "type": "Facility",
+        "status": 0
+      },
+      {
+        "japanese": "きゅうりゅすべり",
+        "chinese": "原木滑行",
+        "type": "Facility",
+        "status": 0
+      },
+      {
+        "japanese": "げきりゅうくだり",
+        "chinese": "急流泛舟",
+        "type": "Facility",
+        "status": 0
+      },
+      {
+        "japanese": "メリーゴーラウンド",
+        "chinese": "旋轉木馬",
+        "type": "Facility",
+        "status": 0
+      },
+      {
+        "japanese": "コーヒーカップ",
+        "chinese": "旋轉咖啡杯",
+        "type": "Facility",
+        "status": 0
+      },
+      {
+        "japanese": "レーシングカート",
+        "chinese": "卡丁車",
+        "type": "Facility",
+        "status": 0
+      },
+      {
+        "japanese": "ブランコ",
+        "chinese": "鞦韆",
+        "type": "Facility",
+        "status": 0
+      },
+      {
+        "japanese": "すべりだい",
+        "chinese": "溜滑梯",
+        "type": "Facility",
+        "status": 0
+      },
+      {
+        "japanese": "おばけやしき",
+        "chinese": "鬼屋",
+        "type": "Facility",
+        "status": 0
+      },
+      {
+        "japanese": "アトラクション",
+        "chinese": "遊樂設施",
+        "type": "Facility",
+        "status": 0
+      }
+    ]
+  }
+}

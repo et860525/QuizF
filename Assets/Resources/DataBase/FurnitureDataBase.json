@@ -1,0 +1,190 @@
+{
+  "WordData": {
+    "date": "5/04/2008",
+    "time": "3:20 PM",
+    "Furniture1": [
+      {
+        "japanese": "げんかん",
+        "chinese": "玄關",
+        "type": "Furniture",
+        "status": 0
+      },
+      {
+        "japanese": "リビングルーム",
+        "chinese": "客廳",
+        "type": "Furniture",
+        "status": 0
+      },
+      {
+        "japanese": "だいどころ",
+        "chinese": "廚房",
+        "type": "Furniture",
+        "status": 0
+      },
+      {
+        "japanese": "ベランダ",
+        "chinese": "陽台",
+        "type": "Furniture",
+        "status": 0
+      },
+      {
+        "japanese": "しんしつ",
+        "chinese": "臥房",
+        "type": "Furniture",
+        "status": 0
+      },
+      {
+        "japanese": "よくしつ",
+        "chinese": "浴室",
+        "type": "Furniture",
+        "status": 0
+      },
+      {
+        "japanese": "へや",
+        "chinese": "房間",
+        "type": "Furniture",
+        "status": 0
+      },
+      {
+        "japanese": "ロフト",
+        "chinese": "閣樓",
+        "type": "Furniture",
+        "status": 0
+      },
+      {
+        "japanese": "ソファー",
+        "chinese": "沙發",
+        "type": "Furniture",
+        "status": 0
+      },
+      {
+        "japanese": "いす",
+        "chinese": "椅子",
+        "type": "Furniture",
+        "status": 0
+      },
+      {
+        "japanese": "テーブル",
+        "chinese": "餐桌",
+        "type": "Furniture",
+        "status": 0
+      },
+      {
+        "japanese": "ベッド",
+        "chinese": "床",
+        "type": "Furniture",
+        "status": 0
+      },
+      {
+        "japanese": "まくら",
+        "chinese": "枕頭",
+        "type": "Furniture",
+        "status": 0
+      },
+      {
+        "japanese": "ふとん",
+        "chinese": "棉被",
+        "type": "Furniture",
+        "status": 0
+      },
+      {
+        "japanese": "べんざ",
+        "chinese": "馬桶",
+        "type": "Furniture",
+        "status": 0
+      }
+    ],
+    "Furniture2": [
+      {
+        "japanese": "まど",
+        "chinese": "窗戶",
+        "type": "Furniture",
+        "status": 0
+      },
+      {
+        "japanese": "ゆか",
+        "chinese": "地板",
+        "type": "Furniture",
+        "status": 0
+      },
+      {
+        "japanese": "でんきスタンド",
+        "chinese": "檯燈",
+        "type": "Furniture",
+        "status": 0
+      },
+      {
+        "japanese": "つくえ",
+        "chinese": "書桌",
+        "type": "Furniture",
+        "status": 0
+      },
+      {
+        "japanese": "ひきだし",
+        "chinese": "抽屜",
+        "type": "Furniture",
+        "status": 0
+      },
+      {
+        "japanese": "ゴミばこ",
+        "chinese": "垃圾桶",
+        "type": "Furniture",
+        "status": 0
+      },
+      {
+        "japanese": "せんぷうき",
+        "chinese": "電風扇",
+        "type": "Furniture",
+        "status": 0
+      },
+      {
+        "japanese": "でんき",
+        "chinese": "燈",
+        "type": "Furniture",
+        "status": 0
+      },
+      {
+        "japanese": "こたつ",
+        "chinese": "暖桌",
+        "type": "Furniture",
+        "status": 0
+      },
+      {
+        "japanese": "おしこみ",
+        "chinese": "壁櫥",
+        "type": "Furniture",
+        "status": 0
+      },
+      {
+        "japanese": "たたみ",
+        "chinese": "榻榻米",
+        "type": "Furniture",
+        "status": 0
+      },
+      {
+        "japanese": "ドア",
+        "chinese": "門",
+        "type": "Furniture",
+        "status": 0
+      },
+      {
+        "japanese": "シューズボックス",
+        "chinese": "鞋櫃",
+        "type": "Furniture",
+        "status": 0
+      },
+      {
+        "japanese": "バスタブ",
+        "chinese": "浴缸",
+        "type": "Furniture",
+        "status": 0
+      },
+      {
+        "japanese": "れいぞうこ",
+        "chinese": "冰箱",
+        "type": "Furniture",
+        "status": 0
+      }
+    ]
+  }
+}

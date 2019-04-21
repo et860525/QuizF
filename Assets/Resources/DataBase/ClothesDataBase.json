@@ -1,0 +1,98 @@
+{
+  "WordData": {
+    "date": "5/04/2008",
+    "time": "3:20 PM",
+    "Clothes1": [
+      {
+        "japanese": "シャツ",
+        "chinese": "襯衫",
+        "type": "Clothes",
+        "status": 0
+      },
+      {
+        "japanese": "スーツ",
+        "chinese": "西裝",
+        "type": "Clothes",
+        "status": 0
+      },
+      {
+        "japanese": "ティーシャツ",
+        "chinese": "T恤",
+        "type": "Clothes",
+        "status": 0
+      },
+      {
+        "japanese": "ジーンズ",
+        "chinese": "牛仔褲",
+        "type": "Clothes",
+        "status": 0
+      },
+      {
+        "japanese": "スポーツウェア",
+        "chinese": "運動服",
+        "type": "Clothes",
+        "status": 0
+      },
+      {
+        "japanese": "ジャケット",
+        "chinese": "夾克",
+        "type": "Clothes",
+        "status": 0
+      },
+      {
+        "japanese": "ズボン",
+        "chinese": "褲子",
+        "type": "Clothes",
+        "status": 0
+      },
+      {
+        "japanese": "したぎ",
+        "chinese": "內衣",
+        "type": "Clothes",
+        "status": 0
+      },
+      {
+        "japanese": "ワンピース",
+        "chinese": "連身裙",
+        "type": "Clothes",
+        "status": 0
+      },
+      {
+        "japanese": "チャイナドレス",
+        "chinese": "旗袍",
+        "type": "Clothes",
+        "status": 0
+      },
+      {
+        "japanese": "セーター",
+        "chinese": "毛衣",
+        "type": "Clothes",
+        "status": 0
+      },
+      {
+        "japanese": "スカート",
+        "chinese": "裙子",
+        "type": "Clothes",
+        "status": 0
+      },
+      {
+        "japanese": "みずぎ",
+        "chinese": "泳衣",
+        "type": "Clothes",
+        "status": 0
+      },
+      {
+        "japanese": "きもの",
+        "chinese": "和服",
+        "type": "Clothes",
+        "status": 0
+      },
+      {
+        "japanese": "コート",
+        "chinese": "大衣",
+        "type": "Clothes",
+        "status": 0
+      }
+    ]
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "WordData": {
+    "date": "5/04/2008",
+    "time": "3:20 PM",
+    "Subject1": [
+      {
+        "japanese": "ちゅうごくご",
+        "chinese": "中文",
+        "type": "Subject",
+        "status": 0
+      },
+      {
+        "japanese": "えいご",
+        "chinese": "英文",
+        "type": "Subject",
+        "status": 0
+      },
+      {
+        "japanese": "にほんご",
+        "chinese": "日文",
+        "type": "Subject",
+        "status": 0
+      },
+      {
+        "japanese": "すうがく",
+        "chinese": "數學",
+        "type": "Subject",
+        "status": 0
+      },
+      {
+        "japanese": "ちり",
+        "chinese": "地理",
+        "type": "Subject",
+        "status": 0
+      },
+      {
+        "japanese": "びじゅつ",
+        "chinese": "美術",
+        "type": "Subject",
+        "status": 0
+      },
+      {
+        "japanese": "れきし",
+        "chinese": "歷史",
+        "type": "Subject",
+        "status": 0
+      },
+      {
+        "japanese": "ぶつり",
+        "chinese": "物理",
+        "type": "Subject",
+        "status": 0
+      },
+      {
+        "japanese": "かがく",
+        "chinese": "化學",
+        "type": "Subject",
+        "status": 0
+      },
+      {
+        "japanese": "せいぶつ",
+        "chinese": "生物",
+        "type": "Subject",
+        "status": 0
+      },
+      {
+        "japanese": "たいいく",
+        "chinese": "體育",
+        "type": "Subject",
+        "status": 0
+      },
+      {
+        "japanese": "おんがく",
+        "chinese": "音樂",
+        "type": "Subject",
+        "status": 0
+      },
+      {
+        "japanese": "かいわ",
+        "chinese": "會話",
+        "type": "Subject",
+        "status": 0
+      },
+      {
+        "japanese": "さくぶん",
+        "chinese": "作文",
+        "type": "Subject",
+        "status": 0
+      },
+      {
+        "japanese": "ぶんぽう",
+        "chinese": "文法",
+        "type": "Subject",
+        "status": 0
+      }
+    ]
+  }
+}

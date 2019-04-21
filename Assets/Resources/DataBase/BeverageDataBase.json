@@ -1,0 +1,98 @@
+{
+  "WordData": {
+    "date": "5/04/2008",
+    "time": "3:20 PM",
+    "Beverage1": [
+      {
+        "japanese": "パールミルクティー",
+        "chinese": "珍珠奶茶",
+        "type": "Beverage",
+        "status": 0
+      },
+      {
+        "japanese": "ミルクティー",
+        "chinese": "奶茶",
+        "type": "Beverage",
+        "status": 0
+      },
+      {
+        "japanese": "こうちゃ",
+        "chinese": "紅茶",
+        "type": "Beverage",
+        "status": 0
+      },
+      {
+        "japanese": "りょくちゃ",
+        "chinese": "綠茶",
+        "type": "Beverage",
+        "status": 0
+      },
+      {
+        "japanese": "まっちゃ",
+        "chinese": "抹茶",
+        "type": "Beverage",
+        "status": 0
+      },
+      {
+        "japanese": "しょうちゅう",
+        "chinese": "燒酒",
+        "type": "Beverage",
+        "status": 0
+      },
+      {
+        "japanese": "ビール",
+        "chinese": "啤酒",
+        "type": "Beverage",
+        "status": 0
+      },
+      {
+        "japanese": "みず",
+        "chinese": "水",
+        "type": "Beverage",
+        "status": 0
+      },
+      {
+        "japanese": "レモネード",
+        "chinese": "檸檬水",
+        "type": "Beverage",
+        "status": 0
+      },
+      {
+        "japanese": "コーヒー",
+        "chinese": "咖啡",
+        "type": "Beverage",
+        "status": 0
+      },
+      {
+        "japanese": "ジュース",
+        "chinese": "果汁",
+        "type": "Beverage",
+        "status": 0
+      },
+      {
+        "japanese": "ソーダ",
+        "chinese": "汽水",
+        "type": "Beverage",
+        "status": 0
+      },
+      {
+        "japanese": "ミルク",
+        "chinese": "牛奶",
+        "type": "Beverage",
+        "status": 0
+      },
+      {
+        "japanese": "ココア",
+        "chinese": "可可亞",
+        "type": "Beverage",
+        "status": 0
+      },
+      {
+        "japanese": "ミルクシェーク",
+        "chinese": "奶昔",
+        "type": "Beverage",
+        "status": 0
+      }
+    ]
+  }
+}

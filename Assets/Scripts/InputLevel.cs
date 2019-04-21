@@ -14,6 +14,8 @@ public class InputLevel : MonoBehaviour
     public List<string> tempListString = new List<string>();
     private OnlyStringData loadData = new OnlyStringData();
 
+    public AudioSource audioPlay = new AudioSource();
+
     private string levelType;
     private string levelName;
     private string fileName = "OnlyString.json";
@@ -43,7 +45,7 @@ public class InputLevel : MonoBehaviour
 
     private void Update()
     {
-        if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
+        if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer || Application.platform == RuntimePlatform.WindowsPlayer)
         {
             // Check if Back was pressed this frame
             if (Input.GetKeyDown(KeyCode.Escape))
@@ -279,7 +281,559 @@ public class InputLevel : MonoBehaviour
                     }
                 }
                 break;
-        }   
+
+            //************************MakeUp********************************
+            case "MakeUp1":
+                if (loadData.MakeUp1_Temp.Count != 0)
+                {
+                    for (int i = 0; i < loadData.MakeUp1_Temp.Count; i++)
+                    {
+                        tempListString.Add(loadData.MakeUp1_Temp[i]);
+                        //Debug.Log(tempListString[i]);
+                    }
+                }
+                else
+                {
+                    for (int i = 0; i < answerInput.Count; i++)
+                    {
+                        tempListString.Add("");
+                    }
+                }
+                break;
+            //************************Position********************************
+            case "Position1":
+                if (loadData.Position1_Temp.Count != 0)
+                {
+                    for (int i = 0; i < loadData.Position1_Temp.Count; i++)
+                    {
+                        tempListString.Add(loadData.Position1_Temp[i]);
+                        //Debug.Log(tempListString[i]);
+                    }
+                }
+                else
+                {
+                    for (int i = 0; i < answerInput.Count; i++)
+                    {
+                        tempListString.Add("");
+                    }
+                }
+                break;
+            case "Position2":
+                if (loadData.Position1_Temp.Count != 0)
+                {
+                    for (int i = 0; i < loadData.Position2_Temp.Count; i++)
+                    {
+                        tempListString.Add(loadData.Position2_Temp[i]);
+                        //Debug.Log(tempListString[i]);
+                    }
+                }
+                else
+                {
+                    for (int i = 0; i < answerInput.Count; i++)
+                    {
+                        tempListString.Add("");
+                    }
+                }
+                break;
+            case "Position3":
+                if (loadData.Position3_Temp.Count != 0)
+                {
+                    for (int i = 0; i < loadData.Position3_Temp.Count; i++)
+                    {
+                        tempListString.Add(loadData.Position3_Temp[i]);
+                        //Debug.Log(tempListString[i]);
+                    }
+                }
+                else
+                {
+                    for (int i = 0; i < answerInput.Count; i++)
+                    {
+                        tempListString.Add("");
+                    }
+                }
+                break;
+            //************************EleProducts********************************
+            case "EleProducts1":
+                if (loadData.EleProducts1_Temp.Count != 0)
+                {
+                    for (int i = 0; i < loadData.EleProducts1_Temp.Count; i++)
+                    {
+                        tempListString.Add(loadData.EleProducts1_Temp[i]);
+                        //Debug.Log(tempListString[i]);
+                    }
+                }
+                else
+                {
+                    for (int i = 0; i < answerInput.Count; i++)
+                    {
+                        tempListString.Add("");
+                    }
+                }
+                break;
+            //************************Family********************************
+            case "Family1":
+                if (loadData.Family1_Temp.Count != 0)
+                {
+                    for (int i = 0; i < loadData.Family1_Temp.Count; i++)
+                    {
+                        tempListString.Add(loadData.Family1_Temp[i]);
+                        //Debug.Log(tempListString[i]);
+                    }
+                }
+                else
+                {
+                    for (int i = 0; i < answerInput.Count; i++)
+                    {
+                        tempListString.Add("");
+                    }
+                }
+                break;
+            //************************Transport********************************
+            case "Transport1":
+                if (loadData.Transport1_Temp.Count != 0)
+                {
+                    for (int i = 0; i < loadData.Transport1_Temp.Count; i++)
+                    {
+                        tempListString.Add(loadData.Transport1_Temp[i]);
+                        //Debug.Log(tempListString[i]);
+                    }
+                }
+                else
+                {
+                    for (int i = 0; i < answerInput.Count; i++)
+                    {
+                        tempListString.Add("");
+                    }
+                }
+                break;
+            //************************Festival********************************
+            case "Festival1":
+                if (loadData.Festival1_Temp.Count != 0)
+                {
+                    for (int i = 0; i < loadData.Festival1_Temp.Count; i++)
+                    {
+                        tempListString.Add(loadData.Festival1_Temp[i]);
+                        //Debug.Log(tempListString[i]);
+                    }
+                }
+                else
+                {
+                    for (int i = 0; i < answerInput.Count; i++)
+                    {
+                        tempListString.Add("");
+                    }
+                }
+                break;
+            //************************Subject********************************
+            case "Subject1":
+                if (loadData.Subject1_Temp.Count != 0)
+                {
+                    for (int i = 0; i < loadData.Subject1_Temp.Count; i++)
+                    {
+                        tempListString.Add(loadData.Subject1_Temp[i]);
+                        //Debug.Log(tempListString[i]);
+                    }
+                }
+                else
+                {
+                    for (int i = 0; i < answerInput.Count; i++)
+                    {
+                        tempListString.Add("");
+                    }
+                }
+                break;
+            //************************CuisimeStyle********************************
+            case "CuisimeStyle1":
+                if (loadData.CuisimeStyle1_Temp.Count != 0)
+                {
+                    for (int i = 0; i < loadData.CuisimeStyle1_Temp.Count; i++)
+                    {
+                        tempListString.Add(loadData.CuisimeStyle1_Temp[i]);
+                        //Debug.Log(tempListString[i]);
+                    }
+                }
+                else
+                {
+                    for (int i = 0; i < answerInput.Count; i++)
+                    {
+                        tempListString.Add("");
+                    }
+                }
+                break;
+            //************************Hair********************************
+            case "Hair1":
+                if (loadData.Hair1_Temp.Count != 0)
+                {
+                    for (int i = 0; i < loadData.Hair1_Temp.Count; i++)
+                    {
+                        tempListString.Add(loadData.Hair1_Temp[i]);
+                        //Debug.Log(tempListString[i]);
+                    }
+                }
+                else
+                {
+                    for (int i = 0; i < answerInput.Count; i++)
+                    {
+                        tempListString.Add("");
+                    }
+                }
+                break;
+            //************************Fitting********************************
+            case "Fitting1":
+                if (loadData.Fitting1_Temp.Count != 0)
+                {
+                    for (int i = 0; i < loadData.Fitting1_Temp.Count; i++)
+                    {
+                        tempListString.Add(loadData.Fitting1_Temp[i]);
+                        //Debug.Log(tempListString[i]);
+                    }
+                }
+                else
+                {
+                    for (int i = 0; i < answerInput.Count; i++)
+                    {
+                        tempListString.Add("");
+                    }
+                }
+                break;
+            //************************Weather********************************
+            case "Weather1":
+                if (loadData.Weather1_Temp.Count != 0)
+                {
+                    for (int i = 0; i < loadData.Weather1_Temp.Count; i++)
+                    {
+                        tempListString.Add(loadData.Weather1_Temp[i]);
+                        //Debug.Log(tempListString[i]);
+                    }
+                }
+                else
+                {
+                    for (int i = 0; i < answerInput.Count; i++)
+                    {
+                        tempListString.Add("");
+                    }
+                }
+                break;
+            //************************Stationery********************************
+            case "Stationery1":
+                if (loadData.Stationery1_Temp.Count != 0)
+                {
+                    for (int i = 0; i < loadData.Stationery1_Temp.Count; i++)
+                    {
+                        tempListString.Add(loadData.Stationery1_Temp[i]);
+                        //Debug.Log(tempListString[i]);
+                    }
+                }
+                else
+                {
+                    for (int i = 0; i < answerInput.Count; i++)
+                    {
+                        tempListString.Add("");
+                    }
+                }
+                break;
+            //************************Clothes********************************
+            case "Clothes1":
+                if (loadData.Clothes1_Temp.Count != 0)
+                {
+                    for (int i = 0; i < loadData.Clothes1_Temp.Count; i++)
+                    {
+                        tempListString.Add(loadData.Clothes1_Temp[i]);
+                        //Debug.Log(tempListString[i]);
+                    }
+                }
+                else
+                {
+                    for (int i = 0; i < answerInput.Count; i++)
+                    {
+                        tempListString.Add("");
+                    }
+                }
+                break;
+            //************************Shoes********************************
+            case "Shoes1":
+                if (loadData.Shoes1_Temp.Count != 0)
+                {
+                    for (int i = 0; i < loadData.Shoes1_Temp.Count; i++)
+                    {
+                        tempListString.Add(loadData.Shoes1_Temp[i]);
+                        //Debug.Log(tempListString[i]);
+                    }
+                }
+                else
+                {
+                    for (int i = 0; i < answerInput.Count; i++)
+                    {
+                        tempListString.Add("");
+                    }
+                }
+                break;
+            //************************Colors********************************
+            case "Colors1":
+                if (loadData.Colors1_Temp.Count != 0)
+                {
+                    for (int i = 0; i < loadData.Colors1_Temp.Count; i++)
+                    {
+                        tempListString.Add(loadData.Colors1_Temp[i]);
+                        //Debug.Log(tempListString[i]);
+                    }
+                }
+                else
+                {
+                    for (int i = 0; i < answerInput.Count; i++)
+                    {
+                        tempListString.Add("");
+                    }
+                }
+                break;
+            //************************Disaster********************************
+            case "Disaster1":
+                if (loadData.Disaster1_Temp.Count != 0)
+                {
+                    for (int i = 0; i < loadData.Disaster1_Temp.Count; i++)
+                    {
+                        tempListString.Add(loadData.Disaster1_Temp[i]);
+                        //Debug.Log(tempListString[i]);
+                    }
+                }
+                else
+                {
+                    for (int i = 0; i < answerInput.Count; i++)
+                    {
+                        tempListString.Add("");
+                    }
+                }
+                break;
+            //************************Beverage********************************
+            case "Beverage1":
+                if (loadData.Beverage1_Temp.Count != 0)
+                {
+                    for (int i = 0; i < loadData.Beverage1_Temp.Count; i++)
+                    {
+                        tempListString.Add(loadData.Beverage1_Temp[i]);
+                        //Debug.Log(tempListString[i]);
+                    }
+                }
+                else
+                {
+                    for (int i = 0; i < answerInput.Count; i++)
+                    {
+                        tempListString.Add("");
+                    }
+                }
+                break;
+            //************************Facility********************************
+            case "Facility1":
+                if (loadData.Facility1_Temp.Count != 0)
+                {
+                    for (int i = 0; i < loadData.Facility1_Temp.Count; i++)
+                    {
+                        tempListString.Add(loadData.Facility1_Temp[i]);
+                        //Debug.Log(tempListString[i]);
+                    }
+                }
+                else
+                {
+                    for (int i = 0; i < answerInput.Count; i++)
+                    {
+                        tempListString.Add("");
+                    }
+                }
+                break;
+            //************************Plant********************************
+            case "Plant1":
+                if (loadData.Plant1_Temp.Count != 0)
+                {
+                    for (int i = 0; i < loadData.Plant1_Temp.Count; i++)
+                    {
+                        tempListString.Add(loadData.Plant1_Temp[i]);
+                        //Debug.Log(tempListString[i]);
+                    }
+                }
+                else
+                {
+                    for (int i = 0; i < answerInput.Count; i++)
+                    {
+                        tempListString.Add("");
+                    }
+                }
+                break;
+            //************************Career********************************
+            case "Career1":
+                if (loadData.Career1_Temp.Count != 0)
+                {
+                    for (int i = 0; i < loadData.Career1_Temp.Count; i++)
+                    {
+                        tempListString.Add(loadData.Career1_Temp[i]);
+                        //Debug.Log(tempListString[i]);
+                    }
+                }
+                else
+                {
+                    for (int i = 0; i < answerInput.Count; i++)
+                    {
+                        tempListString.Add("");
+                    }
+                }
+                break;
+            case "Career2":
+                if (loadData.Career2_Temp.Count != 0)
+                {
+                    for (int i = 0; i < loadData.Career2_Temp.Count; i++)
+                    {
+                        tempListString.Add(loadData.Career2_Temp[i]);
+                        //Debug.Log(tempListString[i]);
+                    }
+                }
+                else
+                {
+                    for (int i = 0; i < answerInput.Count; i++)
+                    {
+                        tempListString.Add("");
+                    }
+                }
+                break;
+            //************************Body********************************
+            case "Body1":
+                if (loadData.Body1_Temp.Count != 0)
+                {
+                    for (int i = 0; i < loadData.Body1_Temp.Count; i++)
+                    {
+                        tempListString.Add(loadData.Body1_Temp[i]);
+                        //Debug.Log(tempListString[i]);
+                    }
+                }
+                else
+                {
+                    for (int i = 0; i < answerInput.Count; i++)
+                    {
+                        tempListString.Add("");
+                    }
+                }
+                break;
+            case "Body2":
+                if (loadData.Body2_Temp.Count != 0)
+                {
+                    for (int i = 0; i < loadData.Body2_Temp.Count; i++)
+                    {
+                        tempListString.Add(loadData.Body2_Temp[i]);
+                        //Debug.Log(tempListString[i]);
+                    }
+                }
+                else
+                {
+                    for (int i = 0; i < answerInput.Count; i++)
+                    {
+                        tempListString.Add("");
+                    }
+                }
+                break;
+            //************************Sport********************************
+            case "Sport1":
+                if (loadData.Sport1_Temp.Count != 0)
+                {
+                    for (int i = 0; i < loadData.Sport1_Temp.Count; i++)
+                    {
+                        tempListString.Add(loadData.Sport1_Temp[i]);
+                        //Debug.Log(tempListString[i]);
+                    }
+                }
+                else
+                {
+                    for (int i = 0; i < answerInput.Count; i++)
+                    {
+                        tempListString.Add("");
+                    }
+                }
+                break;
+            case "Sport2":
+                if (loadData.Sport2_Temp.Count != 0)
+                {
+                    for (int i = 0; i < loadData.Sport2_Temp.Count; i++)
+                    {
+                        tempListString.Add(loadData.Sport2_Temp[i]);
+                        //Debug.Log(tempListString[i]);
+                    }
+                }
+                else
+                {
+                    for (int i = 0; i < answerInput.Count; i++)
+                    {
+                        tempListString.Add("");
+                    }
+                }
+                break;
+            //************************Contry********************************
+            case "Contry1":
+                if (loadData.Contry1_Temp.Count != 0)
+                {
+                    for (int i = 0; i < loadData.Contry1_Temp.Count; i++)
+                    {
+                        tempListString.Add(loadData.Contry1_Temp[i]);
+                        //Debug.Log(tempListString[i]);
+                    }
+                }
+                else
+                {
+                    for (int i = 0; i < answerInput.Count; i++)
+                    {
+                        tempListString.Add("");
+                    }
+                }
+                break;
+            case "Contry2":
+                if (loadData.Contry2_Temp.Count != 0)
+                {
+                    for (int i = 0; i < loadData.Contry2_Temp.Count; i++)
+                    {
+                        tempListString.Add(loadData.Contry2_Temp[i]);
+                        //Debug.Log(tempListString[i]);
+                    }
+                }
+                else
+                {
+                    for (int i = 0; i < answerInput.Count; i++)
+                    {
+                        tempListString.Add("");
+                    }
+                }
+                break;
+            //************************Furniture********************************
+            case "Furniture1":
+                if (loadData.Furniture1_Temp.Count != 0)
+                {
+                    for (int i = 0; i < loadData.Furniture1_Temp.Count; i++)
+                    {
+                        tempListString.Add(loadData.Furniture1_Temp[i]);
+                        //Debug.Log(tempListString[i]);
+                    }
+                }
+                else
+                {
+                    for (int i = 0; i < answerInput.Count; i++)
+                    {
+                        tempListString.Add("");
+                    }
+                }
+                break;
+            case "Furniture2":
+                if (loadData.Furniture2_Temp.Count != 0)
+                {
+                    for (int i = 0; i < loadData.Furniture2_Temp.Count; i++)
+                    {
+                        tempListString.Add(loadData.Furniture2_Temp[i]);
+                        //Debug.Log(tempListString[i]);
+                    }
+                }
+                else
+                {
+                    for (int i = 0; i < answerInput.Count; i++)
+                    {
+                        tempListString.Add("");
+                    }
+                }
+                break;
+        }
         for ( int i = 0; i < answerInput.Count; i++)
         {
             if (tempListString[i] != null)
@@ -319,7 +873,6 @@ public class InputLevel : MonoBehaviour
                     loadData.Animal3_Temp.Add(tempListString[i]);
                 }
                 break;
-
             //************************Cuisime********************************
             case "Cuisime1":
                 loadData.Cuisime1_Temp.Clear();
@@ -376,6 +929,247 @@ public class InputLevel : MonoBehaviour
                     loadData.Vegetable2_Temp.Add(tempListString[i]);
                 }
                 break;
+            //************************MakeUp********************************
+            case "MakeUp1":
+                loadData.MakeUp1_Temp.Clear();
+                for (int i = 0; i < answerInput.Count; i++)
+                {
+                    loadData.MakeUp1_Temp.Add(tempListString[i]);
+                }
+                break;
+            //************************Position********************************
+            case "Position1":
+                loadData.Position1_Temp.Clear();
+                for (int i = 0; i < answerInput.Count; i++)
+                {
+                    loadData.Position1_Temp.Add(tempListString[i]);
+                }
+                break;
+            case "Position2":
+                loadData.Position2_Temp.Clear();
+                for (int i = 0; i < answerInput.Count; i++)
+                {
+                    loadData.Position2_Temp.Add(tempListString[i]);
+                }
+                break;
+            case "Position3":
+                loadData.Position3_Temp.Clear();
+                for (int i = 0; i < answerInput.Count; i++)
+                {
+                    loadData.Position3_Temp.Add(tempListString[i]);
+                }
+                break;
+            //************************EleProducts********************************
+            case "EleProducts1":
+                loadData.EleProducts1_Temp.Clear();
+                for (int i = 0; i < answerInput.Count; i++)
+                {
+                    loadData.EleProducts1_Temp.Add(tempListString[i]);
+                }
+                break;
+            //************************Family********************************
+            case "Family1":
+                loadData.Family1_Temp.Clear();
+                for (int i = 0; i < answerInput.Count; i++)
+                {
+                    loadData.Family1_Temp.Add(tempListString[i]);
+                }
+                break;
+            //************************Transport********************************
+            case "Transport1":
+                loadData.Transport1_Temp.Clear();
+                for (int i = 0; i < answerInput.Count; i++)
+                {
+                    loadData.Transport1_Temp.Add(tempListString[i]);
+                }
+                break;
+            //************************Festival********************************
+            case "Festival1":
+                loadData.Festival1_Temp.Clear();
+                for (int i = 0; i < answerInput.Count; i++)
+                {
+                    loadData.Festival1_Temp.Add(tempListString[i]);
+                }
+                break;
+            //************************Subject********************************
+            case "Subject1":
+                loadData.Subject1_Temp.Clear();
+                for (int i = 0; i < answerInput.Count; i++)
+                {
+                    loadData.Subject1_Temp.Add(tempListString[i]);
+                }
+                break;
+            //************************CuisimeStyle********************************
+            case "CuisimeStyle1":
+                loadData.CuisimeStyle1_Temp.Clear();
+                for (int i = 0; i < answerInput.Count; i++)
+                {
+                    loadData.CuisimeStyle1_Temp.Add(tempListString[i]);
+                }
+                break;
+            //************************Hair********************************
+            case "Hair1":
+                loadData.Hair1_Temp.Clear();
+                for (int i = 0; i < answerInput.Count; i++)
+                {
+                    loadData.Hair1_Temp.Add(tempListString[i]);
+                }
+                break;
+            //************************Fitting********************************
+            case "Fitting1":
+                loadData.Fitting1_Temp.Clear();
+                for (int i = 0; i < answerInput.Count; i++)
+                {
+                    loadData.Fitting1_Temp.Add(tempListString[i]);
+                }
+                break;
+            //************************Weather********************************
+            case "Weather1":
+                loadData.Weather1_Temp.Clear();
+                for (int i = 0; i < answerInput.Count; i++)
+                {
+                    loadData.Weather1_Temp.Add(tempListString[i]);
+                }
+                break;
+            //************************Stationery********************************
+            case "Stationery1":
+                loadData.Stationery1_Temp.Clear();
+                for (int i = 0; i < answerInput.Count; i++)
+                {
+                    loadData.Stationery1_Temp.Add(tempListString[i]);
+                }
+                break;
+            //************************Clothes********************************
+            case "Clothes1":
+                loadData.Clothes1_Temp.Clear();
+                for (int i = 0; i < answerInput.Count; i++)
+                {
+                    loadData.Clothes1_Temp.Add(tempListString[i]);
+                }
+                break;
+            //************************Shoes********************************
+            case "Shoes1":
+                loadData.Shoes1_Temp.Clear();
+                for (int i = 0; i < answerInput.Count; i++)
+                {
+                    loadData.Shoes1_Temp.Add(tempListString[i]);
+                }
+                break;
+            //************************Colors********************************
+            case "Colors1":
+                loadData.Colors1_Temp.Clear();
+                for (int i = 0; i < answerInput.Count; i++)
+                {
+                    loadData.Colors1_Temp.Add(tempListString[i]);
+                }
+                break;
+            //************************Disaster********************************
+            case "Disaster1":
+                loadData.Disaster1_Temp.Clear();
+                for (int i = 0; i < answerInput.Count; i++)
+                {
+                    loadData.Disaster1_Temp.Add(tempListString[i]);
+                }
+                break;
+            //************************Beverage********************************
+            case "Beverage1":
+                loadData.Beverage1_Temp.Clear();
+                for (int i = 0; i < answerInput.Count; i++)
+                {
+                    loadData.Beverage1_Temp.Add(tempListString[i]);
+                }
+                break;
+            //************************Facility********************************
+            case "Facility1":
+                loadData.Facility1_Temp.Clear();
+                for (int i = 0; i < answerInput.Count; i++)
+                {
+                    loadData.Facility1_Temp.Add(tempListString[i]);
+                }
+                break;
+            //************************Plant********************************
+            case "Plant1":
+                loadData.Plant1_Temp.Clear();
+                for (int i = 0; i < answerInput.Count; i++)
+                {
+                    loadData.Plant1_Temp.Add(tempListString[i]);
+                }
+                break;
+            //************************Career********************************
+            case "Career1":
+                loadData.Career1_Temp.Clear();
+                for (int i = 0; i < answerInput.Count; i++)
+                {
+                    loadData.Career1_Temp.Add(tempListString[i]);
+                }
+                break;
+            case "Career2":
+                loadData.Career2_Temp.Clear();
+                for (int i = 0; i < answerInput.Count; i++)
+                {
+                    loadData.Career2_Temp.Add(tempListString[i]);
+                }
+                break;
+            //************************Body********************************
+            case "Body1":
+                loadData.Body1_Temp.Clear();
+                for (int i = 0; i < answerInput.Count; i++)
+                {
+                    loadData.Body1_Temp.Add(tempListString[i]);
+                }
+                break;
+            case "Body2":
+                loadData.Body2_Temp.Clear();
+                for (int i = 0; i < answerInput.Count; i++)
+                {
+                    loadData.Body2_Temp.Add(tempListString[i]);
+                }
+                break;
+            //************************Sport********************************
+            case "Sport1":
+                loadData.Sport1_Temp.Clear();
+                for (int i = 0; i < answerInput.Count; i++)
+                {
+                    loadData.Sport1_Temp.Add(tempListString[i]);
+                }
+                break;
+            case "Sport2":
+                loadData.Sport2_Temp.Clear();
+                for (int i = 0; i < answerInput.Count; i++)
+                {
+                    loadData.Sport2_Temp.Add(tempListString[i]);
+                }
+                break;
+            //************************Contry********************************
+            case "Contry1":
+                loadData.Contry1_Temp.Clear();
+                for (int i = 0; i < answerInput.Count; i++)
+                {
+                    loadData.Contry1_Temp.Add(tempListString[i]);
+                }
+                break;
+            case "Contry2":
+                loadData.Contry2_Temp.Clear();
+                for (int i = 0; i < answerInput.Count; i++)
+                {
+                    loadData.Contry2_Temp.Add(tempListString[i]);
+                }
+                break;
+            //************************Furniture********************************
+            case "Furniture1":
+                loadData.Furniture1_Temp.Clear();
+                for (int i = 0; i < answerInput.Count; i++)
+                {
+                    loadData.Furniture1_Temp.Add(tempListString[i]);
+                }
+                break;
+            case "Furniture2":
+                loadData.Furniture2_Temp.Clear();
+                for (int i = 0; i < answerInput.Count; i++)
+                {
+                    loadData.Furniture2_Temp.Add(tempListString[i]);
+                }
+                break;
         }
 
         string contents = JsonUtility.ToJson(loadData, true);
@@ -392,6 +1186,15 @@ public class InputLevel : MonoBehaviour
 
         Debug.Log("SAVE");
 
+    }
+
+    public void AudioToPlay(AudioClip clip)
+    {
+        if (!audioPlay.isPlaying)
+        {
+            audioPlay.clip = clip;
+            audioPlay.Play();
+        }
     }
 
     public void GetAnswerInt(int i)
@@ -458,27 +1261,39 @@ public class InputLevel : MonoBehaviour
 
     public void YesOutPopUp()
     {
+        SaveData();
+
         switch (levelType)
         {
-            case "Animal":
-                SaveData();
-                SceneManager.LoadScene("AnimalSelectMenu");
+            case "Beverage":
+            case "Clothes":
+            case "Colors":
+            case "CuisimeStyle":
+            case "Disaster":
+            case "EleProducts":
+            case "Facility":
+            case "Family":
+            case "Festival":
+            case "Fitting":
+            case "Hair":
+            case "Plant":
+            case "Shoes":
+            case "Stationery":
+            case "Subject":
+            case "Transport":   
+            case "Weather":                  
+                SceneManager.LoadScene("OneListSelectMenu");
                 break;
-            case "Cuisime":
-                SaveData();
-                SceneManager.LoadScene("CuisimeSelectMenu");
+            case "Body":
+            case "Career":
+            case "Contry":
+            case "Furniture":     
+            case "Sport":
+                SceneManager.LoadScene("TwoListSelectMenu");
                 break;
-            case "Fruit":
-                SaveData();
-                SceneManager.LoadScene("FruitSelectMenu");
-                break;
-            case "Meat":
-                SaveData();
-                SceneManager.LoadScene("MeatSelectMenu");
-                break;
-            case "Vegetable":
-                SaveData();
-                SceneManager.LoadScene("VegetableSelectMenu");
+
+            default:
+                SceneManager.LoadScene(levelType + "SelectMenu");
                 break;
         }
     }

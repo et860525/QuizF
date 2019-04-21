@@ -1,0 +1,98 @@
+{
+  "WordData": {
+    "date": "5/04/2008",
+    "time": "3:20 PM",
+    "Disaster1": [
+      {
+        "japanese": "じしん",
+        "chinese": "地震",
+        "type": "Disaster",
+        "status": 0
+      },
+      {
+        "japanese": "つなみ",
+        "chinese": "海嘯",
+        "type": "Disaster",
+        "status": 0
+      },
+      {
+        "japanese": "たいふう",
+        "chinese": "颱風",
+        "type": "Disaster",
+        "status": 0
+      },
+      {
+        "japanese": "なだれ",
+        "chinese": "雪崩",
+        "type": "Disaster",
+        "status": 0
+      },
+      {
+        "japanese": "たつまき",
+        "chinese": "龍捲風",
+        "type": "Disaster",
+        "status": 0
+      },
+      {
+        "japanese": "すいがい",
+        "chinese": "水災",
+        "type": "Disaster",
+        "status": 0
+      },
+      {
+        "japanese": "どせきりゅう",
+        "chinese": "土石流",
+        "type": "Disaster",
+        "status": 0
+      },
+      {
+        "japanese": "かざんのふんか",
+        "chinese": "火山爆發",
+        "type": "Disaster",
+        "status": 0
+      },
+      {
+        "japanese": "すなあらし",
+        "chinese": "沙塵暴",
+        "type": "Disaster",
+        "status": 0
+      },
+      {
+        "japanese": "じすべり",
+        "chinese": "山崩",
+        "type": "Disaster",
+        "status": 0
+      },
+      {
+        "japanese": "しゅうちゅうごうう",
+        "chinese": "豪雨",
+        "type": "Disaster",
+        "status": 0
+      },
+      {
+        "japanese": "ふぶき",
+        "chinese": "暴風雪",
+        "type": "Disaster",
+        "status": 0
+      },
+      {
+        "japanese": "ひょう",
+        "chinese": "冰雹",
+        "type": "Disaster",
+        "status": 0
+      },
+      {
+        "japanese": "らくせき",
+        "chinese": "落石",
+        "type": "Disaster",
+        "status": 0
+      },
+      {
+        "japanese": "こうずい",
+        "chinese": "洪水",
+        "type": "Disaster",
+        "status": 0
+      }
+    ]
+  }
+}

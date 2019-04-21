@@ -1,0 +1,98 @@
+{
+  "WordData": {
+    "date": "5/04/2008",
+    "time": "3:20 PM",
+    "Hair1": [
+      {
+        "japanese": "カット",
+        "chinese": "剪髮",
+        "type": "Hair",
+        "status": 0
+      },
+      {
+        "japanese": "ブロー",
+        "chinese": "吹頭髮",
+        "type": "Hair",
+        "status": 0
+      },
+      {
+        "japanese": "カラー",
+        "chinese": "染髮",
+        "type": "Hair",
+        "status": 0
+      },
+      {
+        "japanese": "カールする",
+        "chinese": "燙捲髮",
+        "type": "Hair",
+        "status": 0
+      },
+      {
+        "japanese": "シャンプー",
+        "chinese": "洗髮",
+        "type": "Hair",
+        "status": 0
+      },
+      {
+        "japanese": "ストレートパーマ",
+        "chinese": "離子燙",
+        "type": "Hair",
+        "status": 0
+      },
+      {
+        "japanese": "エクステ",
+        "chinese": "接髮",
+        "type": "Hair",
+        "status": 0
+      },
+      {
+        "japanese": "ウェーブヘイア",
+        "chinese": "卷髮",
+        "type": "Hair",
+        "status": 0
+      },
+      {
+        "japanese": "お団子ヘア",
+        "chinese": "包包頭",
+        "type": "Hair",
+        "status": 0
+      },
+      {
+        "japanese": "まえがみ",
+        "chinese": "瀏海",
+        "type": "Hair",
+        "status": 0
+      },
+      {
+        "japanese": "ポニーテール",
+        "chinese": "馬尾",
+        "type": "Hair",
+        "status": 0
+      },
+      {
+        "japanese": "かみがた",
+        "chinese": "髮型",
+        "type": "Hair",
+        "status": 0
+      },
+      {
+        "japanese": "ミディアム",
+        "chinese": "中長髮",
+        "type": "Hair",
+        "status": 0
+      },
+      {
+        "japanese": "ショート",
+        "chinese": "短髮",
+        "type": "Hair",
+        "status": 0
+      },
+      {
+        "japanese": "ロング",
+        "chinese": "長髮",
+        "type": "Hair",
+        "status": 0
+      }
+    ]
+  }
+}

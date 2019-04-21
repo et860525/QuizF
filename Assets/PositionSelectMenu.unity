@@ -2912,6 +2912,9 @@ MonoBehaviour:
   - "\u586B\u5165"
   - "\u5716\u7247\u9078\u64C7"
   - "\u4E2D&\u65E5\u9078\u64C7"
+  - "\u586B\u5165"
+  - "\u5716\u7247\u9078\u64C7"
+  - "\u4E2D&\u65E5\u9078\u64C7"
   numberConst: 10
 --- !u!1 &709656949
 GameObject:

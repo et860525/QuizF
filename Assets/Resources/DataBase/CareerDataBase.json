@@ -1,0 +1,190 @@
+{
+  "WordData": {
+    "date": "5/04/2008",
+    "time": "3:20 PM",
+    "Career1": [
+      {
+        "japanese": "ひしょ",
+        "chinese": "秘書",
+        "type": "Career",
+        "status": 0
+      },
+      {
+        "japanese": "がか",
+        "chinese": "畫家",
+        "type": "Career",
+        "status": 0
+      },
+      {
+        "japanese": "ゆうびんやさん",
+        "chinese": "郵差",
+        "type": "Career",
+        "status": 0
+      },
+      {
+        "japanese": "さいぱんかん",
+        "chinese": "法官",
+        "type": "Career",
+        "status": 0
+      },
+      {
+        "japanese": "ガイド",
+        "chinese": "導遊",
+        "type": "Career",
+        "status": 0
+      },
+      {
+        "japanese": "ダンサー",
+        "chinese": "舞者",
+        "type": "Career",
+        "status": 0
+      },
+      {
+        "japanese": "しつじ",
+        "chinese": "管家",
+        "type": "Career",
+        "status": 0
+      },
+      {
+        "japanese": "しょうぼうし",
+        "chinese": "消防員",
+        "type": "Career",
+        "status": 0
+      },
+      {
+        "japanese": "スチュワーデス",
+        "chinese": "空姐",
+        "type": "Career",
+        "status": 0
+      },
+      {
+        "japanese": "さっか",
+        "chinese": "作家",
+        "type": "Career",
+        "status": 0
+      },
+      {
+        "japanese": "きょうじゅ",
+        "chinese": "教授",
+        "type": "Career",
+        "status": 0
+      },
+      {
+        "japanese": "ひこうし",
+        "chinese": "飛行員",
+        "type": "Career",
+        "status": 0
+      },
+      {
+        "japanese": "コーチ",
+        "chinese": "教練",
+        "type": "Career",
+        "status": 0
+      },
+      {
+        "japanese": "のうふ",
+        "chinese": "農夫",
+        "type": "Career",
+        "status": 0
+      },
+      {
+        "japanese": "カメラマン",
+        "chinese": "攝影師",
+        "type": "Career",
+        "status": 0
+      }
+    ],
+    "Career2": [
+      {
+        "japanese": "べんごし",
+        "chinese": "律師",
+        "type": "Career",
+        "status": 0
+      },
+      {
+        "japanese": "うんてんしゅ",
+        "chinese": "司機",
+        "type": "Career",
+        "status": 0
+      },
+      {
+        "japanese": "サラリーマン",
+        "chinese": "上班族",
+        "type": "Career",
+        "status": 0
+      },
+      {
+        "japanese": "かていしゅふ",
+        "chinese": "家庭主婦",
+        "type": "Career",
+        "status": 0
+      },
+      {
+        "japanese": "せいゆう",
+        "chinese": "配音員",
+        "type": "Career",
+        "status": 0
+      },
+      {
+        "japanese": "かしゅ",
+        "chinese": "歌手",
+        "type": "Career",
+        "status": 0
+      },
+      {
+        "japanese": "けいさつ",
+        "chinese": "警察",
+        "type": "Career",
+        "status": 0
+      },
+      {
+        "japanese": "シェフ",
+        "chinese": "廚師",
+        "type": "Career",
+        "status": 0
+      },
+      {
+        "japanese": "スポーツせんしゅ",
+        "chinese": "運動員",
+        "type": "Career",
+        "status": 0
+      },
+      {
+        "japanese": "ぎんこういん",
+        "chinese": "銀行行員",
+        "type": "Career",
+        "status": 0
+      },
+      {
+        "japanese": "せんせい",
+        "chinese": "老師",
+        "type": "Career",
+        "status": 0
+      },
+      {
+        "japanese": "がくせい",
+        "chinese": "學生",
+        "type": "Career",
+        "status": 0
+      },
+      {
+        "japanese": "てんいん",
+        "chinese": "店員",
+        "type": "Career",
+        "status": 0
+      },
+      {
+        "japanese": "いしゃ",
+        "chinese": "醫生",
+        "type": "Career",
+        "status": 0
+      },
+      {
+        "japanese": "かんごし",
+        "chinese": "護理師",
+        "type": "Career",
+        "status": 0
+      }
+    ]
+  }
+}

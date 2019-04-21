@@ -1,0 +1,190 @@
+{
+  "WordData": {
+    "date": "5/04/2008",
+    "time": "3:20 PM",
+    "Sport1": [
+      {
+        "japanese": "やきゅう",
+        "chinese": "棒球",
+        "type": "Sport",
+        "status": 0
+      },
+      {
+        "japanese": "バスケットボール",
+        "chinese": "籃球",
+        "type": "Sport",
+        "status": 0
+      },
+      {
+        "japanese": "サッカー",
+        "chinese": "足球",
+        "type": "Sport",
+        "status": 0
+      },
+      {
+        "japanese": "テニス",
+        "chinese": "網球",
+        "type": "Sport",
+        "status": 0
+      },
+      {
+        "japanese": "たっきゅう",
+        "chinese": "桌球",
+        "type": "Sport",
+        "status": 0
+      },
+      {
+        "japanese": "すいえい",
+        "chinese": "游泳",
+        "type": "Sport",
+        "status": 0
+      },
+      {
+        "japanese": "ランニング",
+        "chinese": "跑步",
+        "type": "Sport",
+        "status": 0
+      },
+      {
+        "japanese": "じゅうどう",
+        "chinese": "柔道",
+        "type": "Sport",
+        "status": 0
+      },
+      {
+        "japanese": "バドミントン",
+        "chinese": "羽毛球",
+        "type": "Sport",
+        "status": 0
+      },
+      {
+        "japanese": "けんどう",
+        "chinese": "劍道",
+        "type": "Sport",
+        "status": 0
+      },
+      {
+        "japanese": "ボクシング",
+        "chinese": "拳擊",
+        "type": "Sport",
+        "status": 0
+      },
+      {
+        "japanese": "レスリング",
+        "chinese": "摔角",
+        "type": "Sport",
+        "status": 0
+      },
+      {
+        "japanese": "ジョッギング",
+        "chinese": "慢跑",
+        "type": "Sport",
+        "status": 0
+      },
+      {
+        "japanese": "なわとび",
+        "chinese": "跳繩",
+        "type": "Sport",
+        "status": 0
+      },
+      {
+        "japanese": "ダンス",
+        "chinese": "跳舞",
+        "type": "Sport",
+        "status": 0
+      }
+    ],
+    "Sport2": [
+      {
+        "japanese": "とざん",
+        "chinese": "登山",
+        "type": "Sport",
+        "status": 0
+      },
+      {
+        "japanese": "ビリヤード",
+        "chinese": "撞球",
+        "type": "Sport",
+        "status": 0
+      },
+      {
+        "japanese": "ゴルフ",
+        "chinese": "高爾夫球",
+        "type": "Sport",
+        "status": 0
+      },
+      {
+        "japanese": "ドッジボール",
+        "chinese": "躲避球",
+        "type": "Sport",
+        "status": 0
+      },
+      {
+        "japanese": "とびばこをとび",
+        "chinese": "跳箱",
+        "type": "Sport",
+        "status": 0
+      },
+      {
+        "japanese": "つなひき",
+        "chinese": "拔河",
+        "type": "Sport",
+        "status": 0
+      },
+      {
+        "japanese": "スキー",
+        "chinese": "滑雪",
+        "type": "Sport",
+        "status": 0
+      },
+      {
+        "japanese": "アメリカンフットボール",
+        "chinese": "美式足球",
+        "type": "Sport",
+        "status": 0
+      },
+      {
+        "japanese": "ふねをごく",
+        "chinese": "划船",
+        "type": "Sport",
+        "status": 0
+      },
+      {
+        "japanese": "ボウリング",
+        "chinese": "保齡球",
+        "type": "Sport",
+        "status": 0
+      },
+      {
+        "japanese": "きゅうどう",
+        "chinese": "射箭",
+        "type": "Sport",
+        "status": 0
+      },
+      {
+        "japanese": "スケート",
+        "chinese": "溜冰",
+        "type": "Sport",
+        "status": 0
+      },
+      {
+        "japanese": "ダイビング",
+        "chinese": "潛水",
+        "type": "Sport",
+        "status": 0
+      },
+      {
+        "japanese": "バレーボール",
+        "chinese": "排球",
+        "type": "Sport",
+        "status": 0
+      },
+      {
+        "japanese": "すもう",
+        "chinese": "相撲",
+        "type": "Sport",
+        "status": 0
+      }
+    ]
+  }
+}

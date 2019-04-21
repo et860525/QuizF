@@ -1,0 +1,98 @@
+{
+  "WordData": {
+    "date": "5/04/2008",
+    "time": "3:20 PM",
+    "Weather1": [
+      {
+        "japanese": "あめ",
+        "chinese": "雨",
+        "type": "Weather",
+        "status": 0
+      },
+      {
+        "japanese": "ゆき",
+        "chinese": "雪",
+        "type": "Weather",
+        "status": 0
+      },
+      {
+        "japanese": "かみなり",
+        "chinese": "雷",
+        "type": "Weather",
+        "status": 0
+      },
+      {
+        "japanese": "はれ",
+        "chinese": "晴天",
+        "type": "Weather",
+        "status": 0
+      },
+      {
+        "japanese": "くも",
+        "chinese": "雲",
+        "type": "Weather",
+        "status": 0
+      },
+      {
+        "japanese": "にじ",
+        "chinese": "彩虹",
+        "type": "Weather",
+        "status": 0
+      },
+      {
+        "japanese": "かぜ",
+        "chinese": "風",
+        "type": "Weather",
+        "status": 0
+      },
+      {
+        "japanese": "おおゆき",
+        "chinese": "大雪",
+        "type": "Weather",
+        "status": 0
+      },
+      {
+        "japanese": "くもりときどきあめ",
+        "chinese": "多雲偶陣雨",
+        "type": "Weather",
+        "status": 0
+      },
+      {
+        "japanese": "くもりのちはれ",
+        "chinese": "多雲時晴",
+        "type": "Weather",
+        "status": 0
+      },
+      {
+        "japanese": "きせつ",
+        "chinese": "季節",
+        "type": "Weather",
+        "status": 0
+      },
+      {
+        "japanese": "はる",
+        "chinese": "春",
+        "type": "Weather",
+        "status": 0
+      },
+      {
+        "japanese": "なつ",
+        "chinese": "夏",
+        "type": "Weather",
+        "status": 0
+      },
+      {
+        "japanese": "あき",
+        "chinese": "秋",
+        "type": "Weather",
+        "status": 0
+      },
+      {
+        "japanese": "ふゆ",
+        "chinese": "冬",
+        "type": "Weather",
+        "status": 0
+      }
+    ]
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "WordData": {
+    "date": "5/04/2008",
+    "time": "3:20 PM",
+    "Family1": [
+      {
+        "japanese": "おじいさん",
+        "chinese": "爺爺",
+        "type": "Family",
+        "status": 0
+      },
+      {
+        "japanese": "おばあさん",
+        "chinese": "奶奶",
+        "type": "Family",
+        "status": 0
+      },
+      {
+        "japanese": "おとうさん",
+        "chinese": "爸爸",
+        "type": "Family",
+        "status": 0
+      },
+      {
+        "japanese": "おかあさん",
+        "chinese": "媽媽",
+        "type": "Family",
+        "status": 0
+      },
+      {
+        "japanese": "おにいさん",
+        "chinese": "哥哥",
+        "type": "Family",
+        "status": 0
+      },
+      {
+        "japanese": "おねえさん",
+        "chinese": "姊姊",
+        "type": "Family",
+        "status": 0
+      },
+      {
+        "japanese": "おとうとさん",
+        "chinese": "弟弟",
+        "type": "Family",
+        "status": 0
+      },
+      {
+        "japanese": "いもうとさん",
+        "chinese": "妹妹",
+        "type": "Family",
+        "status": 0
+      },
+      {
+        "japanese": "おじさん",
+        "chinese": "叔叔/舅舅",
+        "type": "Family",
+        "status": 0
+      },
+      {
+        "japanese": "おばさん",
+        "chinese": "嬸嬸/舅媽",
+        "type": "Family",
+        "status": 0
+      },
+      {
+        "japanese": "まごさん",
+        "chinese": "孫子",
+        "type": "Family",
+        "status": 0
+      },
+      {
+        "japanese": "おくさま",
+        "chinese": "妻子",
+        "type": "Family",
+        "status": 0
+      },
+      {
+        "japanese": "ごしゅじん",
+        "chinese": "丈夫",
+        "type": "Family",
+        "status": 0
+      },
+      {
+        "japanese": "むすこさん",
+        "chinese": "兒子",
+        "type": "Family",
+        "status": 0
+      },
+      {
+        "japanese": "むすめさん",
+        "chinese": "女兒",
+        "type": "Family",
+        "status": 0
+      }
+    ]
+  }
+}

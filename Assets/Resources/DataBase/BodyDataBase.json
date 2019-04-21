@@ -1,0 +1,190 @@
+{
+  "WordData": {
+    "date": "5/04/2008",
+    "time": "3:20 PM",
+    "Body1": [
+      {
+        "japanese": "あたま",
+        "chinese": "頭",
+        "type": "Body",
+        "status": 0
+      },
+      {
+        "japanese": "まゆ",
+        "chinese": "眉毛",
+        "type": "Body",
+        "status": 0
+      },
+      {
+        "japanese": "め",
+        "chinese": "眼睛",
+        "type": "Body",
+        "status": 0
+      },
+      {
+        "japanese": "はな",
+        "chinese": "鼻子",
+        "type": "Body",
+        "status": 0
+      },
+      {
+        "japanese": "くち",
+        "chinese": "嘴巴",
+        "type": "Body",
+        "status": 0
+      },
+      {
+        "japanese": "みみ",
+        "chinese": "耳朵",
+        "type": "Body",
+        "status": 0
+      },
+      {
+        "japanese": "まつげ",
+        "chinese": "睫毛",
+        "type": "Body",
+        "status": 0
+      },
+      {
+        "japanese": "かみ",
+        "chinese": "頭髮",
+        "type": "Body",
+        "status": 0
+      },
+      {
+        "japanese": "くび",
+        "chinese": "脖子",
+        "type": "Body",
+        "status": 0
+      },
+      {
+        "japanese": "かた",
+        "chinese": "肩膀",
+        "type": "Body",
+        "status": 0
+      },
+      {
+        "japanese": "むね",
+        "chinese": "胸",
+        "type": "Body",
+        "status": 0
+      },
+      {
+        "japanese": "うで",
+        "chinese": "手臂",
+        "type": "Body",
+        "status": 0
+      },
+      {
+        "japanese": "ゆび",
+        "chinese": "手指",
+        "type": "Body",
+        "status": 0
+      },
+      {
+        "japanese": "ひじ",
+        "chinese": "手肘",
+        "type": "Body",
+        "status": 0
+      },
+      {
+        "japanese": "てのひら",
+        "chinese": "手掌",
+        "type": "Body",
+        "status": 0
+      }
+    ],
+    "Body2": [
+      {
+        "japanese": "ネール",
+        "chinese": "指甲",
+        "type": "Body",
+        "status": 0
+      },
+      {
+        "japanese": "おなか",
+        "chinese": "腹部",
+        "type": "Body",
+        "status": 0
+      },
+      {
+        "japanese": "せなか",
+        "chinese": "背部",
+        "type": "Body",
+        "status": 0
+      },
+      {
+        "japanese": "へそ",
+        "chinese": "肚臍",
+        "type": "Body",
+        "status": 0
+      },
+      {
+        "japanese": "は",
+        "chinese": "牙齒",
+        "type": "Body",
+        "status": 0
+      },
+      {
+        "japanese": "した",
+        "chinese": "舌頭",
+        "type": "Body",
+        "status": 0
+      },
+      {
+        "japanese": "もも",
+        "chinese": "大腿",
+        "type": "Body",
+        "status": 0
+      },
+      {
+        "japanese": "ひざ",
+        "chinese": "膝蓋",
+        "type": "Body",
+        "status": 0
+      },
+      {
+        "japanese": "あしくび",
+        "chinese": "腳踝",
+        "type": "Body",
+        "status": 0
+      },
+      {
+        "japanese": "あし",
+        "chinese": "腳",
+        "type": "Body",
+        "status": 0
+      },
+      {
+        "japanese": "おしり",
+        "chinese": "臀部",
+        "type": "Body",
+        "status": 0
+      },
+      {
+        "japanese": "かお",
+        "chinese": "臉",
+        "type": "Body",
+        "status": 0
+      },
+      {
+        "japanese": "のど",
+        "chinese": "喉嚨",
+        "type": "Body",
+        "status": 0
+      },
+      {
+        "japanese": "ふくらはぎ",
+        "chinese": "小腿",
+        "type": "Body",
+        "status": 0
+      },
+      {
+        "japanese": "あご",
+        "chinese": "下巴",
+        "type": "Body",
+        "status": 0
+      }
+    ]
+  }
+}

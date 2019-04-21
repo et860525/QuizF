@@ -1,0 +1,98 @@
+{
+  "WordData": {
+    "date": "5/04/2008",
+    "time": "3:20 PM",
+    "EleProducts1": [
+      {
+        "japanese": "けいたいでんわ",
+        "chinese": "手機",
+        "type": "EleProducts",
+        "status": 0
+      },
+      {
+        "japanese": "パソコン",
+        "chinese": "電腦",
+        "type": "EleProducts",
+        "status": 0
+      },
+      {
+        "japanese": "テレビ",
+        "chinese": "電視",
+        "type": "EleProducts",
+        "status": 0
+      },
+      {
+        "japanese": "タブレットパソコン",
+        "chinese": "平板",
+        "type": "EleProducts",
+        "status": 0
+      },
+      {
+        "japanese": "カメラ",
+        "chinese": "相機",
+        "type": "EleProducts",
+        "status": 0
+      },
+      {
+        "japanese": "プリンタ",
+        "chinese": "印表機",
+        "type": "EleProducts",
+        "status": 0
+      },
+      {
+        "japanese": "ラジオ",
+        "chinese": "收音機",
+        "type": "EleProducts",
+        "status": 0
+      },
+      {
+        "japanese": "テープレコーダー",
+        "chinese": "錄音機",
+        "type": "EleProducts",
+        "status": 0
+      },
+      {
+        "japanese": "イヤホン",
+        "chinese": "耳機",
+        "type": "EleProducts",
+        "status": 0
+      },
+      {
+        "japanese": "USBメモリ",
+        "chinese": "隨身碟",
+        "type": "EleProducts",
+        "status": 0
+      },
+      {
+        "japanese": "ノートブック",
+        "chinese": "筆記型電腦",
+        "type": "EleProducts",
+        "status": 0
+      },
+      {
+        "japanese": "クーラー",
+        "chinese": "冷氣機",
+        "type": "EleProducts",
+        "status": 0
+      },
+      {
+        "japanese": "だんぼう",
+        "chinese": "暖氣",
+        "type": "EleProducts",
+        "status": 0
+      },
+      {
+        "japanese": "せんたくき",
+        "chinese": "洗衣機",
+        "type": "EleProducts",
+        "status": 0
+      },
+      {
+        "japanese": "モバイルバッテリー",
+        "chinese": "行動充電器",
+        "type": "EleProducts",
+        "status": 0
+      }
+    ]
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "WordData": {
+    "date": "5/04/2008",
+    "time": "3:20 PM",
+    "Colors1": [
+      {
+        "japanese": "あか",
+        "chinese": "紅色",
+        "type": "Colors",
+        "status": 0
+      },
+      {
+        "japanese": "オレンジいろ",
+        "chinese": "紅色",
+        "type": "Colors",
+        "status": 0
+      },
+      {
+        "japanese": "きいろ",
+        "chinese": "黃色",
+        "type": "Colors",
+        "status": 0
+      },
+      {
+        "japanese": "みどり",
+        "chinese": "綠色",
+        "type": "Colors",
+        "status": 0
+      },
+      {
+        "japanese": "あお",
+        "chinese": "藍色",
+        "type": "Colors",
+        "status": 0
+      },
+      {
+        "japanese": "こんいろ",
+        "chinese": "深藍色",
+        "type": "Colors",
+        "status": 0
+      },
+      {
+        "japanese": "むらさき",
+        "chinese": "紫色",
+        "type": "Colors",
+        "status": 0
+      },
+      {
+        "japanese": "くろ",
+        "chinese": "黑色",
+        "type": "Colors",
+        "status": 0
+      },
+      {
+        "japanese": "はいいろ",
+        "chinese": "灰色",
+        "type": "Colors",
+        "status": 0
+      },
+      {
+        "japanese": "きんいろ",
+        "chinese": "金色",
+        "type": "Colors",
+        "status": 0
+      },
+      {
+        "japanese": "ぎんいろ",
+        "chinese": "銀色",
+        "type": "Colors",
+        "status": 0
+      },
+      {
+        "japanese": "ピンク",
+        "chinese": "粉紅色",
+        "type": "Colors",
+        "status": 0
+      },
+      {
+        "japanese": "ベージュ",
+        "chinese": "皮膚色",
+        "type": "Colors",
+        "status": 0
+      },
+      {
+        "japanese": "しろ",
+        "chinese": "白色",
+        "type": "Colors",
+        "status": 0
+      },
+      {
+        "japanese": "ちゃいろ",
+        "chinese": "咖啡色",
+        "type": "Colors",
+        "status": 0
+      }
+    ]
+  }
+}

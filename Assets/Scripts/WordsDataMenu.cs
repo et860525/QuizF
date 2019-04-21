@@ -224,6 +224,28 @@ public class WordsDataMenu : MonoBehaviour
                             }
                         }
                         break;
+                    case "MakeUp":
+                        if (true/*PlayerPrefs.GetString("LevelUsed" + _type + "1") == "Open"*/)
+                        {
+                            for (int i = 0; i < theWords.MakeUp1.Count; i++)
+                            {
+                                finalQuestion.Add(theWords.MakeUp1[i]);
+                                Debug.Log(finalQuestion[i].chinese);
+                            }
+                        }
+
+                        foreach (var button in typeButton)
+                        {
+                            if (button.GetComponent<Button>().name == _type)
+                            {
+                                button.GetComponent<Button>().interactable = false;
+                            }
+                            else
+                            {
+                                button.GetComponent<Button>().interactable = true;
+                            }
+                        }
+                        break;
                 }
 
                 wordsControll.DataBaseGetWords(finalQuestion, _type, finalQuestion.Count - 1, rightColor);

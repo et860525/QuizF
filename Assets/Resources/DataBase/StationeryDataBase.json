@@ -1,0 +1,98 @@
+{
+  "WordData": {
+    "date": "5/04/2008",
+    "time": "3:20 PM",
+    "Stationery1": [
+      {
+        "japanese": "えんぴつ",
+        "chinese": "鉛筆",
+        "type": "Stationery",
+        "status": 0
+      },
+      {
+        "japanese": "けしゴム",
+        "chinese": "橡皮擦",
+        "type": "Stationery",
+        "status": 0
+      },
+      {
+        "japanese": "じょうぎ",
+        "chinese": "尺",
+        "type": "Stationery",
+        "status": 0
+      },
+      {
+        "japanese": "しゅうせいテープ",
+        "chinese": "修正帶",
+        "type": "Stationery",
+        "status": 0
+      },
+      {
+        "japanese": "ボールペン",
+        "chinese": "原子筆",
+        "type": "Stationery",
+        "status": 0
+      },
+      {
+        "japanese": "シャープペンシル",
+        "chinese": "自動鉛筆",
+        "type": "Stationery",
+        "status": 0
+      },
+      {
+        "japanese": "まんねんひつ",
+        "chinese": "鋼筆",
+        "type": "Stationery",
+        "status": 0
+      },
+      {
+        "japanese": "ハサミ",
+        "chinese": "剪刀",
+        "type": "Stationery",
+        "status": 0
+      },
+      {
+        "japanese": "ノート",
+        "chinese": "筆記本",
+        "type": "Stationery",
+        "status": 0
+      },
+      {
+        "japanese": "ふせん",
+        "chinese": "便利貼",
+        "type": "Stationery",
+        "status": 0
+      },
+      {
+        "japanese": "テープ",
+        "chinese": "膠帶",
+        "type": "Stationery",
+        "status": 0
+      },
+      {
+        "japanese": "しゅうせいえき",
+        "chinese": "修正液",
+        "type": "Stationery",
+        "status": 0
+      },
+      {
+        "japanese": "ペンケース",
+        "chinese": "鉛筆盒",
+        "type": "Stationery",
+        "status": 0
+      },
+      {
+        "japanese": "ホッチキス",
+        "chinese": "釘書機",
+        "type": "Stationery",
+        "status": 0
+      },
+      {
+        "japanese": "かみ",
+        "chinese": "紙",
+        "type": "Stationery",
+        "status": 0
+      }
+    ]
+  }
+}

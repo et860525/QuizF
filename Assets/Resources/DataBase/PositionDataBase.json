@@ -1,0 +1,282 @@
+﻿{
+  "WordData": {
+    "date": "5/04/2008",
+    "time": "3:20 PM",
+    "Position1": [
+      {
+        "japanese": "うみすいぞくかん",
+        "chinese": "海生館",
+        "type": "Position",
+        "status": 0
+      },
+      {
+        "japanese": "アパート",
+        "chinese": "公寓",
+        "type": "Position",
+        "status": 0
+      },
+      {
+        "japanese": "エスカレーター",
+        "chinese": "手扶梯",
+        "type": "Position",
+        "status": 0
+      },
+      {
+        "japanese": "ゆうえんち",
+        "chinese": "遊樂園",
+        "type": "Position",
+        "status": 0
+      },
+      {
+        "japanese": "ようちえん",
+        "chinese": "幼稚園",
+        "type": "Position",
+        "status": 0
+      },
+      {
+        "japanese": "はくぶつかん",
+        "chinese": "博物館",
+        "type": "Position",
+        "status": 0
+      },
+      {
+        "japanese": "しょうぼうきょく",
+        "chinese": "消防局",
+        "type": "Position",
+        "status": 0
+      },
+      {
+        "japanese": "としょかん",
+        "chinese": "圖書館",
+        "type": "Position",
+        "status": 0
+      },
+      {
+        "japanese": "でんわボックス",
+        "chinese": "電話亭",
+        "type": "Position",
+        "status": 0
+      },
+      {
+        "japanese": "うんどうじょう",
+        "chinese": "運動場",
+        "type": "Position",
+        "status": 0
+      },
+      {
+        "japanese": "スーパー",
+        "chinese": "超市",
+        "type": "Position",
+        "status": 0
+      },
+      {
+        "japanese": "おふろ",
+        "chinese": "澡堂",
+        "type": "Position",
+        "status": 0
+      },
+      {
+        "japanese": "やおや",
+        "chinese": "蔬菜店",
+        "type": "Position",
+        "status": 0
+      },
+      {
+        "japanese": "ゆうびんきょく",
+        "chinese": "郵局",
+        "type": "Position",
+        "status": 0
+      },
+      {
+        "japanese": "きっさてん",
+        "chinese": "咖啡廳",
+        "type": "Position",
+        "status": 0
+      }
+    ],
+    "Position2": [
+      {
+        "japanese": "おてあらい",
+        "chinese": "廁所",
+        "type": "Position",
+        "status": 0
+      },
+      {
+        "japanese": "コート",
+        "chinese": "球場",
+        "type": "Position",
+        "status": 0
+      },
+      {
+        "japanese": "けいさつしょ",
+        "chinese": "警察局",
+        "type": "Position",
+        "status": 0
+      },
+      {
+        "japanese": "やたい",
+        "chinese": "小吃攤",
+        "type": "Position",
+        "status": 0
+      },
+      {
+        "japanese": "かいだん",
+        "chinese": "樓梯",
+        "type": "Position",
+        "status": 0
+      },
+      {
+        "japanese": "ちゅうしゃじょう",
+        "chinese": "停車場",
+        "type": "Position",
+        "status": 0
+      },
+      {
+        "japanese": "スポーツジム",
+        "chinese": "健身房",
+        "type": "Position",
+        "status": 0
+      },
+      {
+        "japanese": "えいがかん",
+        "chinese": "電影院",
+        "type": "Position",
+        "status": 0
+      },
+      {
+        "japanese": "エレベーター",
+        "chinese": "電梯",
+        "type": "Position",
+        "status": 0
+      },
+      {
+        "japanese": "かいしゃ",
+        "chinese": "公司",
+        "type": "Position",
+        "status": 0
+      },
+      {
+        "japanese": "プール",
+        "chinese": "游泳池",
+        "type": "Position",
+        "status": 0
+      },
+      {
+        "japanese": "こうえん",
+        "chinese": "公園",
+        "type": "Position",
+        "status": 0
+      },
+      {
+        "japanese": "がっこう",
+        "chinese": "學校",
+        "type": "Position",
+        "status": 0
+      },
+      {
+        "japanese": "バスてい",
+        "chinese": "公車站",
+        "type": "Position",
+        "status": 0
+      },
+      {
+        "japanese": "コンビニ",
+        "chinese": "便利商店",
+        "type": "Position",
+        "status": 0
+      }
+    ],
+    "Position3": [
+      {
+        "japanese": "きょうしつ",
+        "chinese": "教室",
+        "type": "Position",
+        "status": 0
+      },
+      {
+        "japanese": "びょういん",
+        "chinese": "醫院",
+        "type": "Position",
+        "status": 0
+      },
+      {
+        "japanese": "えき",
+        "chinese": "車站",
+        "type": "Position",
+        "status": 0
+      },
+      {
+        "japanese": "ぎんこう",
+        "chinese": "銀行",
+        "type": "Position",
+        "status": 0
+      },
+      {
+        "japanese": "ほんや",
+        "chinese": "書店",
+        "type": "Position",
+        "status": 0
+      },
+      {
+        "japanese": "まち",
+        "chinese": "街道",
+        "type": "Position",
+        "status": 0
+      },
+      {
+        "japanese": "どうぶつえん",
+        "chinese": "動物園",
+        "type": "Position",
+        "status": 0
+      },
+      {
+        "japanese": "びじゅつかん",
+        "chinese": "美術館",
+        "type": "Position",
+        "status": 0
+      },
+      {
+        "japanese": "じんじゃ",
+        "chinese": "神社",
+        "type": "Position",
+        "status": 0
+      },
+      {
+        "japanese": "おてら",
+        "chinese": "寺廟",
+        "type": "Position",
+        "status": 0
+      },
+      {
+        "japanese": "デパート",
+        "chinese": "百貨公司",
+        "type": "Position",
+        "status": 0
+      },
+      {
+        "japanese": "レストラン",
+        "chinese": "餐廳",
+        "type": "Position",
+        "status": 0
+      },
+      {
+        "japanese": "りょう",
+        "chinese": "宿舍",
+        "type": "Position",
+        "status": 0
+      },
+      {
+        "japanese": "きょうかい",
+        "chinese": "教堂",
+        "type": "Position",
+        "status": 0
+      },
+      {
+        "japanese": "うけつけ",
+        "chinese": "服務中心",
+        "type": "Position",
+        "status": 0
+      }
+    ]
+  }
+}

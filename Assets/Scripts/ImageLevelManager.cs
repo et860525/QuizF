@@ -41,9 +41,6 @@ public class ImageLevelManager : MonoBehaviour
 
     private AudioSource timeSound;
 
-    //Audio source
-    public AudioSource pictureAudio;
-
     //Class
     private StringData theWords = new StringData(); //Load Json dataBase.
     private List<WordList> questionWords; //Store words.
@@ -83,7 +80,7 @@ public class ImageLevelManager : MonoBehaviour
     {
         tempList = new List<string>();
         finalCorrentList = new List<WordList>();
-        pictureAudio = qImage.GetComponent<AudioSource>();
+        //pictureAudio = qImage.GetComponent<AudioSource>();
 
         Time.timeScale = 1;
 
@@ -167,11 +164,11 @@ public class ImageLevelManager : MonoBehaviour
         //loadedIcons.CopyTo (Icons,0);
     }
 
-     public void PlayAudio()
+ /*    public void PlayAudio()
     {
         if (!pictureAudio.isPlaying)
             pictureAudio.Play();
-    }
+    }*/
 
     /*
      * 
@@ -220,8 +217,8 @@ public class ImageLevelManager : MonoBehaviour
 
         //Question
         qImage.sprite = qSprites[randomQuestionIndex];
-        pictureAudio.clip = Resources.Load<AudioClip>(levelType + "/" + explorerName + "Audio" + "/" + qSprites[randomQuestionIndex].name);
-        PlayAudio();
+        /*pictureAudio.clip = Resources.Load<AudioClip>(levelType + "/" + explorerName + "Audio" + "/" + qSprites[randomQuestionIndex].name);
+        PlayAudio();*/
         correct = qSprites[randomQuestionIndex].name;
 
         //Save question string for final board.           
@@ -273,18 +270,23 @@ public class ImageLevelManager : MonoBehaviour
         _an2.text = tempList[tempRnd[1]];
         _an3.text = tempList[tempRnd[2]];
 
+        if (_corrent.text.Length > 6)
+        {
+            _corrent.fontSize = 48;
+        }
         if (_an1.text.Length > 6)
         {
-            _an1.fontSize = 50;
+            _an1.fontSize = 48;
         }
         if (_an2.text.Length > 6)
         {
-            _an2.fontSize = 50;
+            _an2.fontSize = 48;
         }
         if (_an3.text.Length > 6)
         {
-            _an3.fontSize = 50;
+            _an3.fontSize = 48;
         }
+
 
         //Debug.Log("BEF" + tempList.Count);
 
@@ -432,7 +434,7 @@ public class ImageLevelManager : MonoBehaviour
         }
 
         CancelInvoke("TimerDownCount");
-        pictureAudio.Stop();
+        //pictureAudio.Stop();
         TempPanel.gameObject.SetActive(true);
         BackGround.GetComponent<MoveOffset>().frezz = true;
         StartCoroutine(Wait());
@@ -532,25 +534,39 @@ public class ImageLevelManager : MonoBehaviour
 
     public void YesOutPopUp()
     {
-        SceneManager.LoadScene(levelType + "SelectMenu");
 
-        /*switch (levelType)
+        switch (levelType)
         {
-            case "Animal":
-                SceneManager.LoadScene("AnimalSelectMenu");
+            case "Beverage":
+            case "Clothes":
+            case "Colors":
+            case "CuisimeStyle":
+            case "Disaster":
+            case "EleProducts":
+            case "Facility":
+            case "Family":
+            case "Festival":
+            case "Fitting":
+            case "Hair":
+            case "Plant":
+            case "Shoes":
+            case "Stationery":
+            case "Subject":
+            case "Transport":
+            case "Weather":
+                SceneManager.LoadScene("OneListSelectMenu");
                 break;
-            case "Cuisime":
-                SceneManager.LoadScene("CuisimeSelectMenu");
+            case "Body":
+            case "Career":
+            case "Contry":
+            case "Furniture":
+            case "Sport":
+                SceneManager.LoadScene("TwoListSelectMenu");
                 break;
-            case "Fruit":
-                SceneManager.LoadScene("FruitSelectMenu");
+
+            default:
+                SceneManager.LoadScene(levelType + "SelectMenu");
                 break;
-            case "Meat":
-                SceneManager.LoadScene("MeatSelectMenu");
-                break;
-            case "Vegetable":
-                SceneManager.LoadScene("VegetableSelectMenu");
-                break;
-        }*/
+        }
     }
 }

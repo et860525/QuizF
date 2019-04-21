@@ -1,0 +1,98 @@
+{
+  "WordData": {
+    "date": "5/04/2008",
+    "time": "3:20 PM",
+    "Shoes1": [
+      {
+        "japanese": "くつ",
+        "chinese": "鞋子",
+        "type": "Shoes",
+        "status": 0
+      },
+      {
+        "japanese": "サンダル",
+        "chinese": "涼鞋",
+        "type": "Shoes",
+        "status": 0
+      },
+      {
+        "japanese": "ブーツ",
+        "chinese": "馬靴",
+        "type": "Shoes",
+        "status": 0
+      },
+      {
+        "japanese": "かわぐつ",
+        "chinese": "皮鞋",
+        "type": "Shoes",
+        "status": 0
+      },
+      {
+        "japanese": "うんどうぐつ",
+        "chinese": "布鞋",
+        "type": "Shoes",
+        "status": 0
+      },
+      {
+        "japanese": "ハイヒール",
+        "chinese": "高跟鞋",
+        "type": "Shoes",
+        "status": 0
+      },
+      {
+        "japanese": "あまぐつ",
+        "chinese": "雨鞋",
+        "type": "Shoes",
+        "status": 0
+      },
+      {
+        "japanese": "スリッパ",
+        "chinese": "拖鞋",
+        "type": "Shoes",
+        "status": 0
+      },
+      {
+        "japanese": "げた",
+        "chinese": "木屐",
+        "type": "Shoes",
+        "status": 0
+      },
+      {
+        "japanese": "くつした",
+        "chinese": "襪子",
+        "type": "Shoes",
+        "status": 0
+      },
+      {
+        "japanese": "ハイソックス",
+        "chinese": "長襪",
+        "type": "Shoes",
+        "status": 0
+      },
+      {
+        "japanese": "ストッキング",
+        "chinese": "絲襪",
+        "type": "Shoes",
+        "status": 0
+      },
+      {
+        "japanese": "パンティーストッキング",
+        "chinese": "褲襪",
+        "type": "Shoes",
+        "status": 0
+      },
+      {
+        "japanese": "フットカバー",
+        "chinese": "短襪",
+        "type": "Shoes",
+        "status": 0
+      },
+      {
+        "japanese": "ごほんゆびソックス",
+        "chinese": "五指襪",
+        "type": "Shoes",
+        "status": 0
+      }
+    ]
+  }
+}

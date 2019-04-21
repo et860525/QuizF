@@ -92,7 +92,7 @@ public class WordsDataControll : MonoBehaviour
                 tWord.SetActive(true);
                 tWord.GetComponent<WordsDataShow>().SetText(final[i].japanese, final[i].chinese, type, myColor);
                 tWord.transform.SetParent(wordsTemplate.transform.parent, false);
-                tWord.tag = type;
+                //tWord.tag = type;
                 wdList.Add(tWord.gameObject);
                 Debug.Log(wdList[i].GetComponent<WordsDataShow>().type);
             }

@@ -1,0 +1,190 @@
+{
+  "WordData": {
+    "date": "5/04/2008",
+    "time": "3:20 PM",
+    "Contry1": [
+      {
+        "japanese": "ロシア",
+        "chinese": "俄羅斯",
+        "type": "Contry",
+        "status": 0
+      },
+      {
+        "japanese": "モンゴル",
+        "chinese": "蒙古",
+        "type": "Contry",
+        "status": 0
+      },
+      {
+        "japanese": "きたちょうせん",
+        "chinese": "北韓",
+        "type": "Contry",
+        "status": 0
+      },
+      {
+        "japanese": "かんこく",
+        "chinese": "韓國",
+        "type": "Contry",
+        "status": 0
+      },
+      {
+        "japanese": "ちゅうごく",
+        "chinese": "中國",
+        "type": "Contry",
+        "status": 0
+      },
+      {
+        "japanese": "にほん",
+        "chinese": "日本",
+        "type": "Contry",
+        "status": 0
+      },
+      {
+        "japanese": "たいわん",
+        "chinese": "台灣",
+        "type": "Contry",
+        "status": 0
+      },
+      {
+        "japanese": "タイ",
+        "chinese": "泰國",
+        "type": "Contry",
+        "status": 0
+      },
+      {
+        "japanese": "フィリピン",
+        "chinese": "菲律賓",
+        "type": "Contry",
+        "status": 0
+      },
+      {
+        "japanese": "マレーシア",
+        "chinese": "馬來西亞",
+        "type": "Contry",
+        "status": 0
+      },
+      {
+        "japanese": "シンガポール",
+        "chinese": "新加坡",
+        "type": "Contry",
+        "status": 0
+      },
+      {
+        "japanese": "インドネシア",
+        "chinese": "印尼",
+        "type": "Contry",
+        "status": 0
+      },
+      {
+        "japanese": "インド",
+        "chinese": "印度",
+        "type": "Contry",
+        "status": 0
+      },
+      {
+        "japanese": "サウジアラビア",
+        "chinese": "沙烏地阿拉伯",
+        "type": "Contry",
+        "status": 0
+      },
+      {
+        "japanese": "エジプト",
+        "chinese": "埃及",
+        "type": "Contry",
+        "status": 0
+      }
+    ],
+    "Contry2": [
+      {
+        "japanese": "スウェーデン",
+        "chinese": "瑞典",
+        "type": "Contry",
+        "status": 0
+      },
+      {
+        "japanese": "フィンランド",
+        "chinese": "芬蘭",
+        "type": "Contry",
+        "status": 0
+      },
+      {
+        "japanese": "イギリス",
+        "chinese": "英國",
+        "type": "Contry",
+        "status": 0
+      },
+      {
+        "japanese": "オランダ",
+        "chinese": "荷蘭",
+        "type": "Contry",
+        "status": 0
+      },
+      {
+        "japanese": "ドイツ",
+        "chinese": "德國",
+        "type": "Contry",
+        "status": 0
+      },
+      {
+        "japanese": "フランス",
+        "chinese": "法國",
+        "type": "Contry",
+        "status": 0
+      },
+      {
+        "japanese": "スイス",
+        "chinese": "瑞士",
+        "type": "Contry",
+        "status": 0
+      },
+      {
+        "japanese": "スペイン",
+        "chinese": "西班牙",
+        "type": "Contry",
+        "status": 0
+      },
+      {
+        "japanese": "イタリア",
+        "chinese": "義大利",
+        "type": "Contry",
+        "status": 0
+      },
+      {
+        "japanese": "ギリシャ",
+        "chinese": "希臘",
+        "type": "Contry",
+        "status": 0
+      },
+      {
+        "japanese": "ニュージーランド",
+        "chinese": "紐西蘭",
+        "type": "Contry",
+        "status": 0
+      },
+      {
+        "japanese": "カナダ",
+        "chinese": "加拿大",
+        "type": "Contry",
+        "status": 0
+      },
+      {
+        "japanese": "アメリカ",
+        "chinese": "美國",
+        "type": "Contry",
+        "status": 0
+      },
+      {
+        "japanese": "ブラジル",
+        "chinese": "巴西",
+        "type": "Contry",
+        "status": 0
+      },
+      {
+        "japanese": "チリ",
+        "chinese": "智利",
+        "type": "Contry",
+        "status": 0
+      }
+    ]
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "WordData": {
+    "date": "5/04/2008",
+    "time": "3:20 PM",
+    "CuisimeStyle1": [
+      {
+        "japanese": "きる",
+        "chinese": "切",
+        "type": "CuisimeStyle",
+        "status": 0
+      },
+      {
+        "japanese": "ゆでる",
+        "chinese": "水煮",
+        "type": "CuisimeStyle",
+        "status": 0
+      },
+      {
+        "japanese": "いためる",
+        "chinese": "炒",
+        "type": "CuisimeStyle",
+        "status": 0
+      },
+      {
+        "japanese": "むす",
+        "chinese": "蒸",
+        "type": "CuisimeStyle",
+        "status": 0
+      },
+      {
+        "japanese": "やく",
+        "chinese": "烤",
+        "type": "CuisimeStyle",
+        "status": 0
+      },
+      {
+        "japanese": "あげる",
+        "chinese": "炸",
+        "type": "CuisimeStyle",
+        "status": 0
+      },
+      {
+        "japanese": "にる",
+        "chinese": "燉",
+        "type": "CuisimeStyle",
+        "status": 0
+      },
+      {
+        "japanese": "つける",
+        "chinese": "醃漬",
+        "type": "CuisimeStyle",
+        "status": 0
+      },
+      {
+        "japanese": "さます",
+        "chinese": "冰鎮",
+        "type": "CuisimeStyle",
+        "status": 0
+      },
+      {
+        "japanese": "うすぎりにする",
+        "chinese": "切薄",
+        "type": "CuisimeStyle",
+        "status": 0
+      },
+      {
+        "japanese": "まぜあわせる",
+        "chinese": "混和",
+        "type": "CuisimeStyle",
+        "status": 0
+      },
+      {
+        "japanese": "おろす",
+        "chinese": "磨成泥狀",
+        "type": "CuisimeStyle",
+        "status": 0
+      },
+      {
+        "japanese": "ひく",
+        "chinese": "磨碎",
+        "type": "CuisimeStyle",
+        "status": 0
+      },
+      {
+        "japanese": "つつむ",
+        "chinese": "包",
+        "type": "CuisimeStyle",
+        "status": 0
+      },
+      {
+        "japanese": "わる",
+        "chinese": "打蛋",
+        "type": "CuisimeStyle",
+        "status": 0
+      }
+    ]
+  }
+}

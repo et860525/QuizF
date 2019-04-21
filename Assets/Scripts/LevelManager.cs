@@ -64,6 +64,7 @@ public class LevelManager : MonoBehaviour
     private string levelType;
     private string correct;
     private string fileName = "FinalList.json";
+    private string explorerName;
 
     //Bool
     private bool isOutPopUp; // Controll the panel.
@@ -82,7 +83,8 @@ public class LevelManager : MonoBehaviour
         //Get Level Information
         iTeam = PlayerPrefs.GetInt("iTeam");
         levelType = PlayerPrefs.GetString("LevelType");
-        
+        explorerName = PlayerPrefs.GetString("ExplorerName");
+
         questionWords = new List<WordList>();
         finalCorrentList = new List<WordList>();
 
@@ -167,6 +169,7 @@ public class LevelManager : MonoBehaviour
                 //Get data.
                 Debug.Log(theWords.date + "\n" + theWords.time);
 
+
                 switch (_leveltype)
                 {
                     case "Animal":
@@ -195,6 +198,97 @@ public class LevelManager : MonoBehaviour
                             }
                         }
                         break;
+
+                    case "Beverage":
+                        if (iTeam == 3)
+                        {
+                            for (int i = 0; i < theWords.Beverage1.Count; i++)
+                            {
+                                getJsonList.Add(theWords.Beverage1[i]);
+                                //Debug.Log(getJsonList.Count);
+                            }
+                        }
+                        break;
+
+                    case "Body":
+                        if (iTeam == 3)
+                        {
+                            for (int i = 0; i < theWords.Body1.Count; i++)
+                            {
+                                getJsonList.Add(theWords.Body1[i]);
+                                //Debug.Log(getJsonList.Count);
+                            }
+                        }
+                        if (iTeam == 6)
+                        {
+                            for (int i = 0; i < theWords.Body2.Count; i++)
+                            {
+                                getJsonList.Add(theWords.Body2[i]);
+                                //Debug.Log(getJsonList.Count);
+                            }
+                        }
+                        break;
+
+                    case "Career":
+                        if (iTeam == 3)
+                        {
+                            for (int i = 0; i < theWords.Career1.Count; i++)
+                            {
+                                getJsonList.Add(theWords.Career1[i]);
+                                //Debug.Log(getJsonList.Count);
+                            }
+                        }
+                        if (iTeam == 6)
+                        {
+                            for (int i = 0; i < theWords.Career2.Count; i++)
+                            {
+                                getJsonList.Add(theWords.Career2[i]);
+                                //Debug.Log(getJsonList.Count);
+                            }
+                        }
+                        break;
+
+                    case "Clothes":
+                        if (iTeam == 3)
+                        {
+                            for (int i = 0; i < theWords.Clothes1.Count; i++)
+                            {
+                                getJsonList.Add(theWords.Clothes1[i]);
+                                //Debug.Log(getJsonList.Count);
+                            }
+                        }
+                        break;
+
+                    case "Colors":
+                        if (iTeam == 3)
+                        {
+                            for (int i = 0; i < theWords.Colors1.Count; i++)
+                            {
+                                getJsonList.Add(theWords.Colors1[i]);
+                                //Debug.Log(getJsonList.Count);
+                            }
+                        }
+                        break;
+
+                    case "Contry":
+                        if (iTeam == 3)
+                        {
+                            for (int i = 0; i < theWords.Contry1.Count; i++)
+                            {
+                                getJsonList.Add(theWords.Contry1[i]);
+                                //Debug.Log(getJsonList.Count);
+                            }
+                        }
+                        if (iTeam == 6)
+                        {
+                            for (int i = 0; i < theWords.Contry2.Count; i++)
+                            {
+                                getJsonList.Add(theWords.Contry2[i]);
+                                //Debug.Log(getJsonList.Count);
+                            }
+                        }
+                        break;
+
                     case "Cuisime":
                         if (iTeam == 3)
                         {
@@ -213,6 +307,111 @@ public class LevelManager : MonoBehaviour
                             }
                         }
                         break;
+
+                    case "CuisimeStyle":
+                        if (iTeam == 3)
+                        {
+                            for (int i = 0; i < theWords.CuisimeStyle1.Count; i++)
+                            {
+                                getJsonList.Add(theWords.CuisimeStyle1[i]);
+                                //Debug.Log(getJsonList.Count);
+                            }
+                        }
+                        break;
+
+                    case "Dessert":
+                        if (iTeam == 3)
+                        {
+                            for (int i = 0; i < theWords.Dessert1.Count; i++)
+                            {
+                                getJsonList.Add(theWords.Dessert1[i]);
+                                //Debug.Log(getJsonList.Count);
+                            }
+                        }
+                        if (iTeam == 6)
+                        {
+                            for (int i = 0; i < theWords.Dessert2.Count; i++)
+                            {
+                                getJsonList.Add(theWords.Dessert2[i]);
+                                //Debug.Log(getJsonList.Count);
+                            }
+                        }
+                        if (iTeam == 9)
+                        {
+                            for (int i = 0; i < theWords.Dessert3.Count; i++)
+                            {
+                                getJsonList.Add(theWords.Dessert3[i]);
+                                //Debug.Log(getJsonList.Count);
+                            }
+                        }
+                        break;
+
+                    case "Disaster":
+                        if (iTeam == 3)
+                        {
+                            for (int i = 0; i < theWords.Disaster1.Count; i++)
+                            {
+                                getJsonList.Add(theWords.Disaster1[i]);
+                                //Debug.Log(getJsonList.Count);
+                            }
+                        }
+                        break;
+
+                    case "EleProducts":
+                        if (iTeam == 3)
+                        {
+                            for (int i = 0; i < theWords.EleProducts1.Count; i++)
+                            {
+                                getJsonList.Add(theWords.EleProducts1[i]);
+                                //Debug.Log(getJsonList.Count);
+                            }
+                        }
+                        break;
+
+                    case "Facility":
+                        if (iTeam == 3)
+                        {
+                            for (int i = 0; i < theWords.Facility1.Count; i++)
+                            {
+                                getJsonList.Add(theWords.Facility1[i]);
+                                //Debug.Log(getJsonList.Count);
+                            }
+                        }
+                        break;
+
+                    case "Family":
+                        if (iTeam == 3)
+                        {
+                            for (int i = 0; i < theWords.Family1.Count; i++)
+                            {
+                                getJsonList.Add(theWords.Family1[i]);
+                                //Debug.Log(getJsonList.Count);
+                            }
+                        }
+                        break;
+
+                    case "Festival":
+                        if (iTeam == 3)
+                        {
+                            for (int i = 0; i < theWords.Festival1.Count; i++)
+                            {
+                                getJsonList.Add(theWords.Festival1[i]);
+                                //Debug.Log(getJsonList.Count);
+                            }
+                        }
+                        break;
+
+                    case "Fitting":
+                        if (iTeam == 3)
+                        {
+                            for (int i = 0; i < theWords.Fitting1.Count; i++)
+                            {
+                                getJsonList.Add(theWords.Fitting1[i]);
+                                //Debug.Log(getJsonList.Count);
+                            }
+                        }
+                        break;
+
                     case "Fruit":
                         if (iTeam == 3)
                         {
@@ -231,6 +430,48 @@ public class LevelManager : MonoBehaviour
                             }
                         }
                         break;
+
+                    case "Furniture":
+                        if (iTeam == 3)
+                        {
+                            for (int i = 0; i < theWords.Furniture1.Count; i++)
+                            {
+                                getJsonList.Add(theWords.Furniture1[i]);
+                                //Debug.Log(getJsonList.Count);
+                            }
+                        }
+                        if (iTeam == 6)
+                        {
+                            for (int i = 0; i < theWords.Furniture2.Count; i++)
+                            {
+                                getJsonList.Add(theWords.Furniture2[i]);
+                                //Debug.Log(getJsonList.Count);
+                            }
+                        }
+                        break;
+
+                    case "Hair":
+                        if (iTeam == 3)
+                        {
+                            for (int i = 0; i < theWords.Hair1.Count; i++)
+                            {
+                                getJsonList.Add(theWords.Hair1[i]);
+                                //Debug.Log(getJsonList.Count);
+                            }
+                        }
+                        break;
+
+                    case "MakeUp":
+                        if (iTeam == 3)
+                        {
+                            for (int i = 0; i < theWords.MakeUp1.Count; i++)
+                            {
+                                getJsonList.Add(theWords.MakeUp1[i]);
+                                //Debug.Log(getJsonList.Count);
+                            }
+                        }
+                        break;
+
                     case "Meat":
                         if (iTeam == 3)
                         {
@@ -241,6 +482,108 @@ public class LevelManager : MonoBehaviour
                             }
                         }
                         break;
+
+                    case "Plant":
+                        if (iTeam == 3)
+                        {
+                            for (int i = 0; i < theWords.Plant1.Count; i++)
+                            {
+                                getJsonList.Add(theWords.Plant1[i]);
+                                //Debug.Log(getJsonList.Count);
+                            }
+                        }
+                        break;
+
+                    case "Position":
+                        if (iTeam == 3)
+                        {
+                            for (int i = 0; i < theWords.Position1.Count; i++)
+                            {
+                                getJsonList.Add(theWords.Position1[i]);
+                                //Debug.Log(getJsonList.Count);
+                            }
+                        }
+                        if (iTeam == 6)
+                        {
+                            for (int i = 0; i < theWords.Position2.Count; i++)
+                            {
+                                getJsonList.Add(theWords.Position2[i]);
+                                //Debug.Log(getJsonList.Count);
+                            }
+                        }
+                        if (iTeam == 9)
+                        {
+                            for (int i = 0; i < theWords.Position3.Count; i++)
+                            {
+                                getJsonList.Add(theWords.Position3[i]);
+                                //Debug.Log(getJsonList.Count);
+                            }
+                        }
+                        break;
+
+                    case "Shoes":
+                        if (iTeam == 3)
+                        {
+                            for (int i = 0; i < theWords.Shoes1.Count; i++)
+                            {
+                                getJsonList.Add(theWords.Shoes1[i]);
+                                //Debug.Log(getJsonList.Count);
+                            }
+                        }
+                        break;
+
+                    case "Sport":
+                        if (iTeam == 3)
+                        {
+                            for (int i = 0; i < theWords.Sport1.Count; i++)
+                            {
+                                getJsonList.Add(theWords.Sport1[i]);
+                                //Debug.Log(getJsonList.Count);
+                            }
+                        }
+                        if (iTeam == 6)
+                        {
+                            for (int i = 0; i < theWords.Sport2.Count; i++)
+                            {
+                                getJsonList.Add(theWords.Sport2[i]);
+                                //Debug.Log(getJsonList.Count);
+                            }
+                        }
+                        break;
+
+                    case "Stationery":
+                        if (iTeam == 3)
+                        {
+                            for (int i = 0; i < theWords.Stationery1.Count; i++)
+                            {
+                                getJsonList.Add(theWords.Stationery1[i]);
+                                //Debug.Log(getJsonList.Count);
+                            }
+                        }
+                        break;
+
+                    case "Subject":
+                        if (iTeam == 3)
+                        {
+                            for (int i = 0; i < theWords.Subject1.Count; i++)
+                            {
+                                getJsonList.Add(theWords.Subject1[i]);
+                                //Debug.Log(getJsonList.Count);
+                            }
+                        }
+                        break;
+
+                    case "Transport":
+                        if (iTeam == 3)
+                        {
+                            for (int i = 0; i < theWords.Transport1.Count; i++)
+                            {
+                                getJsonList.Add(theWords.Transport1[i]);
+                                //Debug.Log(getJsonList.Count);
+                            }
+                        }
+                        break;
+
                     case "Vegetable":
                         if (iTeam == 3)
                         {
@@ -259,12 +602,13 @@ public class LevelManager : MonoBehaviour
                             }
                         }
                         break;
-                    case "MakeUp":
+
+                    case "Weather":
                         if (iTeam == 3)
                         {
-                            for (int i = 0; i < theWords.MakeUp1.Count; i++)
+                            for (int i = 0; i < theWords.Weather1.Count; i++)
                             {
-                                getJsonList.Add(theWords.MakeUp1[i]);
+                                getJsonList.Add(theWords.Weather1[i]);
                                 //Debug.Log(getJsonList.Count);
                             }
                         }
@@ -335,7 +679,7 @@ public class LevelManager : MonoBehaviour
             qText.text = questionWords[randomQuestionIndex].japanese;
             if (qText.text.Length > 6)
             {
-                qText.fontSize = 50;
+                qText.fontSize = 40;
             }
             correct = questionWords[randomQuestionIndex].chinese;
             finalCorrentList.Add(questionWords[randomQuestionIndex]);
@@ -364,25 +708,25 @@ public class LevelManager : MonoBehaviour
                 break;
             case 2:
                 answerTextB.text = correct;
-                if (answerTextA.text.Length > 6)
+                if (answerTextB.text.Length > 6)
                 {
-                    answerTextA.fontSize = 50;
+                    answerTextB.fontSize = 50;
                 }
                 SetAnswer(_levelType, _gameMode, answerTextB, answerTextA, answerTextC, answerTextD);
                 break;
             case 3:
                 answerTextC.text = correct;
-                if (answerTextA.text.Length > 6)
+                if (answerTextC.text.Length > 6)
                 {
-                    answerTextA.fontSize = 50;
+                    answerTextC.fontSize = 50;
                 }
                 SetAnswer(_levelType, _gameMode, answerTextC, answerTextA, answerTextB, answerTextD);
                 break;
             case 4:
                 answerTextD.text = correct;
-                if (answerTextA.text.Length > 6)
+                if (answerTextD.text.Length > 6)
                 {
-                    answerTextA.fontSize = 50;
+                    answerTextD.fontSize = 50;
                 }
                 SetAnswer(_levelType, _gameMode, answerTextD, answerTextA, answerTextB, answerTextC);
                 break;
@@ -441,6 +785,151 @@ public class LevelManager : MonoBehaviour
                     }
                 }
                 break;
+           
+            case "Beverage":
+                if (iTeam == 3)
+                {
+                    for (int i = 0; i <= (int)maxQuestion - 1; i++)
+                    {
+                        tempList.Add(theWords.Beverage1[i]);
+                    }
+                    for (int i = 0; i < tempList.Count; i++)
+                    {
+                        if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
+                        {
+                            tempList.RemoveAt(i);
+                        }
+                    }
+                }
+                break;
+
+            case "Body":
+                if (iTeam == 3)
+                {
+                    for (int i = 0; i <= (int)maxQuestion - 1; i++)
+                    {
+                        tempList.Add(theWords.Body1[i]);
+                    }
+                    for (int i = 0; i < tempList.Count; i++)
+                    {
+                        if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
+                        {
+                            tempList.RemoveAt(i);
+                        }
+                    }
+                }
+                else if (iTeam == 6)
+                {
+                    for (int i = 0; i <= (int)maxQuestion - 1; i++)
+                    {
+                        tempList.Add(theWords.Body2[i]);
+                    }
+                    for (int i = 0; i < tempList.Count; i++)
+                    {
+                        if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
+                        {
+                            tempList.RemoveAt(i);
+                        }
+                    }
+                }
+                break;
+
+            case "Career":
+                if (iTeam == 3)
+                {
+                    for (int i = 0; i <= (int)maxQuestion - 1; i++)
+                    {
+                        tempList.Add(theWords.Career1[i]);
+                    }
+                    for (int i = 0; i < tempList.Count; i++)
+                    {
+                        if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
+                        {
+                            tempList.RemoveAt(i);
+                        }
+                    }
+                }
+                else if (iTeam == 6)
+                {
+                    for (int i = 0; i <= (int)maxQuestion - 1; i++)
+                    {
+                        tempList.Add(theWords.Career2[i]);
+                    }
+                    for (int i = 0; i < tempList.Count; i++)
+                    {
+                        if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
+                        {
+                            tempList.RemoveAt(i);
+                        }
+                    }
+                }
+                break;
+
+            case "Clothes":
+                if (iTeam == 3)
+                {
+                    for (int i = 0; i <= (int)maxQuestion - 1; i++)
+                    {
+                        tempList.Add(theWords.Clothes1[i]);
+                    }
+                    for (int i = 0; i < tempList.Count; i++)
+                    {
+                        if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
+                        {
+                            tempList.RemoveAt(i);
+                        }
+                    }
+                }
+                break;
+
+            case "Colors":
+                if (iTeam == 3)
+                {
+                    for (int i = 0; i <= (int)maxQuestion - 1; i++)
+                    {
+                        tempList.Add(theWords.Colors1[i]);
+                    }
+                    for (int i = 0; i < tempList.Count; i++)
+                    {
+                        if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
+                        {
+                            tempList.RemoveAt(i);
+                        }
+                    }
+                }
+                break;
+
+            case "Contry":
+                if (iTeam == 3)
+                {
+                    for (int i = 0; i <= (int)maxQuestion - 1; i++)
+                    {
+                        tempList.Add(theWords.Contry1[i]);
+                    }
+                    for (int i = 0; i < tempList.Count; i++)
+                    {
+                        if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
+                        {
+                            tempList.RemoveAt(i);
+                        }
+                    }
+                }
+                else if (iTeam == 6)
+                {
+                    for (int i = 0; i <= (int)maxQuestion - 1; i++)
+                    {
+                        tempList.Add(theWords.Contry2[i]);
+                    }
+                    for (int i = 0; i < tempList.Count; i++)
+                    {
+                        if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
+                        {
+                            tempList.RemoveAt(i);
+                        }
+                    }
+                }
+                break;
+
             case "Cuisime":
                 if (iTeam == 3)
                 {
@@ -448,7 +937,6 @@ public class LevelManager : MonoBehaviour
                     {
                         tempList.Add(theWords.Cuisime1[i]);
                     }
-
                     for (int i = 0; i < tempList.Count; i++)
                     {
                         if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
@@ -472,6 +960,171 @@ public class LevelManager : MonoBehaviour
                     }
                 }
                 break;
+
+            case "CuisimeStyle":
+                if (iTeam == 3)
+                {
+                    for (int i = 0; i <= (int)maxQuestion - 1; i++)
+                    {
+                        tempList.Add(theWords.CuisimeStyle1[i]);
+                    }
+                    for (int i = 0; i < tempList.Count; i++)
+                    {
+                        if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
+                        {
+                            tempList.RemoveAt(i);
+                        }
+                    }
+                }
+                break;
+
+            case "Dessert":
+                if (iTeam == 3)
+                {
+                    for (int i = 0; i <= (int)maxQuestion - 1; i++)
+                    {
+                        tempList.Add(theWords.Dessert1[i]);
+                    }
+                    for (int i = 0; i < tempList.Count; i++)
+                    {
+                        if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
+                        {
+                            tempList.RemoveAt(i);
+                        }
+                    }
+                }
+                else if (iTeam == 6)
+                {
+                    for (int i = 0; i <= (int)maxQuestion - 1; i++)
+                    {
+                        tempList.Add(theWords.Dessert2[i]);
+                    }
+                    for (int i = 0; i < tempList.Count; i++)
+                    {
+                        if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
+                        {
+                            tempList.RemoveAt(i);
+                        }
+                    }
+                }
+                else if (iTeam == 9)
+                {
+                    for (int i = 0; i <= (int)maxQuestion - 1; i++)
+                    {
+                        tempList.Add(theWords.Dessert3[i]);
+                    }
+                    for (int i = 0; i < tempList.Count; i++)
+                    {
+                        if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
+                        {
+                            tempList.RemoveAt(i);
+                        }
+                    }
+                }
+                break;
+
+            case "Disaster":
+                if (iTeam == 3)
+                {
+                    for (int i = 0; i <= (int)maxQuestion - 1; i++)
+                    {
+                        tempList.Add(theWords.Disaster1[i]);
+                    }
+                    for (int i = 0; i < tempList.Count; i++)
+                    {
+                        if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
+                        {
+                            tempList.RemoveAt(i);
+                        }
+                    }
+                }
+                break;
+
+            case "EleProducts":
+                if (iTeam == 3)
+                {
+                    for (int i = 0; i <= (int)maxQuestion - 1; i++)
+                    {
+                        tempList.Add(theWords.EleProducts1[i]);
+                    }
+                    for (int i = 0; i < tempList.Count; i++)
+                    {
+                        if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
+                        {
+                            tempList.RemoveAt(i);
+                        }
+                    }
+                }
+                break;
+
+            case "Facility":
+                if (iTeam == 3)
+                {
+                    for (int i = 0; i <= (int)maxQuestion - 1; i++)
+                    {
+                        tempList.Add(theWords.Facility1[i]);
+                    }
+                    for (int i = 0; i < tempList.Count; i++)
+                    {
+                        if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
+                        {
+                            tempList.RemoveAt(i);
+                        }
+                    }
+                }
+                break;
+
+            case "Family":
+                if (iTeam == 3)
+                {
+                    for (int i = 0; i <= (int)maxQuestion - 1; i++)
+                    {
+                        tempList.Add(theWords.Family1[i]);
+                    }
+                    for (int i = 0; i < tempList.Count; i++)
+                    {
+                        if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
+                        {
+                            tempList.RemoveAt(i);
+                        }
+                    }
+                }
+                break;
+
+            case "Festival":
+                if (iTeam == 3)
+                {
+                    for (int i = 0; i <= (int)maxQuestion - 1; i++)
+                    {
+                        tempList.Add(theWords.Festival1[i]);
+                    }
+                    for (int i = 0; i < tempList.Count; i++)
+                    {
+                        if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
+                        {
+                            tempList.RemoveAt(i);
+                        }
+                    }
+                }
+                break;
+
+            case "Fitting":
+                if (iTeam == 3)
+                {
+                    for (int i = 0; i <= (int)maxQuestion - 1; i++)
+                    {
+                        tempList.Add(theWords.Fitting1[i]);
+                    }
+                    for (int i = 0; i < tempList.Count; i++)
+                    {
+                        if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
+                        {
+                            tempList.RemoveAt(i);
+                        }
+                    }
+                }
+                break;
+
             case "Fruit":
                 if (iTeam == 3)
                 {
@@ -479,7 +1132,6 @@ public class LevelManager : MonoBehaviour
                     {
                         tempList.Add(theWords.Fruit1[i]);
                     }
-
                     for (int i = 0; i < tempList.Count; i++)
                     {
                         if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
@@ -503,14 +1155,28 @@ public class LevelManager : MonoBehaviour
                     }
                 }
                 break;
-            case "Meat":
+
+            case "Furniture":
                 if (iTeam == 3)
                 {
                     for (int i = 0; i <= (int)maxQuestion - 1; i++)
                     {
-                        tempList.Add(theWords.Meat1[i]);
+                        tempList.Add(theWords.Furniture1[i]);
                     }
-
+                    for (int i = 0; i < tempList.Count; i++)
+                    {
+                        if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
+                        {
+                            tempList.RemoveAt(i);
+                        }
+                    }
+                }
+                else if (iTeam == 6)
+                {
+                    for (int i = 0; i <= (int)maxQuestion - 1; i++)
+                    {
+                        tempList.Add(theWords.Furniture2[i]);
+                    }
                     for (int i = 0; i < tempList.Count; i++)
                     {
                         if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
@@ -520,6 +1186,219 @@ public class LevelManager : MonoBehaviour
                     }
                 }
                 break;
+
+            case "Hair":
+                if (iTeam == 3)
+                {
+                    for (int i = 0; i <= (int)maxQuestion - 1; i++)
+                    {
+                        tempList.Add(theWords.Hair1[i]);
+                    }
+                    for (int i = 0; i < tempList.Count; i++)
+                    {
+                        if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
+                        {
+                            tempList.RemoveAt(i);
+                        }
+                    }
+                }
+                break;
+
+            case "MakeUp":
+                if (iTeam == 3)
+                {
+                    for (int i = 0; i <= (int)maxQuestion - 1; i++)
+                    {
+                        tempList.Add(theWords.MakeUp1[i]);
+                    }
+                    for (int i = 0; i < tempList.Count; i++)
+                    {
+                        if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
+                        {
+                            tempList.RemoveAt(i);
+                        }
+                    }
+                }
+                break;
+
+            case "Meat":
+                if (iTeam == 3)
+                {
+                    for (int i = 0; i <= (int)maxQuestion - 1; i++)
+                    {
+                        tempList.Add(theWords.Meat1[i]);
+                    }
+                    for (int i = 0; i < tempList.Count; i++)
+                    {
+                        if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
+                        {
+                            tempList.RemoveAt(i);
+                        }
+                    }
+                }
+                break;
+
+            case "Plant":
+                if (iTeam == 3)
+                {
+                    for (int i = 0; i <= (int)maxQuestion - 1; i++)
+                    {
+                        tempList.Add(theWords.Plant1[i]);
+                    }
+                    for (int i = 0; i < tempList.Count; i++)
+                    {
+                        if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
+                        {
+                            tempList.RemoveAt(i);
+                        }
+                    }
+                }
+                break;
+
+            case "Position":
+                if (iTeam == 3)
+                {
+                    for (int i = 0; i <= (int)maxQuestion - 1; i++)
+                    {
+                        tempList.Add(theWords.Position1[i]);
+                    }
+                    for (int i = 0; i < tempList.Count; i++)
+                    {
+                        if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
+                        {
+                            tempList.RemoveAt(i);
+                        }
+                    }
+                }
+                else if (iTeam == 6)
+                {
+                    for (int i = 0; i <= (int)maxQuestion - 1; i++)
+                    {
+                        tempList.Add(theWords.Position2[i]);
+                    }
+                    for (int i = 0; i < tempList.Count; i++)
+                    {
+                        if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
+                        {
+                            tempList.RemoveAt(i);
+                        }
+                    }
+                }
+                else if (iTeam == 9)
+                {
+                    for (int i = 0; i <= (int)maxQuestion - 1; i++)
+                    {
+                        tempList.Add(theWords.Position3[i]);
+                    }
+                    for (int i = 0; i < tempList.Count; i++)
+                    {
+                        if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
+                        {
+                            tempList.RemoveAt(i);
+                        }
+                    }
+                }
+                break;
+
+            case "Shoes":
+                if (iTeam == 3)
+                {
+                    for (int i = 0; i <= (int)maxQuestion - 1; i++)
+                    {
+                        tempList.Add(theWords.Shoes1[i]);
+                    }
+                    for (int i = 0; i < tempList.Count; i++)
+                    {
+                        if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
+                        {
+                            tempList.RemoveAt(i);
+                        }
+                    }
+                }
+                break;
+
+            case "Sport":
+                if (iTeam == 3)
+                {
+                    for (int i = 0; i <= (int)maxQuestion - 1; i++)
+                    {
+                        tempList.Add(theWords.Sport1[i]);
+                    }
+                    for (int i = 0; i < tempList.Count; i++)
+                    {
+                        if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
+                        {
+                            tempList.RemoveAt(i);
+                        }
+                    }
+                }
+                else if (iTeam == 6)
+                {
+                    for (int i = 0; i <= (int)maxQuestion - 1; i++)
+                    {
+                        tempList.Add(theWords.Sport2[i]);
+                    }
+                    for (int i = 0; i < tempList.Count; i++)
+                    {
+                        if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
+                        {
+                            tempList.RemoveAt(i);
+                        }
+                    }
+                }
+                break;
+
+            case "Stationery":
+                if (iTeam == 3)
+                {
+                    for (int i = 0; i <= (int)maxQuestion - 1; i++)
+                    {
+                        tempList.Add(theWords.Stationery1[i]);
+                    }
+                    for (int i = 0; i < tempList.Count; i++)
+                    {
+                        if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
+                        {
+                            tempList.RemoveAt(i);
+                        }
+                    }
+                }
+                break;
+
+            case "Subject":
+                if (iTeam == 3)
+                {
+                    for (int i = 0; i <= (int)maxQuestion - 1; i++)
+                    {
+                        tempList.Add(theWords.Subject1[i]);
+                    }
+                    for (int i = 0; i < tempList.Count; i++)
+                    {
+                        if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
+                        {
+                            tempList.RemoveAt(i);
+                        }
+                    }
+                }
+                break;
+
+            case "Transport":
+                if (iTeam == 3)
+                {
+                    for (int i = 0; i <= (int)maxQuestion - 1; i++)
+                    {
+                        tempList.Add(theWords.Transport1[i]);
+                    }
+                    for (int i = 0; i < tempList.Count; i++)
+                    {
+                        if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
+                        {
+                            tempList.RemoveAt(i);
+                        }
+                    }
+                }
+                break;
+
             case "Vegetable":
                 if (iTeam == 3)
                 {
@@ -527,7 +1406,6 @@ public class LevelManager : MonoBehaviour
                     {
                         tempList.Add(theWords.Vegetable1[i]);
                     }
-
                     for (int i = 0; i < tempList.Count; i++)
                     {
                         if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
@@ -551,14 +1429,14 @@ public class LevelManager : MonoBehaviour
                     }
                 }
                 break;
-            case "MakeUp":
+
+            case "Weather":
                 if (iTeam == 3)
                 {
                     for (int i = 0; i <= (int)maxQuestion - 1; i++)
                     {
-                        tempList.Add(theWords.MakeUp1[i]);
+                        tempList.Add(theWords.Weather1[i]);
                     }
-
                     for (int i = 0; i < tempList.Count; i++)
                     {
                         if (tempList[i].chinese == _corrent.text || tempList[i].japanese == _corrent.text)
@@ -568,6 +1446,7 @@ public class LevelManager : MonoBehaviour
                     }
                 }
                 break;
+
                 //Add type
         }
 
@@ -578,6 +1457,20 @@ public class LevelManager : MonoBehaviour
                 _an1.text = tempList[tempRnd[0]].chinese;
                 _an2.text = tempList[tempRnd[1]].chinese;
                 _an3.text = tempList[tempRnd[2]].chinese;
+
+                if (_an1.text.Length > 6)
+                {
+                    _an1.fontSize = 50;
+                }
+                if (_an2.text.Length > 6)
+                {
+                    _an2.fontSize = 50;
+                }
+                if (_an3.text.Length > 6)
+                {
+                    _an3.fontSize = 50;
+                }
+
                 break;
 
             case "ch":
@@ -835,25 +1728,38 @@ public class LevelManager : MonoBehaviour
 
     public void YesOutPopUp()
     {
-        SceneManager.LoadScene(levelType + "SelectMenu");
-        /*switch(levelType)
+        switch (levelType)
         {
-            case "Animal":
-                SceneManager.LoadScene("AnimalSelectMenu");
+            case "Beverage":
+            case "Clothes":
+            case "Colors":
+            case "CuisimeStyle":
+            case "Disaster":
+            case "EleProducts":
+            case "Facility":
+            case "Family":
+            case "Festival":
+            case "Fitting":
+            case "Hair":
+            case "Plant":
+            case "Shoes":
+            case "Stationery":
+            case "Subject":
+            case "Transport":
+            case "Weather":
+                SceneManager.LoadScene("OneListSelectMenu");
                 break;
-            case "Cuisime":
-                SceneManager.LoadScene("CuisimeSelectMenu");
+            case "Body":
+            case "Career":
+            case "Contry":
+            case "Furniture":
+            case "Sport":
+                SceneManager.LoadScene("TwoListSelectMenu");
                 break;
-            case "Fruit":
-                SceneManager.LoadScene("FruitSelectMenu");
-                break;
-            case "Meat":
-                SceneManager.LoadScene("MeatSelectMenu");
-                break;
-            case "Vegetable":
-                SceneManager.LoadScene("VegetableSelectMenu");
-                break;
-        }*/
 
+            default:
+                SceneManager.LoadScene(levelType + "SelectMenu");
+                break;
+        }
     }
 }

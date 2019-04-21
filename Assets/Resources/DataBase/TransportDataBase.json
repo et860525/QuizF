@@ -1,0 +1,98 @@
+{
+  "WordData": {
+    "date": "5/04/2008",
+    "time": "3:20 PM",
+    "Transport1": [
+      {
+        "japanese": "バス",
+        "chinese": "公車",
+        "type": "Transport",
+        "status": 0
+      },
+      {
+        "japanese": "じてんしゃ",
+        "chinese": "腳踏車",
+        "type": "Transport",
+        "status": 0
+      },
+      {
+        "japanese": "ちかてつ",
+        "chinese": "捷運",
+        "type": "Transport",
+        "status": 0
+      },
+      {
+        "japanese": "タクシー",
+        "chinese": "計程車",
+        "type": "Transport",
+        "status": 0
+      },
+      {
+        "japanese": "じどうしゃ",
+        "chinese": "汽車",
+        "type": "Transport",
+        "status": 0
+      },
+      {
+        "japanese": "きゅうきゅうしゃ",
+        "chinese": "救護車",
+        "type": "Transport",
+        "status": 0
+      },
+      {
+        "japanese": "しょうぼうしゃ",
+        "chinese": "消防車",
+        "type": "Transport",
+        "status": 0
+      },
+      {
+        "japanese": "パトカー",
+        "chinese": "警車",
+        "type": "Transport",
+        "status": 0
+      },
+      {
+        "japanese": "ふね",
+        "chinese": "船",
+        "type": "Transport",
+        "status": 0
+      },
+      {
+        "japanese": "ひこうき",
+        "chinese": "飛機",
+        "type": "Transport",
+        "status": 0
+      },
+      {
+        "japanese": "ヘリコプター",
+        "chinese": "直升機",
+        "type": "Transport",
+        "status": 0
+      },
+      {
+        "japanese": "バイク",
+        "chinese": "機車",
+        "type": "Transport",
+        "status": 0
+      },
+      {
+        "japanese": "でんしゃ",
+        "chinese": "火車",
+        "type": "Transport",
+        "status": 0
+      },
+      {
+        "japanese": "しんかんせん",
+        "chinese": "高鐵",
+        "type": "Transport",
+        "status": 0
+      },
+      {
+        "japanese": "こうつうしんごう",
+        "chinese": "紅綠燈",
+        "type": "Transport",
+        "status": 0
+      }
+    ]
+  }
+}

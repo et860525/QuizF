@@ -98,7 +98,16 @@ public class FinalBoard : MonoBehaviour
 
     public void ReStart()
     {
-        //UnityEngine.SceneManagement.SceneManager.LoadScene("Level" + iTeam.ToString());
+        if (iTeam == 3 || iTeam == 6 || iTeam == 9)
+        {
+            SceneManager.LoadScene("WordLevel");
+        }
+
+        if (iTeam == 2 || iTeam == 5 || iTeam == 8)
+        {
+            SceneManager.LoadScene("ImageLevel");
+        }
+        
     }
 
     void LoadData()
@@ -248,10 +257,11 @@ public class FinalBoard : MonoBehaviour
         //loadedIcons.CopyTo (Icons,0);
     }
 
-    public void GoTo(string nameScene)
+    public void GoTo()
     {
         buttonClik.Play();
-        switch (levelType)
+        SceneManager.LoadScene(levelType + "SelectMenu");
+        /*switch (levelType)
         {          
             case "Animal":
                 SceneManager.LoadScene("AnimalSelectMenu");
@@ -269,7 +279,7 @@ public class FinalBoard : MonoBehaviour
                 SceneManager.LoadScene("VegetableSelectMenu");
                 break;
 
-        }
+        }*/
     }
 
 }

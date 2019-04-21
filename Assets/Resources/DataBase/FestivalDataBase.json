@@ -1,0 +1,98 @@
+{
+  "WordData": {
+    "date": "5/04/2008",
+    "time": "3:20 PM",
+    "Festival1": [
+      {
+        "japanese": "しょうがつ",
+        "chinese": "新年",
+        "type": "Festival",
+        "status": 0
+      },
+      {
+        "japanese": "ひなまつ",
+        "chinese": "女兒節",
+        "type": "Festival",
+        "status": 0
+      },
+      {
+        "japanese": "こどものひ",
+        "chinese": "兒童節",
+        "type": "Festival",
+        "status": 0
+      },
+      {
+        "japanese": "クリスマス",
+        "chinese": "聖誕節",
+        "type": "Festival",
+        "status": 0
+      },
+      {
+        "japanese": "おぼん",
+        "chinese": "盂蘭盆節",
+        "type": "Festival",
+        "status": 0
+      },
+      {
+        "japanese": "たなばた",
+        "chinese": "七夕",
+        "type": "Festival",
+        "status": 0
+      },
+      {
+        "japanese": "せいじんのひ",
+        "chinese": "成人節",
+        "type": "Festival",
+        "status": 0
+      },
+      {
+        "japanese": "そつぎょうしき",
+        "chinese": "畢業",
+        "type": "Festival",
+        "status": 0
+      },
+      {
+        "japanese": "じゅうごや",
+        "chinese": "中秋節",
+        "type": "Festival",
+        "status": 0
+      },
+      {
+        "japanese": "バレンタインデー",
+        "chinese": "情人節",
+        "type": "Festival",
+        "status": 0
+      },
+      {
+        "japanese": "ハロウィーン",
+        "chinese": "萬聖節",
+        "type": "Festival",
+        "status": 0
+      },
+      {
+        "japanese": "せいめいせつ",
+        "chinese": "清明節",
+        "type": "Festival",
+        "status": 0
+      },
+      {
+        "japanese": "ちちのひ",
+        "chinese": "父親節",
+        "type": "Festival",
+        "status": 0
+      },
+      {
+        "japanese": "ははのひ",
+        "chinese": "母親節",
+        "type": "Festival",
+        "status": 0
+      },
+      {
+        "japanese": "かんしゃさい",
+        "chinese": "感恩節",
+        "type": "Festival",
+        "status": 0
+      }
+    ]
+  }
+}
